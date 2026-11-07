@@ -59,6 +59,8 @@ _Berdasarkan Sample 1–5:_
 - Secara umum: untuk pilihan kreatif (gaya, hook, BGM, warna), Claude beri cadangan + sebab, pengguna pilih.
 - **Video tanpa suara (gaya Sample 5):** masukkan **BGM royalty-free** — Claude cadangkan beberapa pilihan (link untuk didengar) ikut mood. Jika tiada yang sesuai, render dengan **SFX sahaja tanpa BGM** supaya pengguna boleh tambah trending sound sendiri dalam TikTok.
 
+- **Remotion (Nov 2026, projek `projects/jam-wira/`):** pengguna minta edit guna **Remotion** — transkrip dulu (Whisper, word-level) untuk tentukan letak animasi/motion graphics/SFX; **SFX premium**; **jangan tutup muka** dengan grafik; patuhi **safe zone TikTok & IG**; BGM ada tapi suara mesti dominan (≈18 dB bawah suara); buang ulangan & jeda janggal; cari hook paling kuat; **tunjuk preview dulu, jangan render final**. Pengguna beri kebebasan kreatif ("ikut kreativiti kau").
+
 ## BGM (royalty-free) — senarai pendek untuk pengguna pilih
 
 Muat turun dari sumber rasmi (bensound.com / incompetech.com / YouTube Audio Library), bukan dari reupload.
