@@ -50,3 +50,10 @@ Perubahan dari V1:
 6. **CTA kecil awal** "🛒 ADA DI BEG KUNING" pada badge water resistant; CTA akhir masuk dengan **slam**.
 7. **SFX dikurangkan** (buang 3 yang bertindih) + yang utama dikuatkan 20 %.
 8. Kekal: safe zone, caption mint y≈1340, BGM −18 dB, loudness −14.8 LUFS, peak −1.5 dBFS (limiter oversampled).
+
+## V3 (keputusan pengguna selepas V2)
+**Status:** PREVIEW 540p — [`preview_v3_540p.mp4`](preview_v3_540p.mp4), menunggu persetujuan sebelum render final.
+- Hook gabungan V2 (smartwatch ❌ + b-roll close-up) — **dipersetujui**.
+- **BGM dibuang** (suara + SFX sahaja; pengguna tambah trending sound di TikTok jika mahu). Kredit Kevin MacLeod tidak lagi diperlukan.
+- Caption kekal besar + mint; jumlah grafik kekal.
+- Audio: −14.8 LUFS, peak −1.8 dBFS.

@@ -387,8 +387,6 @@ export const Main: React.FC<{showSafe: boolean}> = ({showSafe}) => {
       {showSafe && <SafeGuides />}
       {/* AUDIO */}
       <Audio src={staticFile('voice.wav')} />
-      <Audio src={staticFile('carefree.mp3')} startFrom={f(3)}
-        volume={(fr) => 0.22 * interpolate(fr, [0, 12, totalF - 30, totalF], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
       {data.sfx.map((s, i) => (
         <Sequence key={'s' + i} from={f(s.t)} layout="none">
           <Audio src={staticFile(`sfx/${s.n}.mp3`)} volume={s.v} />

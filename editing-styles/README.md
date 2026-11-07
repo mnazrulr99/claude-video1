@@ -62,6 +62,7 @@ _Berdasarkan Sample 1–6:_
 
 - **Remotion (Nov 2026, projek `projects/jam-wira/`):** pengguna minta edit guna **Remotion** — transkrip dulu (Whisper, word-level) untuk tentukan letak animasi/motion graphics/SFX; **SFX premium**; **jangan tutup muka** dengan grafik; patuhi **safe zone TikTok & IG**; BGM ada tapi suara mesti dominan (≈18 dB bawah suara); buang ulangan & jeda janggal; cari hook paling kuat; **tunjuk preview dulu, jangan render final**. Pengguna beri kebebasan kreatif ("ikut kreativiti kau").
 
+- **Jam-wira V3 (keputusan pengguna):** suka hook gabungan (kontra + b-roll produk), **buang BGM**, caption kekal besar, grafik ~15 OK.
 - **Belajar dari Sample 6 vs edit Claude (jam-wira):** pengguna suka **produk kelihatan sangat awal**, **close-up produk sebagai title card**, grafik bergaya organik (bukan semua kotak seragam), **CTA kecil awal**, SFX sedikit tapi jelas. Gunakan sebagai default untuk review UGC, tapi kekalkan amalan Claude yang lebih selamat: **safe zone**, **limiter (peak ≤ −1 dBFS)**, **loudness ≈ −14 hingga −16 LUFS**, grafik tidak menutup muka/dahi.
 
 ## BGM (royalty-free) — senarai pendek untuk pengguna pilih
