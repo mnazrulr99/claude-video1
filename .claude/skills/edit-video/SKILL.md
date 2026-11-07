@@ -93,6 +93,24 @@ Hantar kepada pengguna (SendUserFile, display render). **Tunggu komen; ulang seh
 **Semak sebelum hantar:** beberapa frame (caption tak terpotong, dalam zon selamat TikTok), loudness, sync caption.
 Hantar video siap + teks kredit BGM (jika perlu).
 
+## Pengajaran dari job ujian pertama (periuk, 52 s) — WAJIB ikut
+
+- **Templat sedia guna** dalam `tools/templates/` (salin ke scratchpad, sunting `plan.py` untuk job baru):
+  `plan.py` (HOOK, SEGMENTS+zoom, FIXES ejaan, GRAPHICS, SIZE_TIMES, `src_to_out`) →
+  `storyboard.py <dir_skrip> <dir_job> <dir_output>` (PIL, 2 halaman × 5 panel) →
+  `base.py <dir_skrip> <dir_job>` (ffmpeg: hook senyap + potongan + punch-in → `base.mp4`) →
+  `hf.py <dir_skrip> <dir_job>` (jana `hfproj/index.html`: video + caption karaoke + grafik GSAP + SFX).
+  Projek HyperFrames: salin `hyperframes.json`, `meta.json`, `package.json` dari `npx hyperframes init`, symlink `base.mp4`,
+  `sfx/` (dari `tools/sfx/`) dan `fonts/` (Inter-Black, Inter-ExtraBold, LiberationSerif-BoldItalic).
+- **SFX:** `tools/sfx/` (whoosh, pop, ding, sparkle, impact, chime — disintesis ffmpeg, puncak −6 dB, guna `data-volume` 0.35–0.6).
+- **HyperFrames:** setiap `<audio>`/`<video>` **mesti ada `id`** (tanpa id → SENYAP dalam render). Klip audio tak boleh melepasi
+  `data-duration` root. Amaran `nested_structure_needs_subcomposition` boleh diabaikan.
+- Semak dengan `npx hyperframes lint` (0 error) dan `npx hyperframes snapshot --at ...` (lihat contact sheet) **sebelum** render.
+- Masa render cloud: ±3.5 min untuk 52 s (1080×1920, CPU). Fail render ±70 MB.
+- Akhir: `loudnorm=I=-14:TP=-1.5:LRA=11`, libx264 crf 18, AAC 192k, `+faststart` → `output/<job>/<nama>-final.mp4`.
+- Video raw resolusi rendah (cth. 464×848) akan lembut bila dibesarkan — maklumkan pengguna awal.
+- Whisper keliru nama/sapaan (cth. "seller"→"selera", "akak"→"enak") — senaraikan tekaan dan minta pengguna sahkan.
+
 ## Nota
 
 - Simpan fail kerja dalam scratchpad; **jangan commit video job pengguna** ke repo.
