@@ -1,0 +1,10 @@
+# Arahan untuk Claude (projek editing video)
+
+Repo ini menyimpan rujukan gaya editing video pengguna. **Baca `editing-styles/README.md` dahulu** sebelum
+sebarang tugas editing atau analisis sample — ia mengandungi aliran kerja wajib, katalog gaya
+(Sample 1, Sample 2, …), pattern bersama dan citarasa pengguna.
+
+Ringkasan:
+- Video mentah → analisis & cadang gaya → storyboard imej → tunggu setuju → baru render (ffmpeg).
+- Sample siap edit baharu → analisis penuh → `editing-styles/sample-N/` → kemas kini katalog & "Pattern Bersama".
+- Balas dalam Bahasa Melayu santai, mesra.
