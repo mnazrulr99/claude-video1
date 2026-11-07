@@ -86,7 +86,7 @@ selain header — penonton menonton proses.
 
 - **Selebihnya SENYAP digital** (tiada suara, tiada BGM dalam fail eksport, purata −29 dB).
   Ini menunjukkan **muzik/trending sound ditambah terus dalam TikTok semasa posting**.
-- Untuk job sebenar: Claude **cadangkan BGM** (royalty-free) atau biarkan ruang untuk trending sound — pengguna pilih.
+- **Keputusan pengguna untuk job sebenar:** masukkan **BGM royalty-free** (Claude cadangkan beberapa pilihan + link). Jika tiada pilihan yang sesuai → render **SFX sahaja**, pengguna tambah trending sound sendiri dalam TikTok.
 
 ---
 
@@ -100,7 +100,7 @@ selain header — penonton menonton proses.
 6. Manfaat sebagai **checklist ✅ ditanda satu demi satu** dengan ding.
 7. Teks tertumpu pada 10 s pertama; selepas itu biar visual bercerita.
 8. Transition: splash cecair; boleh guna split screen 3 panel untuk variasi.
-9. SFX sahaja dalam timeline; BGM — cadangkan atau biar kosong untuk trending sound (tanya pengguna).
+9. **BGM royalty-free** (cadang beberapa pilihan); jika tiada yang sesuai → SFX sahaja, pengguna tambah trending sound di TikTok.
 
 **Bahan yang perlu dari pengguna:** nama produk (header), senarai manfaat untuk checklist, nama watermark (jika ada),
-tema/sticker yang sesuai, keputusan BGM vs trending sound.
+tema/sticker yang sesuai, pilihan BGM dari senarai cadangan.
