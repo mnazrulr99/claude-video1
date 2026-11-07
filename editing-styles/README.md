@@ -4,16 +4,27 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 ## Aliran kerja WAJIB (setiap job editing)
 
+0. **Guna skill yang dah dipelajari:** baca katalog, Pattern Bersama, Catatan citarasa & **Pelajaran projek siap**
+   di bawah, dan ikut skill teknikal `edit-video` (`.claude/skills/edit-video/SKILL.md`).
 1. Pengguna hantar **video mentah** (+ gambar produk PNG jika ada; jika tiada, pengguna akan maklumkan
    → Claude potong gambar produk dari video sebagai alternatif).
-2. **Analisis dulu, jangan terus edit.** Claude analisis video mentah (durasi, kandungan, transkrip,
-   jenis video: edukasi/sembang vs iklan produk, mood, kualiti audio) dan beri **cadangan gaya**
+2. **Analisis dulu, jangan terus edit.** Claude analisis video mentah (durasi, kandungan, **transkrip word-level**,
+   jenis video: edukasi/sembang vs iklan produk, mood, kualiti audio, kedudukan muka/produk) dan beri **cadangan gaya**
    (Sample mana yang paling sesuai + sebab + apa yang perlu diubah suai, cadangan hook & BGM).
+   Jika pengguna kata "ikut kreativiti kau", Claude terus pilih dan teruskan ke langkah 4.
 3. Pengguna pilih/setuju gaya.
-4. Claude hasilkan **STORYBOARD dalam bentuk imej**
-   (frame setiap babak + masa, teks caption, title callout, zoom, effect, SFX, BGM, jenis hook).
-5. **JANGAN render** sebelum pengguna setuju. Ulang storyboard ikut komen pengguna sehingga setuju.
-6. Baru render video akhir 1080×1920 dan hantar kepada pengguna.
+4. Claude edit dan hasilkan **PREVIEW 540p + STORYBOARD dalam bentuk imej**
+   (frame setiap babak + masa, teks caption, title callout, zoom, effect, SFX, BGM, jenis hook, zon safe-zone).
+5. **JANGAN render final** sebelum pengguna setuju. Ulang preview + storyboard ikut komen pengguna sehingga setuju.
+6. Baru render video akhir 1080×1920 (30 fps, kecuali diminta lain) dan hantar kepada pengguna.
+7. **Simpan pelajaran** (wajib setiap kali editing habis): `projects/<nama>/README.md`, baris baharu dalam
+   **"Pelajaran projek siap"**, kemas kini citarasa/pattern & skill `edit-video` jika perlu → commit & push.
+
+## Pelajaran projek siap (skill yang dipelajari dari setiap edit)
+
+| Projek | Jenis | Gaya dipakai | Keputusan akhir pengguna | Pelajaran untuk edit akan datang |
+|---|---|---|---|---|
+| [jam-wira](../projects/jam-wira/README.md) (Nov 2026) | Review UGC talking-head, jam budak, 87.5 s → 58.4 s | S1 + S2/S3, kemudian belajar dari S6 (edit pengguna sendiri) | V3: hook kontra "tak nak smartwatch ❌" + **b-roll close-up produk dalam 2 s**, flash+impact, punch-in kuat pada poin utama, word-art warna, tulisan tangan + anak panah, CTA kecil awal + CTA slam, caption **besar mint**, ~15 grafik, **tanpa BGM** | (1) Tunjuk produk close-up dalam 2–3 s pertama. (2) Pindah ayat ulang/terkuat jadi hook, bukan padam. (3) Grafik tidak semua kotak seragam — campur serif/word-art/tulisan tangan. (4) Semak setiap grafik dengan still sebenar — anotasi pernah tertindih dagu bila subjek condong. (5) Review UGC: default **tanpa BGM**. (6) Audio: loudnorm −15 LUFS + limiter oversampled (peak ≤ −1.5 dBFS). (7) Sahkan potongan dengan transkrip semula. |
 
 ## Belajar berterusan
 

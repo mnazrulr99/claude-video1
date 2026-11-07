@@ -52,8 +52,13 @@ Perubahan dari V1:
 8. Kekal: safe zone, caption mint y≈1340, BGM −18 dB, loudness −14.8 LUFS, peak −1.5 dBFS (limiter oversampled).
 
 ## V3 (keputusan pengguna selepas V2)
-**Status:** PREVIEW 540p — [`preview_v3_540p.mp4`](preview_v3_540p.mp4), menunggu persetujuan sebelum render final.
+**Status:** ✅ **FINAL dirender** (diluluskan pengguna): `JamWira_V3_final_1080x1920.mp4` — 1080×1920, 30 fps, 58.4 s, CRF 16, AAC 320k, −14.8 LUFS, peak −1.9 dBFS (~92 MB, tidak disimpan dalam repo). Preview: [`preview_v3_540p.mp4`](preview_v3_540p.mp4).
 - Hook gabungan V2 (smartwatch ❌ + b-roll close-up) — **dipersetujui**.
 - **BGM dibuang** (suara + SFX sahaja; pengguna tambah trending sound di TikTok jika mahu). Kredit Kevin MacLeod tidak lagi diperlukan.
 - Caption kekal besar + mint; jumlah grafik kekal.
 - Audio: −14.8 LUFS, peak −1.8 dBFS.
+
+## Pelajaran (disalin ke `editing-styles/README.md` → "Pelajaran projek siap" & skill `edit-video`)
+- Pengguna suka produk close-up seawal mungkin, flash+impact, punch-in kuat pada poin, grafik pelbagai gaya, CTA awal kecil.
+- Review UGC: **tanpa BGM**; caption besar mint dikekalkan; ~15 grafik OK.
+- Teknikal: font embed base64, grafik ikut frame mutlak, sahkan potongan dengan transkrip semula, limiter oversampled, semak still untuk muka.
