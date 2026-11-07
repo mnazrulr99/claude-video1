@@ -44,6 +44,20 @@ ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,widt
   (`zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p`).
 - Gambar produk daripada pengguna: simpan dalam `$W/assets/`. Jika tiada, maklumkan bahawa Claude akan potong dari video.
 
+### Banyak fail (video raw + gambar dari customer)
+
+Jumlah fail tak tentu (ikut customer). Cara terima, ikut keutamaan:
+1. **Link folder Google Drive** ("Anyone with the link can view"): `pip install -q gdown` →
+   `gdown --folder "<link>" -O $W/input` (had ±50 fail/folder; jika lebih, minta pengguna pecah folder atau guna cara 2).
+   **BELUM DIUJI** — jika gagal (folder private/had/ralat), beritahu pengguna dan guna cara 2.
+2. **Senarai link fail satu-satu** (+ nota ringkas setiap fail) — terbukti berfungsi (curl `drive.usercontent.google.com`).
+3. **Session di komputer pengguna:** fail dalam `input/<job>/` dalam repo (diabaikan git).
+
+Selepas terima: **inventori** (jadual: nama, jenis, durasi/resolusi, HDR?, ringkasan isi) + **contact sheet thumbnail**
+semua fail → analisis setiap video (transkrip, momen terbaik) → **cadang susunan** (hook, klip utama, B-roll, gambar mana
+di-overlay pada babak mana & kenapa) dalam peringkat cadangan/storyboard. Gambar produk: semak resolusi & latar
+(PNG lutsinar lebih baik); overlay ikut R1 (tak tutup muka).
+
 ## Langkah 2 — Analisis & CADANG gaya (jangan edit lagi)
 
 1. Contact sheet: `fps=2,scale=150:-1,drawtext(timestamp),tile=12x4` → lihat isi video.
