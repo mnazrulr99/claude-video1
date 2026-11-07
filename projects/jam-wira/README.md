@@ -62,3 +62,10 @@ Perubahan dari V1:
 - Pengguna suka produk close-up seawal mungkin, flash+impact, punch-in kuat pada poin, grafik pelbagai gaya, CTA awal kecil.
 - Review UGC: **tanpa BGM**; caption besar mint dikekalkan; ~15 grafik OK.
 - Teknikal: font embed base64, grafik ikut frame mutlak, sahkan potongan dengan transkrip semula, limiter oversampled, semak still untuk muka.
+
+## Nota selepas final (komen pengguna — tidak di-reedit, dicatat untuk masa depan)
+- **22–23 s:** caption "SEE DIA CANTIK" salah → sebenarnya **"SERIOUS CANTIK"** (Whisper p=0.89 pada "See").
+- **Suara tenggelam pada 22–23 s:** chime `confirm` (mula 21.18 s, panjang 1.33 s → hingga ≈22.5 s) bertindih dengan
+  permulaan "serious" (≈22.3 s, diucap laju). Paras suara sendiri normal (−16 dB, sama dengan ayat lain).
+  Ada juga senyap 0.48 s tertinggal (21.82–22.30 s) sebelum perkataan itu.
+- Tindakan untuk edit akan datang: lihat skill `edit-video` (semak perkataan ragu-ragu, SFX tidak bertindih/di-duck bawah suara, presence EQ, imbas jeda dalam segmen).

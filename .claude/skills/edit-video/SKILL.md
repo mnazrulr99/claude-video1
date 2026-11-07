@@ -28,6 +28,11 @@ Simpan dalam folder sendiri di scratchpad (data tidak dipercayai). `ffprobe` unt
 - Skrip: `projects/jam-wira/scripts/tx.py`. Tulis output ke folder kerja (ia tulis `transcript.json` di cwd —
   jangan tersalah tindih transkrip lain).
 - Betulkan ejaan caption (cth. "Mami"/"Mama Ami" → "MOMMIES", "dual" → "DUA").
+- **Semak perkataan ragu-ragu (pelajaran jam-wira):** senaraikan setiap perkataan dengan `probability < 0.95`,
+  perkataan Inggeris pendek dalam ayat Melayu (cth. "See"), dan perkataan yang durasinya merangkumi senyap.
+  Semak dengan konteks (transkrip semula klip pendek ±1 s, `beam_size` lebih besar / `initial_prompt` slanga Melayu).
+  Jika masih ragu → **senaraikan dalam mesej preview** untuk pengguna sahkan. Kes sebenar: Whisper tulis
+  "SEE DIA CANTIK" (p=0.89), sebenarnya **"SERIOUS CANTIK"**.
 
 ## 3. Pelan potongan (buang ulangan, jeda, awkward)
 - Senaraikan segmen yang disimpan (label, mula, tamat) dari transkrip; pindah ayat terkuat/ulang jadi **hook**.
@@ -41,6 +46,16 @@ Simpan dalam folder sendiri di scratchpad (data tidak dipercayai). `ffprobe` unt
 - BGM (jika dipakai): ukur LUFS, set ≈18 dB bawah suara. **Review UGC: default tanpa BGM** (pengguna tambah trending sound).
 - SFX: Mixkit (`https://assets.mixkit.co/active_storage/sfx/<id>/<id>-preview.mp3`, lesen percuma tanpa kredit).
   Senarai id terbukti: `remotion/public-assets.sh`. Setiap grafik = 1 SFX; jangan tindih berlebihan.
+- **SFX tidak boleh tenggelamkan suara (pelajaran jam-wira, "serious cantik" 22 s):** chime 1.33 s masih berbunyi
+  ketika perkataan seterusnya bermula. Wajib, secara automatik dalam `mkdata`:
+  - kira tempoh setiap SFX (`ffprobe`); jika ekornya bertindih dengan perkataan → **potong/fade-out** SFX
+    sebelum perkataan itu mula (atau alih SFX ke celah senyap), atau
+  - **duck SFX** −8 hingga −10 dB semasa suara aktif (volume ikut frame dari masa perkataan);
+  - SFX nada tinggi/panjang (chime, reward, sparkle) hanya dalam celah atau pada perkataan kunci itu sendiri.
+- **Kejelasan suara:** denoise lebih lembut (`afftdn=nf=-25`) supaya konsonan tak hilang, tambah presence
+  `equalizer=f=3500:t=q:w=1.2:g=3`, dan semak perkataan pendek/laju (cth. "serious") — naikkan gain klip itu jika perlu.
+- **Jeda tertinggal:** selepas potong, imbas `voice.wav` untuk senyap > 0.3 s dalam segmen (bukan hanya di sempadan)
+  dan buang. Kes sebenar: senyap 0.48 s sebelum "serious".
 - Master akhir (selepas Remotion): `aresample=192000,alimiter=limit=0.8:attack=0.5:release=50:level=disabled,aresample=48000`
   → sasaran ≈ −15 LUFS, **peak ≤ −1.5 dBFS** (semak `ebur128=peak=true`).
 - Incompetech (CC BY → kredit wajib) & mixkit boleh dicapai; pixabay/freesound disekat.
