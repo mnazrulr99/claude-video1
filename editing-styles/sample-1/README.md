@@ -1,9 +1,20 @@
-# Gaya Editing: **KUNING PUNCH** 🟡👊
+# Gaya Editing: **SAMPLE 1**
 
-> Nama panggilan: **"Kuning Punch"** — sebab dua ciri paling ketara: caption dengan
-> **highlight kuning** pada perkataan aktif, dan **punch-in zoom** (jump cut + tukar saiz frame) setiap kali ayat bertukar.
+> Cara guna: *"Edit video ni guna gaya Sample 1."*
 >
-> Cara guna: *"Edit video ni guna gaya Kuning Punch."*
+> Ciri paling ketara: caption karaoke dengan **highlight kuning** pada perkataan aktif, dan
+> **punch-in zoom** (jump cut + tukar saiz frame) setiap kali ayat bertukar.
+
+## Pilihan pengguna (WAJIB ikut)
+
+1. **Claude edit & render terus** (ffmpeg dalam session). Pengguna tak buka sebarang app/software editing.
+   Pengguna hanya hantar video mentah (link/fail) → Claude hantar balik video siap.
+2. **BGM: pilihan.** Video rujukan tiada BGM, tapi pengguna kadang-kadang nak BGM yang sesuai dengan
+   mood video. Bila guna BGM: perlahan di bawah suara (duck ~−20 dB bawah dialog), ikut mood topik.
+3. **Hook: sentiasa ada, tapi gayanya ikut jenis video.** Hitam-putih + colour pop hanya satu pilihan
+   (sesuai untuk nada serius/refleksi). Pilih treatment hook yang kena dengan kandungan
+   (contoh: freeze-frame, zoom laju, teks soalan besar, SFX sting, dll.).
+   Kalau tak pasti, tanya pengguna dulu.
 
 ## Video rujukan
 
@@ -104,15 +115,15 @@ Dari analisis spectrogram & loudness (RMS):
 
 ---
 
-## Checklist cepat — "Edit gaya Kuning Punch"
+## Checklist cepat — "Edit gaya Sample 1"
 
 1. Format 9:16, 1080×1920, 30 fps. Sasaran durasi 20–40 s.
 2. Buang semua jeda/silap (jeda ≤0.3 s).
-3. Hook 1–2 s pertama: flash putih + **hitam-putih**, warna kembali pada kata kunci.
+3. Hook 1–2 s pertama yang **sesuai dengan jenis video** (hitam-putih + colour pop hanya satu pilihan).
 4. Punch-in/zoom crop setiap 2–4 s; close-up besar pada nombor/emosi.
 5. Caption word-by-word, ALL CAPS, putih + highlight **kuning**, 2–3 perkataan, posisi ~62% dari atas.
 6. Setiap poin utama → **title callout atas** kuning italic outline tebal, typewriter in, + ❌ / ‼️.
 7. Satu SFX (pop/ding/whoosh) setiap kali title atau zoom besar; poin terpenting = impact paling kuat.
 8. Sticker/VFX literal pada kata kunci (cth. money rain untuk "profit").
-9. Tiada BGM (atau sangat perlahan), suara jadi fokus.
+9. BGM **pilihan** — jika guna, pilih ikut mood & duck bawah suara; suara kekal fokus.
 10. Akhiri dengan punchline + hard cut ke hitam ~0.5–0.7 s.
