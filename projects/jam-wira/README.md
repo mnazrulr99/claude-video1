@@ -1,6 +1,6 @@
 # Projek: Jam Budak Wira (review UGC, Remotion)
 
-**Status:** PREVIEW 540p sahaja — menunggu persetujuan pengguna sebelum render final 1080×1920.
+**Status:** ✅ Diluluskan **Status:** PREVIEW 540p sahaja — menunggu persetujuan pengguna sebelum render final 1080×1920. dirender final (Nov 2026): 1080×1920 30 fps (CRF 16, AAC 320k, ~91 MB) + 720×1280 30 fps (~28 MB). Fail final tidak disimpan dalam repo (saiz); render semula dengan arahan di bawah.
 
 - Video mentah: Google Drive `1us7ccW34K1LIIPguMhJArHhN4SRlxKKU` (720×1280, 87.5 s, talking-head dalam kereta, review jam analog budak warna hijau).
 - Hasil potongan: **57.8 s** (buang ulangan & jeda janggal; disahkan dengan transkrip semula Whisper).
