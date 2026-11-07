@@ -39,7 +39,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R18 | **Label gaya search bar** (pill putih + kursor menaip + ikon ×, teks bertukar berturut) untuk senarai pilihan/lokasi/kegunaan. | Grafik | Sample 6 (P2) | 2026-11-07 |
 | R19 | **Label tulisan tangan + sparkle ✦** untuk harga, ciri (✅) dan nama varian **di sebelah produk** (R1b). Warna ikut tema. | Grafik | Sample 6 (P3) | 2026-11-07 |
 | R20 | **Satu momen lawak: klip B&W reaksi** (presenter berlakon reaksi orang lain) bila skrip ada punchline. | Effect | Sample 6 (P4) | 2026-11-07 |
-| R21 | **Transition kreatif mesti sesuai dengan video** (mood, produk, tema warna) — cth. kad foto berpusing + bintang/reben (feminin/rumah), paper-rip, splash cecair (produk buih), brush stroke. Pilih satu-dua sahaja (R10) dan terangkan sebab dalam storyboard. | Transition | Sample 6 (P5) + arahan pengguna | 2026-11-07 |
+| R21 | **Transition kreatif mesti sesuai dengan video** (mood, produk, tema warna) dan **tidak rigid** — contoh dalam sample (kad foto + bintang/reben, paper-rip, splash cecair, brush stroke) hanyalah **alternatif/inspirasi**; Claude bebas guna **kreativiti sendiri** untuk cipta transition yang paling kena. Satu-dua sahaja (R10); terangkan sebab dalam storyboard. | Transition | Sample 6 (P5) + arahan pengguna | 2026-11-07 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
@@ -49,6 +49,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | X2 | CTA / teks besar yang **menutup produk** (cth. teks skrip "Tengok dekat beg kuning" atas periuk) | Bercanggah R1 | /compare-learnedit periuk (item 12) | 2026-11-07 |
 
 ## 📝 Nota (bukan peraturan)
+
+- **Kreativiti Claude digalakkan:** gaya dalam Sample 1–6 ialah rujukan, bukan templat tegar. Selagi Peraturan Diterima (terutama R1, R13, R16, R21) dipatuhi, Claude boleh cadang idea grafik/transition/effect baharu yang sesuai dengan video — tunjuk dalam storyboard untuk keputusan pengguna (R2/R3).
 
 - **Jumlah grafik fleksibel** — pengguna suka dua-dua (±5 grafik/45 s atau ±9 grafik/52 s). Claude tentukan ikut kandungan dan tunjuk dalam storyboard. (/compare-learnedit periuk item 8)
 - **Presenter dikenali:** "Yana" (video periuk stainless steel pink, bilik dinding pink).
