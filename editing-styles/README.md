@@ -24,24 +24,27 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 ## Pattern Bersama (dikemas kini setiap sample baharu)
 
-_Berdasarkan Sample 1, 2 & 3:_
+_Berdasarkan Sample 1–4:_
 
-| Pattern | Sample 1 (edukasi) | Sample 2 (iklan) | Sample 3 (iklan feminin) | Kesimpulan |
-|---|---|---|---|---|
-| Format | 9:16 | 9:16, 60 fps | ≈9:16 (1050×1920) | **Sentiasa vertical 9:16, 1080×1920** |
-| Hook | Flash + B&W, soalan | Pegang produk + colour bars/beep | Title soalan masalah + sticker emoji + sparkle | **Hook < 3.5 s: soalan/masalah + elemen visual luar biasa + SFX** |
-| Potongan | Jump cut, jeda ≤0.3 s | Jump cut setiap 1–3 s | Jump cut, take lebih panjang semasa demo | **Buang jeda; rentak laju, boleh perlahan sedikit masa demo** |
-| Zoom/framing | Punch-in setiap 2–4 s | Punch-in ekstrem 4× | Produk digerak rapat ke lensa + shot wide | **Variasi framing setiap beberapa saat** |
-| Caption | Word-by-word, ALL CAPS, teks kuning | Word-by-word, ALL CAPS, kotak lime | Word-by-word, ALL CAPS condensed, teks pink | **Karaoke word-by-word, ALL CAPS, putih + highlight 1 warna (ikut mood/brand)**, posisi 60–78% dari atas |
-| Title/grafik | Title atas + ❌/‼️ | Title + ❌/✅ + banyak label | Serif + skrip italic, 🎀 ✅, sticker | **Poin utama = title + emoji (❌/✅/‼️/🎀), animasi typewriter** |
-| SFX | Pop/ding/impact | Beep/chime/click/ding | Sparkle + pop sama diulang + ASMR | **Setiap title/grafik baru = satu SFX** |
-| Transition | Hard cut sahaja | Hard cut + 2 khas | Hard cut + 3 khas (blur, mirror, splash) | **Hard cut dominan; 0–3 transition khas di pertukaran bahagian** |
-| BGM | Tiada | Perlahan berterusan | Perlahan berterusan | **Iklan: BGM perlahan; edukasi: tiada/perlahan** |
-| Struktur iklan | – | Masalah → Produk → Manfaat → Dos → CTA | Masalah → Punca → Varian → Demo → Manfaat → CTA + bukti | **Formula iklan: Masalah → Produk → Manfaat/Demo → CTA "beg kuning"** |
-| Ending | Cut ke hitam | Cut ke hitam + fade | Cut ke hitam + ding + fade | **Akhiri dengan cut ke hitam (+ fade audio)** |
+| Pattern | S1 (edukasi) | S2 (iklan UGC) | S3 (iklan feminin) | S4 (skit brand) | Kesimpulan |
+|---|---|---|---|---|---|
+| Format | 9:16 | 9:16, 60 fps | ≈9:16 | ≈9:16 | **Sentiasa vertical 9:16, 1080×1920** |
+| Hook | Flash + B&W, soalan | Produk + colour bars/beep | Title soalan + sticker emoji | Makan ASMR tanpa caption | **Hook < 3.5 s: visual luar biasa/menarik + SFX; soalan atau aksi** |
+| Potongan | Jump cut laju | Jump cut 1–3 s | Take lebih panjang masa demo | Take lakonan 2–4 s | **Buang jeda; laju, perlahan sedikit masa demo** |
+| Framing | Punch-in 2–4 s | Punch-in ekstrem | Produk rapat ke lensa + wide | Medium + top-down + crash zoom | **Variasi framing kerap** |
+| Caption | ALL CAPS, teks kuning | ALL CAPS, kotak lime | ALL CAPS condensed, teks pink | ALL CAPS, kotak biru | **Karaoke word-by-word, ALL CAPS, putih + 1 warna highlight (teks/kotak) ikut brand/mood**, 60–78% dari atas |
+| Title/grafik | Title + ❌/‼️ | Title + ❌/✅ + label pelbagai | Serif + skrip, 🎀 ✅, sticker | Title gaya brand + doodle animasi | **Title poin utama + emoji/doodle; gaya title ikut brand/mood** |
+| SFX | Pop/ding/impact | Beep/chime/click/ding | Sparkle + pop berulang + ASMR | Whoosh/ding + ASMR + foley | **Setiap grafik = SFX; kekalkan bunyi ASMR/foley produk** |
+| Transition | Hard cut | + 2 khas | + 3 khas (blur, mirror, splash) | + whip/zoom blur, crash zoom | **Hard cut dominan; blur-type transition di pertukaran babak** |
+| BGM | Tiada | Perlahan | Perlahan | Sangat perlahan / mungkin tiada | **Suara sentiasa dominan; BGM perlahan atau tiada** |
+| Struktur | Hook → senarai → twist | Masalah → Produk → Manfaat → CTA | Masalah → Punca → Demo → CTA | Masalah (lakonan) → Produk → Kempen → CTA | **Masalah → Produk/solusi → Bukti/demo → CTA** |
+| Ending | Cut hitam | Cut hitam + fade | Cut hitam + ding | Impact + cut hitam | **Cut ke hitam (+ SFX/fade)** |
 
-**Pemerhatian:** 2 daripada 3 sample ialah **iklan produk UGC untuk TikTok Shop** — kemungkinan besar ini jenis job utama pengguna.
-Warna highlight caption nampaknya dipilih **ikut warna produk/brand/mood** (kuning, lime, pink).
+**Pemerhatian:**
+- 3 daripada 4 sample ialah **kandungan produk/brand** (UGC affiliate atau tajaan) — jenis job utama pengguna.
+- Warna highlight caption sentiasa **ikut warna produk/brand/mood** (kuning, lime, pink, biru).
+- Grafik maklumat (poster, infografik) diletak di atas **video yang di-blur** atau dipop masuk sebagai bukti (S3, S4).
+- Bunyi semula jadi produk (buih, sedut mi, taip) **dikekalkan** sebagai ASMR.
 
 ## Catatan citarasa pengguna
 
@@ -73,3 +76,4 @@ Pilihan pengguna: _(belum dipilih)_
 | **Sample 1** | Talking-head 9:16, hook ikut jenis video, caption karaoke highlight kuning, punch-in zoom tiap 2–4 s, title callout atas + ❌/‼️, SFX pop/ding/impact, BGM pilihan, hard cut ke hitam | [sample-1/](sample-1/README.md) |
 | **Sample 2** | UGC iklan produk 9:16 selfie, hook pegang produk + colour bars/beep, caption kotak highlight lime, title pain-point ❌, product reveal elegan + packshot, grafik pelbagai (UI box ✅, kursor klik, marquee, badge emas), BGM perlahan, CTA beg kuning | [sample-2/](sample-2/README.md) |
 | **Sample 3** | UGC iklan produk feminin, hook soalan + sticker 🍑, caption condensed highlight pink, title serif + skrip italic 🎀 ✅, demo produk close-up + ASMR, transition zoom blur/mirror/splash cecair, poster bukti, BGM perlahan, CTA beg kuning | [sample-3/](sample-3/README.md) |
+| **Sample 4** | Skit lakonan komedi tajaan brand (makanan), hook makan ASMR tanpa caption, flashback masalah, title gaya brand, doodle animasi + tint merah "pedas", whip/zoom blur, segmen kempen dengan poster atas latar blur, caption kotak biru | [sample-4/](sample-4/README.md) |
