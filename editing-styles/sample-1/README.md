@@ -31,6 +31,8 @@ Gambar rujukan dalam folder ini:
 `timeline-0-12s.jpg`, `timeline-12-23s.jpg` (frame setiap 0.25 s), `frame-bw-hook.jpg`,
 `frame-title-callout.jpg`, `frame-money-rain.jpg`, `audio-spectrogram.jpg`.
 
+**Salinan preview video:** `preview-540p.mp4` (540p, H.264, dengan audio) — untuk semakan semula timing, animasi & bunyi selepas video asal dipadam dari Google Drive.
+
 ---
 
 ## 1. Struktur & Timing (beat sheet)

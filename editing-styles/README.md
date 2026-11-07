@@ -17,6 +17,8 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 ## Belajar berterusan
 
+- Setiap sample disimpan bersama **salinan preview `preview-540p.mp4`** (540p, ~1.5–7 MB) dalam folder sample — video asal di Google Drive boleh dipadam oleh pengguna.
+
 - Pengguna akan terus beri **video sample siap edit**. Setiap sample baharu → analisis penuh,
   simpan sebagai `sample-N/README.md`, tambah ke katalog, dan **kemas kini "Pattern Bersama" di bawah**.
 - Cari pattern yang berulang merentas sample → itulah "selera" pengguna; utamakan pattern ini dalam setiap edit.
