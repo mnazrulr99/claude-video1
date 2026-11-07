@@ -4,16 +4,18 @@ import {
   staticFile, useCurrentFrame, useVideoConfig, Easing, delayRender, continueRender,
 } from 'remotion';
 import data from './data.json';
-import {MONT_B64, FRED_B64} from './fontdata';
+import {MONT_B64, FRED_B64, CAV_B64} from './fontdata';
 
 const MONT = 'MontLocal';
 const FRED = 'FredLocal';
+const CAV = 'CavLocal';
 const b64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0)).buffer;
 if (typeof document !== 'undefined' && !(window as any).__lf) {
   (window as any).__lf = true;
   const a = new FontFace('MontLocal', b64(MONT_B64), {weight: '900'});
   const b = new FontFace('FredLocal', b64(FRED_B64), {weight: '700'});
-  document.fonts.add(a); document.fonts.add(b);
+  const c = new FontFace('CavLocal', b64(CAV_B64), {weight: '700'});
+  document.fonts.add(a); document.fonts.add(b); document.fonts.add(c);
 }
 
 const FPS = 30;
@@ -47,20 +49,34 @@ const VideoLayer: React.FC = () => {
   const crash = interpolate(frame, [0, 8], [1.28, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
   // emphasis punches
   let punch = 1;
+  let oy = 0.34;
   (data.ev as Ev[]).filter((e) => e.type === 'punch').forEach((e) => {
     const a = f(e.s), b = f(e.e);
     if (frame >= a && frame <= b + 6) {
       const k = interpolate(frame, [a, a + 3, b, b + 6], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
       punch = 1 + (e.z - 1) * k;
+      if (e.oy) oy = e.oy;
     }
   });
   const scale = (frame < 8 ? crash : base) * punch;
-  const flash = interpolate(frame, [0, 4], [0.85, 0], {extrapolateRight: 'clamp'});
+  let flash = interpolate(frame, [0, 4], [0.85, 0], {extrapolateRight: 'clamp'});
+  (data.ev as Ev[]).filter((e) => e.type === 'flash').forEach((e) => {
+    const a = f(e.s);
+    if (frame >= a - 2 && frame <= a + 6) flash = Math.max(flash, interpolate(frame, [a - 2, a, a + 6], [0, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}));
+  });
+  const br = (data.ev as Ev[]).find((e) => e.type === 'broll' && frame >= f(e.s) && frame < f(e.e));
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
-      <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 34%'}}>
+      <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: `50% ${oy * 100}%`}}>
         <OffthreadVideo src={staticFile('cut_video.mp4')} muted style={{width: '100%', height: '100%'}} />
       </AbsoluteFill>
+      {(data.ev as Ev[]).filter((e) => e.type === 'broll').map((e) => (
+        <Sequence key={'br' + e.s} from={f(e.s)} durationInFrames={f(e.e) - f(e.s)} layout="none">
+          <AbsoluteFill style={{transform: `scale(${interpolate(frame - f(e.s), [0, f(e.e) - f(e.s)], [1.12, 1.0])})`, opacity: br ? 1 : 0}}>
+            <OffthreadVideo src={staticFile('raw.mp4')} startFrom={f(e.src)} muted style={{width: '100%', height: '100%'}} />
+          </AbsoluteFill>
+        </Sequence>
+      ))}
       <AbsoluteFill style={{backgroundColor: 'white', opacity: flash}} />
     </AbsoluteFill>
   );
@@ -171,11 +187,11 @@ const Swatches: React.FC<{e: Ev}> = ({e}) => {
           return (
             <div key={i} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', transform: `scale(${s * (picked && isG ? 1 + 0.18 * pk : 1)})`,
               opacity: picked && !isG ? 0.45 : 1}}>
-              <div style={{width: 118, height: 118, borderRadius: 60, background: it.c, border: `${picked && isG ? 10 : 6}px solid ${picked && isG ? MINT : '#111'}`,
+              <div style={{width: 100, height: 100, borderRadius: 60, background: it.c, border: `${picked && isG ? 10 : 6}px solid ${picked && isG ? MINT : '#111'}`,
                 boxShadow: '0 8px 0 rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 {picked && isG && <Emo c="✅" size={56} />}
               </div>
-              <div style={{marginTop: 10, fontFamily: MONT, fontWeight: 900, fontSize: 36, color: 'white', WebkitTextStroke: '8px black', paintOrder: 'stroke fill'}}>{it.l}</div>
+              <div style={{marginTop: 8, fontFamily: FRED, fontWeight: 700, fontSize: 58, color: isG ? '#7CF29C' : it.c, WebkitTextStroke: '10px #111', paintOrder: 'stroke fill', textShadow: '0 6px 0 rgba(0,0,0,0.6)'}}>{it.l}</div>
             </div>
           );
         })}
@@ -208,6 +224,8 @@ const Badge: React.FC<{e: Ev}> = ({e}) => (
   <SideBadge s={e.s} e={e.e} color={e.color}>
     <Emo c={e.emoji} size={90} />
     <div style={{fontFamily: MONT, fontWeight: 900, fontSize: 38, textAlign: 'center', lineHeight: 1.1, whiteSpace: 'pre-line', color: INK}}>{e.text}</div>
+    {e.foot && <div style={{marginTop: 10, background: '#FFD23F', border: '4px solid #111', borderRadius: 14, padding: '4px 10px', fontFamily: MONT, fontWeight: 900, fontSize: 22, color: INK, whiteSpace: 'nowrap'}}>
+      <span style={{fontFamily: EMOJI}}>{e.foot.slice(0, 2)}</span>{e.foot.slice(2)}</div>}
   </SideBadge>
 );
 
@@ -286,7 +304,7 @@ const Cta: React.FC<{e: Ev}> = ({e}) => {
   const bounce = Math.abs(Math.sin(frame / 5)) * -14;
   return (
     <div style={{position: 'absolute', top: TITLE_Y - 10, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity}}>
-      <div style={{transform: `scale(${scale})`, background: '#FFD23F', border: '6px solid #111', borderRadius: 32, padding: '16px 30px',
+      <div style={{transform: `scale(${scale * interpolate(frame - f(e.s), [0, 5], [1.9, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}) rotate(${interpolate(frame - f(e.s), [0, 5], [-12, -3], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}deg)`, background: '#FFD23F', border: '6px solid #111', borderRadius: 32, padding: '16px 30px',
         boxShadow: '0 10px 0 rgba(0,0,0,0.85)', display: 'flex', alignItems: 'center', gap: 18}}>
         <span style={{fontFamily: EMOJI, fontSize: 84, transform: `translateY(${bounce}px)`, display: 'inline-block'}}>🛒</span>
         <div style={{fontFamily: FRED, fontWeight: 700, color: INK, lineHeight: 1.0}}>
@@ -306,6 +324,26 @@ const PinkNote: React.FC<{e: Ev}> = ({e}) => (
   </SideBadge>
 );
 
+const Note: React.FC<{e: Ev}> = ({e}) => {
+  const frame = useCurrentFrame();
+  const a = f(e.s);
+  const write = interpolate(frame, [a, a + 14], [0, 100], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const arrow = interpolate(frame, [a + 8, a + 18], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const out = interpolate(frame, [f(e.e) - 5, f(e.e)], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <div style={{position: 'absolute', left: 300, top: 250, opacity: out}}>
+      <div style={{fontFamily: CAV, fontWeight: 700, fontSize: 84, color: 'white', transform: 'rotate(-6deg)', clipPath: `inset(0 ${100 - write}% 0 0)`,
+        textShadow: '0 4px 0 #111, 0 0 14px rgba(0,0,0,0.6)', whiteSpace: 'nowrap'}}>{e.text}</div>
+      <svg width={360} height={300} style={{position: 'absolute', left: 420, top: 95, overflow: 'visible'}}>
+        <path d="M 10 10 C 110 20, 150 150, 112 290" fill="none" stroke="white" strokeWidth={9} strokeLinecap="round" pathLength={1}
+          strokeDasharray={1} strokeDashoffset={arrow} style={{filter: 'drop-shadow(0 3px 0 #111)'}} />
+        <path d="M 84 264 L 111 292 L 134 260" fill="none" stroke="white" strokeWidth={9} strokeLinecap="round" strokeLinejoin="round"
+          opacity={arrow < 0.05 ? 1 : 0} style={{filter: 'drop-shadow(0 3px 0 #111)'}} />
+      </svg>
+    </div>
+  );
+};
+
 const Graphic: React.FC<{e: Ev}> = ({e}) => {
   switch (e.type) {
     case 'hookTitle': return <HookTitle e={e} />;
@@ -319,6 +357,7 @@ const Graphic: React.FC<{e: Ev}> = ({e}) => {
     case 'clock': return <Clock e={e} />;
     case 'cta': return <Cta e={e} />;
     case 'pinkNote': return <PinkNote e={e} />;
+    case 'note': return <Note e={e} />;
     default: return null;
   }
 };
@@ -340,7 +379,7 @@ export const Main: React.FC<{showSafe: boolean}> = ({showSafe}) => {
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
       <VideoLayer />
-      {(data.ev as Ev[]).filter((e) => e.type !== 'punch' && frame >= f(e.s) - 1 && frame <= f(e.e) + 35).map((e, i) => (
+      {(data.ev as Ev[]).filter((e) => e.type !== 'punch' && e.type !== 'broll' && e.type !== 'flash' && frame >= f(e.s) - 1 && frame <= f(e.e) + 35).map((e, i) => (
         <Graphic key={e.type + e.s} e={e} />
       ))}
       <Captions />

@@ -35,3 +35,18 @@ cd remotion && npm i && ./public-assets.sh   # + jana public/cut_video.mp4 & pub
 npx remotion render src/index.ts JamWira out.mp4 --scale=0.5          # preview 540p
 npx remotion render src/index.ts JamWira final.mp4                    # FINAL 1080×1920 (selepas setuju)
 ```
+
+---
+
+## V2 (selepas belajar dari edit pengguna — [Sample 6](../../editing-styles/sample-6/README.md))
+**Status:** PREVIEW 540p — [`preview_v2_540p.mp4`](preview_v2_540p.mp4), menunggu keputusan pengguna. Kod V1 disimpan di `remotion/src_v1/`, V2 di `remotion/src/` (`scripts/mkdata_v2.py`).
+
+Perubahan dari V1:
+1. **Produk dalam 2 s pertama:** b-roll close-up jam (mentah 20.2 s) atas ayat hook kedua "…pergi sekolah".
+2. **Flash putih + impact** masuk "Haa ni dia" (diambil dari gaya pengguna).
+3. **Punch-in lebih kuat** pada poin utama: smartwatch 1.18×, very good 1.2×, nombor 1.15×, bekas tin 1.25× (fokus pada tin).
+4. **Word-art warna** PINK/PUTIH/HIJAU lebih besar (gaya pengguna) dengan bulatan warna.
+5. **Anotasi tulisan tangan** "senang baca waktu!" + anak panah ke jam (ganti title kotak) — diletak di ruang kosong atas, tidak atas muka.
+6. **CTA kecil awal** "🛒 ADA DI BEG KUNING" pada badge water resistant; CTA akhir masuk dengan **slam**.
+7. **SFX dikurangkan** (buang 3 yang bertindih) + yang utama dikuatkan 20 %.
+8. Kekal: safe zone, caption mint y≈1340, BGM −18 dB, loudness −14.8 LUFS, peak −1.5 dBFS (limiter oversampled).

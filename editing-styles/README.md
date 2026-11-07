@@ -26,21 +26,21 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 ## Pattern Bersama (dikemas kini setiap sample baharu)
 
-_Berdasarkan Sample 1–5:_
+_Berdasarkan Sample 1–6:_
 
-| Pattern | S1 (edukasi) | S2 (iklan UGC) | S3 (iklan feminin) | S4 (skit brand) | S5 (showcase senyap) | Kesimpulan |
-|---|---|---|---|---|---|---|
-| Format | 9:16 | 9:16, 60 fps | ≈9:16 | ≈9:16 | 9:16 | **Sentiasa vertical 9:16, 1080×1920** |
-| Hook | Flash + B&W, soalan | Produk + colour bars/beep | Title soalan + sticker emoji | Makan ASMR tanpa caption | Unboxing + header + sparkle | **Hook < 3.5 s: visual luar biasa/menarik + SFX; soalan atau aksi** |
-| Potongan | Jump cut laju | Jump cut 1–3 s | Take lebih panjang masa demo | Take lakonan 2–4 s | Klip 2–12 s ikut proses | **Buang jeda; laju, perlahan sedikit masa demo** |
-| Framing | Punch-in 2–4 s | Punch-in ekstrem | Produk rapat ke lensa + wide | Medium + top-down + crash zoom | Close-up tangan, top-down, split 3 panel | **Variasi framing kerap** |
-| Caption | ALL CAPS, teks kuning | ALL CAPS, kotak lime | ALL CAPS condensed, teks pink | ALL CAPS, kotak biru | Tiada (tiada suara) | **Jika ada suara:** karaoke word-by-word, ALL CAPS, putih + 1 warna highlight (teks/kotak) ikut brand/mood, 60–78% dari atas. **Tiada suara:** tiada caption, guna teks callout |
-| Title/grafik | Title + ❌/‼️ | Title + ❌/✅ + label pelbagai | Serif + skrip, 🎀 ✅, sticker | Title gaya brand + doodle animasi | Header tetap + checklist ✅ + sticker sudut | **Title poin utama + emoji/doodle; gaya title ikut brand/mood** |
-| SFX | Pop/ding/impact | Beep/chime/click/ding | Sparkle + pop berulang + ASMR | Whoosh/ding + ASMR + foley | Sparkle/ding sahaja, selebihnya senyap | **Setiap grafik = SFX; kekalkan bunyi ASMR/foley produk** |
-| Transition | Hard cut | + 2 khas | + 3 khas (blur, mirror, splash) | + whip/zoom blur, crash zoom | Splash cecair putih/hitam, split screen | **Hard cut dominan; blur-type transition di pertukaran babak** |
-| BGM | Tiada | Perlahan | Perlahan | Sangat perlahan / mungkin tiada | Tiada dalam eksport (trending sound di TikTok) | **Suara sentiasa dominan; BGM perlahan atau tiada. Video tanpa suara: BGM royalty-free; jika tiada yang sesuai → SFX sahaja (pengguna tambah trending sound di TikTok)** |
-| Struktur | Hook → senarai → twist | Masalah → Produk → Manfaat → CTA | Masalah → Punca → Demo → CTA | Masalah (lakonan) → Produk → Kempen → CTA | Unboxing → Guna → Manfaat → Proses | **Masalah → Produk/solusi → Bukti/demo → CTA** |
-| Ending | Cut hitam | Cut hitam + fade | Cut hitam + ding | Impact + cut hitam | Splash hitam + ding | **Cut ke hitam (+ SFX/fade)** |
+| Pattern | S1 (edukasi) | S2 (iklan UGC) | S3 (iklan feminin) | S4 (skit brand) | S5 (showcase senyap) | S6 (review UGC, edit pengguna) | Kesimpulan |
+|---|---|---|---|---|---| --- |---|
+| Format | 9:16 | 9:16, 60 fps | ≈9:16 | ≈9:16 | 9:16 | 9:16, 30 fps | **Sentiasa vertical 9:16, 1080×1920** |
+| Hook | Flash + B&W, soalan | Produk + colour bars/beep | Title soalan + sticker emoji | Makan ASMR tanpa caption | Unboxing + header + sparkle | Manfaat produk + produk di tangan, flash+impact | **Hook < 3.5 s: visual luar biasa/menarik + SFX; soalan atau aksi** |
+| Potongan | Jump cut laju | Jump cut 1–3 s | Take lebih panjang masa demo | Take lakonan 2–4 s | Klip 2–12 s ikut proses | Kronologi; baris ulang dipindah jadi hook | **Buang jeda; laju, perlahan sedikit masa demo** |
+| Framing | Punch-in 2–4 s | Punch-in ekstrem | Produk rapat ke lensa + wide | Medium + top-down + crash zoom | Close-up tangan, top-down, split 3 panel | Punch-in kuat & jarang (1.2–1.4×) | **Variasi framing kerap** |
+| Caption | ALL CAPS, teks kuning | ALL CAPS, kotak lime | ALL CAPS condensed, teks pink | ALL CAPS, kotak biru | Tiada (tiada suara) | ALL CAPS kecil, highlight kuning, y≈77% | **Jika ada suara:** karaoke word-by-word, ALL CAPS, putih + 1 warna highlight (teks/kotak) ikut brand/mood, 60–78% dari atas. **Tiada suara:** tiada caption, guna teks callout |
+| Title/grafik | Title + ❌/‼️ | Title + ❌/✅ + label pelbagai | Serif + skrip, 🎀 ✅, sticker | Title gaya brand + doodle animasi | Header tetap + checklist ✅ + sticker sudut | Serif+skrip atas close-up, word-art warna, tulisan tangan + anak panah, ✓ checklist | **Title poin utama + emoji/doodle; gaya title ikut brand/mood** |
+| SFX | Pop/ding/impact | Beep/chime/click/ding | Sparkle + pop berulang + ASMR | Whoosh/ding + ASMR + foley | Sparkle/ding sahaja, selebihnya senyap | ~8 SFX kuat (impact, chime) | **Setiap grafik = SFX; kekalkan bunyi ASMR/foley produk** |
+| Transition | Hard cut | + 2 khas | + 3 khas (blur, mirror, splash) | + whip/zoom blur, crash zoom | Splash cecair putih/hitam, split screen | Flash putih + blur zoom | **Hard cut dominan; blur-type transition di pertukaran babak** |
+| BGM | Tiada | Perlahan | Perlahan | Sangat perlahan / mungkin tiada | Tiada dalam eksport (trending sound di TikTok) | Tiada | **Suara sentiasa dominan; BGM perlahan atau tiada. Video tanpa suara: BGM royalty-free; jika tiada yang sesuai → SFX sahaja (pengguna tambah trending sound di TikTok)** |
+| Struktur | Hook → senarai → twist | Masalah → Produk → Manfaat → CTA | Masalah → Punca → Demo → CTA | Masalah (lakonan) → Produk → Kempen → CTA | Unboxing → Guna → Manfaat → Proses | Manfaat → Cerita → Ciri → Bonus → CTA | **Masalah → Produk/solusi → Bukti/demo → CTA** |
+| Ending | Cut hitam | Cut hitam + fade | Cut hitam + ding | Impact + cut hitam | Splash hitam + ding | CTA cop "CHECKOUT SEKARANG!" + SFX | **Cut ke hitam (+ SFX/fade)** |
 
 **Pemerhatian:**
 - **4 daripada 5 sample ialah kandungan produk/brand** — jenis job utama pengguna. Ada 2 sub-jenis:
@@ -49,6 +49,7 @@ _Berdasarkan Sample 1–5:_
 - Warna highlight caption sentiasa **ikut warna produk/brand/mood** (kuning, lime, pink, biru).
 - Grafik maklumat (poster, infografik) diletak di atas **video yang di-blur** atau dipop masuk sebagai bukti (S3, S4).
 - Bunyi semula jadi produk (buih, sedut mi, taip) **dikekalkan** sebagai ASMR.
+- **S6 (edit pengguna sendiri)** = rujukan paling tepat untuk citarasa pengguna: grafik **sedikit tapi bergaya** (serif elegan, word-art warna, tulisan tangan), **CTA kecil awal** + CTA akhir, **tiada BGM**, caption kecil kuning. Highlight **kuning** kini muncul dalam S1 & S6.
 
 ## Catatan citarasa pengguna
 
@@ -60,6 +61,8 @@ _Berdasarkan Sample 1–5:_
 - **Video tanpa suara (gaya Sample 5):** masukkan **BGM royalty-free** — Claude cadangkan beberapa pilihan (link untuk didengar) ikut mood. Jika tiada yang sesuai, render dengan **SFX sahaja tanpa BGM** supaya pengguna boleh tambah trending sound sendiri dalam TikTok.
 
 - **Remotion (Nov 2026, projek `projects/jam-wira/`):** pengguna minta edit guna **Remotion** — transkrip dulu (Whisper, word-level) untuk tentukan letak animasi/motion graphics/SFX; **SFX premium**; **jangan tutup muka** dengan grafik; patuhi **safe zone TikTok & IG**; BGM ada tapi suara mesti dominan (≈18 dB bawah suara); buang ulangan & jeda janggal; cari hook paling kuat; **tunjuk preview dulu, jangan render final**. Pengguna beri kebebasan kreatif ("ikut kreativiti kau").
+
+- **Belajar dari Sample 6 vs edit Claude (jam-wira):** pengguna suka **produk kelihatan sangat awal**, **close-up produk sebagai title card**, grafik bergaya organik (bukan semua kotak seragam), **CTA kecil awal**, SFX sedikit tapi jelas. Gunakan sebagai default untuk review UGC, tapi kekalkan amalan Claude yang lebih selamat: **safe zone**, **limiter (peak ≤ −1 dBFS)**, **loudness ≈ −14 hingga −16 LUFS**, grafik tidak menutup muka/dahi.
 
 ## BGM (royalty-free) — senarai pendek untuk pengguna pilih
 
@@ -85,3 +88,4 @@ Pilihan pengguna: _(belum dipilih)_
 | **Sample 3** | UGC iklan produk feminin, hook soalan + sticker 🍑, caption condensed highlight pink, title serif + skrip italic 🎀 ✅, demo produk close-up + ASMR, transition zoom blur/mirror/splash cecair, poster bukti, BGM perlahan, CTA beg kuning | [sample-3/](sample-3/README.md) |
 | **Sample 4** | Skit lakonan komedi tajaan brand (makanan), hook makan ASMR tanpa caption, flashback masalah, title gaya brand, doodle animasi + tint merah "pedas", whip/zoom blur, segmen kempen dengan poster atas latar blur, caption kotak biru | [sample-4/](sample-4/README.md) |
 | **Sample 5** | Showcase produk faceless tanpa suara (unboxing + proses), header tetap font bubbly, sticker hiasan sudut, checklist ✅ ditanda, split screen 3 panel, splash cecair putih/hitam, SFX sahaja (trending sound ditambah di TikTok) | [sample-5/](sample-5/README.md) |
+| **Sample 6** | Review UGC talking-head (edit pengguna sendiri, video mentah sama dgn projek jam-wira), hook manfaat + produk di tangan, flash+impact, word-art warna, title serif atas close-up, anotasi tulisan tangan, ✓ MATERIAL, CTA cop "CHECKOUT SEKARANG!", caption kecil kuning, tiada BGM | [sample-6/](sample-6/README.md) |
