@@ -1,9 +1,9 @@
 ---
-name: banding-edit
+name: compare-learn
 description: Banding video yang pengguna EDIT SENDIRI dengan cara Claude edit (versi Claude bagi raw yang sama, atau gaya dalam editing-styles/), kenal pasti apa yang patut dipelajari dan apa yang tidak, dan simpan ke editing-styles/LEARNINGS.md untuk pembelajaran berterusan. Gunakan bila pengguna hantar video hasil edit sendiri untuk Claude banding & belajar.
 ---
 
-# /banding-edit — Banding edit pengguna & belajar secara berterusan
+# /compare-learn — Banding edit pengguna & belajar secara berterusan
 
 Input: `$ARGUMENTS` — link Google Drive video yang **pengguna edit sendiri**. Pilihan: link/nama video raw atau job Claude
 yang sama (cth. "job periuk" → `output/test1/periuk-final-v2.mp4`), dan nota pengguna (apa yang dia suka/tak suka).
