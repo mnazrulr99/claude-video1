@@ -50,7 +50,15 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 ## 🕒 Menunggu keputusan pengguna
 
-_(Cadangan dari `/compare-learnedit` yang belum disahkan — jangan guna sehingga disahkan.)_
+_(Cadangan yang belum disahkan — jangan guna sehingga disahkan.)_
+
+| # | Cadangan | Sumber |
+|---|---|---|
+| P1 | Hook alternatif **POV skit** dengan teks "Pov: …" gaya TikTok (selain Hook B) | Sample 6 |
+| P2 | Label pilihan/lokasi gaya **search bar** (pill + kursor menaip + ikon ×) | Sample 6 (juga Sample 2) |
+| P3 | Label **tulisan tangan** (harga, ciri ✅, nama varian sebelah produk) + sparkle | Sample 6 (juga edit pengguna) |
+| P4 | Satu momen lawak **klip B&W reaksi** | Sample 6 |
+| P5 | Transition **kad foto berpusing** + bintang/reben warna tema selepas hook | Sample 6 |
 
 ---
 
@@ -60,3 +68,4 @@ _(Cadangan dari `/compare-learnedit` yang belum disahkan — jangan guna sehingg
 |---|---|---|---|---|
 | 2026-11-07 | Maklum balas job | Ujian periuk stainless steel (v1 → v2) | Badge & tulisan tutup muka/produk → semua tulisan dipindah ke zon kosong | R1 diterima |
 | 2026-11-07 | /compare-learnedit | Periuk stainless steel — edit pengguna (45.7 s) vs Claude v2 (52.1 s) | 14 item dibanding; perbandingan dalam `comparisons/2026-11-07-periuk/` | R1a, R1b, R5–R16 diterima; X1, X2 ditolak; item 8 = nota |
+| 2026-11-07 | /sample-baru | Sample 6 — IDECO Smart Diffuser (BettyRahmad) | Caption kotak lime bercanggah R16; −9.9 LUFS bercanggah R14 (tidak dipelajari). 5 cadangan P1–P5 menunggu keputusan | Menunggu |
