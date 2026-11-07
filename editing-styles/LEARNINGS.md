@@ -1,7 +1,7 @@
 # Pembelajaran Berterusan (Continuous Learning)
 
 Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia dikemas kini oleh:
-- `/compare-learn` — bila pengguna beri video yang **dia edit sendiri** untuk dibanding & dipelajari;
+- `/compare-learnedit` — bila pengguna beri video yang **dia edit sendiri** untuk dibanding & dipelajari;
 - `/edit-video` — maklum balas pengguna selepas setiap job (storyboard & video siap);
 - `/sample-baru` — pattern baharu daripada sample siap edit.
 
@@ -30,7 +30,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 ## 🕒 Menunggu keputusan pengguna
 
-_(Cadangan dari `/compare-learn` yang belum disahkan — jangan guna sehingga disahkan.)_
+_(Cadangan dari `/compare-learnedit` yang belum disahkan — jangan guna sehingga disahkan.)_
 
 ---
 

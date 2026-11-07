@@ -52,7 +52,7 @@ _Berdasarkan Sample 1–5:_
 
 ## Catatan citarasa pengguna
 
-> Peraturan terperinci & sejarah pembelajaran: **[LEARNINGS.md](LEARNINGS.md)** (dikemas kini oleh `/compare-learn`, `/edit-video`, `/sample-baru`).
+> Peraturan terperinci & sejarah pembelajaran: **[LEARNINGS.md](LEARNINGS.md)** (dikemas kini oleh `/compare-learnedit`, `/edit-video`, `/sample-baru`).
 
 
 - Tidak mahu buka sebarang app editing — Claude render terus.

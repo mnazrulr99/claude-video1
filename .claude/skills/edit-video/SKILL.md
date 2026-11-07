@@ -124,7 +124,7 @@ Hantar video siap + teks kredit BGM (jika perlu).
   peraturan umum (cth. "tulisan tak boleh tutup muka") dan tanya pengguna sama ada mahu simpan sebagai peraturan tetap.
 - Bila disahkan: tambah ke `editing-styles/LEARNINGS.md` (Peraturan Diterima / Ditolak + Log), kemas kini templat/skill
   jika perlu, commit & push ke branch kerja dan `main`.
-- Jika pengguna kemudian edit sendiri video yang sama, cadangkan `/compare-learn` untuk banding & belajar.
+- Jika pengguna kemudian edit sendiri video yang sama, cadangkan `/compare-learnedit` untuk banding & belajar.
 
 ## Nota
 
