@@ -31,8 +31,10 @@ ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,widt
 
 1. Contact sheet: `fps=2,scale=150:-1,drawtext(timestamp),tile=12x4` → lihat isi video.
 2. Transkrip **dengan masa setiap perkataan** (perlu untuk caption karaoke):
-   `pip install faster-whisper` (atau `openai-whisper`), model `small`/`medium`, bahasa `ms`, `word_timestamps=True`.
-   Semak ejaan Bahasa Melayu santai secara manual.
+   `python3 -I tools/transcribe.py <video> $W/transcript.json` (lalai: model `medium`, bahasa `ms`).
+   - Jika `faster_whisper` belum dipasang: `pip install -q faster-whisper` (model ±1.5 GB dimuat turun kali pertama).
+   - Tool ini nyahkod audio dengan ffmpeg (elak isu versi PyAV). `medium` ≈ 1.5× tempoh video pada CPU; `small` lebih laju tapi kurang tepat.
+   - Semak & betulkan ejaan Bahasa Melayu santai secara manual (cth. "Korang", istilah English/jenama).
 3. Kenal pasti: jenis video (bercakap ke kamera vs faceless tanpa suara; edukasi vs produk), mood, kualiti audio, jeda/silap.
 4. Bentangkan kepada pengguna:
    - **Gaya dicadang** (Sample mana / gabungan) + sebab.
