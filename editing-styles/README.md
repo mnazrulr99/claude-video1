@@ -24,20 +24,24 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 ## Pattern Bersama (dikemas kini setiap sample baharu)
 
-_Berdasarkan Sample 1 & Sample 2:_
+_Berdasarkan Sample 1, 2 & 3:_
 
-| Pattern | Sample 1 | Sample 2 | Kesimpulan |
-|---|---|---|---|
-| Format | 9:16, 1080×1920 | 9:16, 1080×1920 | **Sentiasa vertical 9:16** |
-| Hook | Flash + B&W, soalan | Pegang produk + colour bars/beep | **Hook < 2.5 s dengan pattern interrupt visual + SFX** |
-| Potongan | Jump cut, jeda ≤0.3 s | Jump cut setiap 1–3 s | **Buang semua jeda, rentak laju** |
-| Zoom | Punch-in setiap 2–4 s | Punch-in ekstrem 4× | **Punch-in pada momen penting** |
-| Caption | Word-by-word, ALL CAPS, teks kuning | Word-by-word, ALL CAPS, kotak lime | **Karaoke word-by-word, ALL CAPS, highlight kuning/lime** |
-| Title/grafik | Title atas + ❌/‼️ | Title tengah + ❌/✅ + banyak label | **Poin utama = title + emoji ❌/✅/‼️, animasi typewriter** |
-| SFX | Pop/ding/impact pada setiap title | Beep/chime/click/ding pada setiap grafik | **Setiap grafik baru = satu SFX** |
-| Transition | Hard cut sahaja | Hard cut + 2 transition khas | **Hard cut dominan, transition khas jarang** |
-| BGM | Tiada | Perlahan berterusan | **Ikut jenis video** (edukasi: tiada/perlahan; iklan: ada) |
-| Ending | Cut ke hitam | Cut ke hitam + audio fade | **Akhiri dengan cut ke hitam** |
+| Pattern | Sample 1 (edukasi) | Sample 2 (iklan) | Sample 3 (iklan feminin) | Kesimpulan |
+|---|---|---|---|---|
+| Format | 9:16 | 9:16, 60 fps | ≈9:16 (1050×1920) | **Sentiasa vertical 9:16, 1080×1920** |
+| Hook | Flash + B&W, soalan | Pegang produk + colour bars/beep | Title soalan masalah + sticker emoji + sparkle | **Hook < 3.5 s: soalan/masalah + elemen visual luar biasa + SFX** |
+| Potongan | Jump cut, jeda ≤0.3 s | Jump cut setiap 1–3 s | Jump cut, take lebih panjang semasa demo | **Buang jeda; rentak laju, boleh perlahan sedikit masa demo** |
+| Zoom/framing | Punch-in setiap 2–4 s | Punch-in ekstrem 4× | Produk digerak rapat ke lensa + shot wide | **Variasi framing setiap beberapa saat** |
+| Caption | Word-by-word, ALL CAPS, teks kuning | Word-by-word, ALL CAPS, kotak lime | Word-by-word, ALL CAPS condensed, teks pink | **Karaoke word-by-word, ALL CAPS, putih + highlight 1 warna (ikut mood/brand)**, posisi 60–78% dari atas |
+| Title/grafik | Title atas + ❌/‼️ | Title + ❌/✅ + banyak label | Serif + skrip italic, 🎀 ✅, sticker | **Poin utama = title + emoji (❌/✅/‼️/🎀), animasi typewriter** |
+| SFX | Pop/ding/impact | Beep/chime/click/ding | Sparkle + pop sama diulang + ASMR | **Setiap title/grafik baru = satu SFX** |
+| Transition | Hard cut sahaja | Hard cut + 2 khas | Hard cut + 3 khas (blur, mirror, splash) | **Hard cut dominan; 0–3 transition khas di pertukaran bahagian** |
+| BGM | Tiada | Perlahan berterusan | Perlahan berterusan | **Iklan: BGM perlahan; edukasi: tiada/perlahan** |
+| Struktur iklan | – | Masalah → Produk → Manfaat → Dos → CTA | Masalah → Punca → Varian → Demo → Manfaat → CTA + bukti | **Formula iklan: Masalah → Produk → Manfaat/Demo → CTA "beg kuning"** |
+| Ending | Cut ke hitam | Cut ke hitam + fade | Cut ke hitam + ding + fade | **Akhiri dengan cut ke hitam (+ fade audio)** |
+
+**Pemerhatian:** 2 daripada 3 sample ialah **iklan produk UGC untuk TikTok Shop** — kemungkinan besar ini jenis job utama pengguna.
+Warna highlight caption nampaknya dipilih **ikut warna produk/brand/mood** (kuning, lime, pink).
 
 ## Catatan citarasa pengguna
 
@@ -66,3 +70,4 @@ Pilihan pengguna: _(belum dipilih)_
 |---|---|---|
 | **Sample 1** | Talking-head 9:16, hook ikut jenis video, caption karaoke highlight kuning, punch-in zoom tiap 2–4 s, title callout atas + ❌/‼️, SFX pop/ding/impact, BGM pilihan, hard cut ke hitam | [sample-1/](sample-1/README.md) |
 | **Sample 2** | UGC iklan produk 9:16 selfie, hook pegang produk + colour bars/beep, caption kotak highlight lime, title pain-point ❌, product reveal elegan + packshot, grafik pelbagai (UI box ✅, kursor klik, marquee, badge emas), BGM perlahan, CTA beg kuning | [sample-2/](sample-2/README.md) |
+| **Sample 3** | UGC iklan produk feminin, hook soalan + sticker 🍑, caption condensed highlight pink, title serif + skrip italic 🎀 ✅, demo produk close-up + ASMR, transition zoom blur/mirror/splash cecair, poster bukti, BGM perlahan, CTA beg kuning | [sample-3/](sample-3/README.md) |
