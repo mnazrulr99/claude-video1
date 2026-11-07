@@ -39,3 +39,6 @@ def src_to_out(t):
 
 def total():
     return (HOOK[1]-HOOK[0]) + sum(b-a for a,b,_ in SEGMENTS) + END_BLACK
+
+# Zon selamat untuk SEMUA tulisan (tidak tutup muka & produk) — dari tools/zones.py
+SAFE = dict(x=36, w=440, gfx_top=120, cap_top=520)

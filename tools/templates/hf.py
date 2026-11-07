@@ -38,14 +38,14 @@ for k, (a, b, kind, txt) in enumerate(P.GRAPHICS):
     s, e = o(a), o(b); d = e - s; gid = f"g{k}"
     if kind == "title":
         l1, l2 = txt.split("|")
-        chars = "".join(f'<span class="ch">{html.escape(c)}</span>' for c in l1)
-        els.append(f'<div id="{gid}" class="clip title" data-start="{s:.3f}" data-duration="{d:.3f}"><div class="t1">{chars}</div><div class="t2">{html.escape(l2)}</div></div>')
+        chars = "<br>".join("".join(f'<span class="ch">{html.escape(c)}</span>' for c in part) for part in l1.split(" ", 1))
+        els.append(f'<div id="{gid}" class="clip gfx title" data-start="{s:.3f}" data-duration="{d:.3f}"><div class="t1">{chars}</div><div class="t2">{html.escape(l2)}</div></div>')
         tl.append(f'tl.from("#{gid} .ch", {{opacity:0, duration:0.01, stagger:0.035}}, {s+0.05:.3f});')
         tl.append(f'tl.from("#{gid} .t2", {{scale:0, opacity:0, duration:0.35, ease:"back.out(2.2)"}}, {s+0.85:.3f});')
         sfx("sparkle", s, 0.45); sfx("pop", s+0.85, 0.5)
     elif kind == "sizes":
         circ = "".join(f'<div class="sz" id="{gid}_{j}">{n}</div>' for j, n in enumerate(txt.split("|")))
-        els.append(f'<div id="{gid}" class="clip sizes" data-start="{s:.3f}" data-duration="{d:.3f}"><div class="row">{circ}</div><div class="cm">SAIZ (cm)</div></div>')
+        els.append(f'<div id="{gid}" class="clip gfx sizes" data-start="{s:.3f}" data-duration="{d:.3f}"><div class="row">{circ}</div><div class="cm">SAIZ (cm)</div></div>')
         for j, st in enumerate(P.SIZE_TIMES):
             t = o(st); tl.append(f'tl.from("#{gid}_{j}", {{scale:0, duration:0.3, ease:"back.out(2.5)"}}, {t:.3f});'); sfx("pop", t, 0.45)
         tl.append(f'tl.from("#{gid} .cm", {{opacity:0, y:20, duration:0.25}}, {s:.3f});')
@@ -54,25 +54,26 @@ for k, (a, b, kind, txt) in enumerate(P.GRAPHICS):
         for j, ln in enumerate(lines):
             icon = GIFT_SVG if kind == "gift" else CHECK_SVG
             rows += f'<div class="pill" id="{gid}_{j}">{icon}<span>{html.escape(ln)}</span></div>'
-        els.append(f'<div id="{gid}" class="clip checks" data-start="{s:.3f}" data-duration="{d:.3f}">{rows}</div>')
+        els.append(f'<div id="{gid}" class="clip gfx checks" data-start="{s:.3f}" data-duration="{d:.3f}">{rows}</div>')
         for j in range(len(lines)):
             t = s + j*0.9
-            tl.append(f'tl.from("#{gid}_{j}", {{x:-420, opacity:0, duration:0.35, ease:"power3.out"}}, {t:.3f});')
+            tl.append(f'tl.from("#{gid}_{j}", {{x:-300, opacity:0, duration:0.35, ease:"power3.out"}}, {t:.3f});')
             tl.append(f'tl.from("#{gid}_{j} .box", {{scale:0, duration:0.25, ease:"back.out(3)"}}, {t+0.3:.3f});')
             sfx("chime" if kind == "gift" else "ding", t+0.3, 0.4)
     elif kind == "badge":
-        els.append(f'<div id="{gid}" class="clip badge" data-start="{s:.3f}" data-duration="{d:.3f}"><div class="bb">{html.escape(txt)}</div></div>')
+        els.append(f'<div id="{gid}" class="clip gfx badge" data-start="{s:.3f}" data-duration="{d:.3f}"><div class="bb">{html.escape(txt)}</div></div>')
         tl.append(f'tl.from("#{gid} .bb", {{scale:2.4, opacity:0, duration:0.3, ease:"power4.in"}}, {s:.3f});')
         tl.append(f'tl.to("#{gid} .bb", {{scale:1.06, duration:0.5, yoyo:true, repeat:{max(1,int(d/0.5)-2)}, ease:"sine.inOut"}}, {s+0.35:.3f});')
         sfx("impact", s+0.25, 0.6)
     elif kind == "cta":
-        els.append(f'<div id="{gid}" class="clip cta" data-start="{s:.3f}" data-duration="{min(d, VID_DUR-s):.3f}"><div class="cp"><span class="ic">{BAG_SVG}</span><span>{html.escape(txt)}</span></div></div>')
-        tl.append(f'tl.from("#{gid} .cp", {{y:220, opacity:0, duration:0.4, ease:"back.out(1.8)"}}, {s:.3f});')
+        els.append(f'<div id="{gid}" class="clip gfx cta" data-start="{s:.3f}" data-duration="{min(d, VID_DUR-s):.3f}"><div class="cp"><span class="ic">{BAG_SVG}</span><span>{html.escape(txt)}</span></div></div>')
+        tl.append(f'tl.from("#{gid} .cp", {{x:-300, opacity:0, duration:0.4, ease:"back.out(1.8)"}}, {s:.3f});')
         tl.append(f'tl.to("#{gid} .cp", {{scale:1.07, duration:0.4, yoyo:true, repeat:{max(1,int(d/0.4)-2)}, ease:"sine.inOut"}}, {s+0.5:.3f});')
         sfx("pop", s, 0.5)
 
 sfx("whoosh", 0.0, 0.35); sfx("whoosh", (P.HOOK[1]-P.HOOK[0]) - 0.25, 0.45); sfx("ding", VID_DUR + 0.05, 0.4)
 
+SX, SW, GT, CT = P.SAFE['x'], P.SAFE['w'], P.SAFE['gfx_top'], P.SAFE['cap_top']
 doc = f'''<!doctype html>
 <html lang="ms" data-resolution="portrait">
 <head>
@@ -87,30 +88,27 @@ html, body {{ width:1080px; height:1920px; overflow:hidden; background:#000; }}
 #root {{ position:relative; width:1080px; height:1920px; }}
 #base {{ position:absolute; inset:0; width:1080px; height:1920px; object-fit:cover; z-index:0; }}
 #endblack {{ position:absolute; inset:0; background:#000; z-index:50; }}
-.cap {{ position:absolute; left:40px; right:40px; top:1290px; text-align:center; z-index:20;
-  font-family:"InterXB"; font-size:60px; line-height:1.15; color:#fff; letter-spacing:0.5px;
-  -webkit-text-stroke:10px #000; paint-order:stroke fill; text-shadow:0 6px 14px rgba(0,0,0,.45); }}
-.title {{ position:absolute; left:0; right:0; top:170px; text-align:center; z-index:10; }}
-.title .t1 {{ font-family:"SerifBI"; font-size:92px; color:#fff; -webkit-text-stroke:9px #2a0a1a; paint-order:stroke fill; }}
-.title .t2 {{ display:inline-block; font-family:"InterBlack"; font-size:150px; color:#FFE600; -webkit-text-stroke:14px #000; paint-order:stroke fill; margin-top:-10px; }}
-.sizes {{ position:absolute; left:0; right:0; top:600px; z-index:10; text-align:center; }}
-.sizes .row {{ display:flex; justify-content:center; gap:22px; }}
-.sz {{ width:168px; height:168px; border-radius:50%; background:#fff; border:12px solid #FFE600; display:flex; align-items:center; justify-content:center;
-  font-family:"InterBlack"; font-size:66px; color:#D6287A; box-shadow:0 10px 24px rgba(0,0,0,.3); }}
-.sizes .cm {{ margin-top:16px; font-family:"InterXB"; font-size:54px; color:#fff; -webkit-text-stroke:9px #000; paint-order:stroke fill; }}
-.checks {{ position:absolute; left:54px; top:700px; z-index:10; display:flex; flex-direction:column; gap:26px; align-items:flex-start; }}
-.pill {{ display:flex; align-items:center; gap:22px; background:#fff; border-radius:80px; padding:18px 44px 18px 20px; box-shadow:0 10px 26px rgba(0,0,0,.28);
-  font-family:"InterXB"; font-size:52px; color:#1e1e1e; }}
-.box {{ width:76px; height:76px; border-radius:18px; background:#2EB85C; display:flex; align-items:center; justify-content:center; }}
+.cap {{ position:absolute; left:{SX}px; width:{SW}px; top:{CT}px; text-align:left; z-index:20;
+  font-family:"InterXB"; font-size:54px; line-height:1.12; color:#fff; letter-spacing:0.3px;
+  -webkit-text-stroke:9px #000; paint-order:stroke fill; text-shadow:0 5px 12px rgba(0,0,0,.45); }}
+.gfx {{ position:absolute; left:{SX}px; width:{SW}px; top:{GT}px; z-index:10; text-align:left; }}
+.title .t1 {{ font-family:"SerifBI"; font-size:64px; line-height:1.05; color:#fff; -webkit-text-stroke:8px #2a0a1a; paint-order:stroke fill; }}
+.title .t2 {{ display:inline-block; font-family:"InterBlack"; font-size:118px; line-height:1.05; color:#FFE600; -webkit-text-stroke:12px #000; paint-order:stroke fill; transform-origin:left center; }}
+.sizes .row {{ display:flex; gap:10px; }}
+.sz {{ width:80px; height:80px; border-radius:50%; background:#fff; border:7px solid #FFE600; display:flex; align-items:center; justify-content:center;
+  font-family:"InterBlack"; font-size:34px; color:#D6287A; box-shadow:0 6px 14px rgba(0,0,0,.3); }}
+.sizes .cm {{ margin-top:12px; font-family:"InterXB"; font-size:44px; color:#fff; -webkit-text-stroke:8px #000; paint-order:stroke fill; }}
+.checks {{ display:flex; flex-direction:column; gap:18px; align-items:flex-start; }}
+.pill {{ display:flex; align-items:center; gap:14px; background:#fff; border-radius:60px; padding:12px 26px 12px 12px; box-shadow:0 8px 20px rgba(0,0,0,.28);
+  font-family:"InterXB"; font-size:34px; color:#1e1e1e; white-space:nowrap; }}
+.box {{ width:56px; height:56px; border-radius:14px; background:#2EB85C; display:flex; align-items:center; justify-content:center; flex:none; }}
 .box.gift {{ background:#E0457B; }}
-.box svg {{ width:56px; height:56px; }}
-.badge {{ position:absolute; left:0; right:0; top:330px; z-index:10; text-align:center; }}
-.badge .bb {{ display:inline-block; transform:rotate(-6deg); background:#E61E32; color:#FFE600; font-family:"InterBlack"; font-size:96px; padding:22px 54px;
-  border-radius:40px; -webkit-text-stroke:6px #78000a; paint-order:stroke fill; box-shadow:0 14px 30px rgba(0,0,0,.35); }}
-.cta {{ position:absolute; left:0; right:0; top:1520px; z-index:15; text-align:center; }}
-.cta .cp {{ display:inline-flex; align-items:center; gap:26px; background:#FFD600; border-radius:90px; padding:26px 64px 26px 28px; font-family:"InterBlack"; font-size:66px; color:#141414; box-shadow:0 14px 30px rgba(0,0,0,.35); }}
-.cta .ic {{ width:96px; height:96px; border-radius:22px; background:#FF8A00; display:flex; align-items:center; justify-content:center; }}
-.cta .bag {{ width:66px; height:66px; }}
+.box svg {{ width:42px; height:42px; }}
+.badge .bb {{ display:inline-block; transform:rotate(-5deg); transform-origin:left center; background:#E61E32; color:#FFE600; font-family:"InterBlack"; font-size:62px; padding:16px 34px;
+  border-radius:30px; -webkit-text-stroke:5px #78000a; paint-order:stroke fill; box-shadow:0 10px 24px rgba(0,0,0,.35); white-space:nowrap; }}
+.cta .cp {{ display:inline-flex; align-items:center; gap:16px; background:#FFD600; border-radius:70px; padding:16px 34px 16px 16px; font-family:"InterBlack"; font-size:46px; color:#141414; box-shadow:0 10px 24px rgba(0,0,0,.35); white-space:nowrap; transform-origin:left center; }}
+.cta .ic {{ width:70px; height:70px; border-radius:18px; background:#FF8A00; display:flex; align-items:center; justify-content:center; }}
+.cta .bag {{ width:48px; height:48px; }}
 </style>
 </head>
 <body>

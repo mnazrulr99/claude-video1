@@ -102,6 +102,12 @@ Hantar video siap + teks kredit BGM (jika perlu).
   `hf.py <dir_skrip> <dir_job>` (jana `hfproj/index.html`: video + caption karaoke + grafik GSAP + SFX).
   Projek HyperFrames: salin `hyperframes.json`, `meta.json`, `package.json` dari `npx hyperframes init`, symlink `base.mp4`,
   `sfx/` (dari `tools/sfx/`) dan `fonts/` (Inter-Black, Inter-ExtraBold, LiberationSerif-BoldItalic).
+- **Kedudukan tulisan (citarasa pengguna — WAJIB):** jangan tutup **muka**; sedaya upaya jangan tutup **produk**.
+  Sebelum storyboard: jalankan `python3 -I tools/zones.py base.mp4 <mula:tamat ...> --hsv <julat warna produk>`
+  (YuNet untuk muka, model dalam `tools/models/`; perlu `pip install opencv-python-headless`) → peta grid F/P/. bagi setiap babak.
+  Pilih zon kosong (cth. dinding kiri atas) dan set `SAFE` dalam `plan.py` (x, w, gfx_top, cap_top); semua grafik & caption
+  diletak dalam zon itu (kecilkan saiz jika perlu). Jika latar sama warna dengan produk, naikkan `smin` dalam `--hsv`.
+  Storyboard mesti tunjuk kedudukan sebenar; semak semula dengan `hyperframes snapshot` sebelum render.
 - **SFX:** `tools/sfx/` (whoosh, pop, ding, sparkle, impact, chime — disintesis ffmpeg, puncak −6 dB, guna `data-volume` 0.35–0.6).
 - **HyperFrames:** setiap `<audio>`/`<video>` **mesti ada `id`** (tanpa id → SENYAP dalam render). Klip audio tak boleh melepasi
   `data-duration` root. Amaran `nested_structure_needs_subcomposition` boleh diabaikan.

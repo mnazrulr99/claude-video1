@@ -57,6 +57,7 @@ _Berdasarkan Sample 1–5:_
 - Hook wajib, tapi gaya hook mesti kena dengan jenis video.
 - **Warna highlight caption:** Claude cadangkan pilihan (cth. padan warna produk/brand vs warna dari sample) berserta sebab dalam peringkat cadangan gaya/storyboard; **pengguna yang buat keputusan akhir**.
 - Secara umum: untuk pilihan kreatif (gaya, hook, BGM, warna), Claude beri cadangan + sebab, pengguna pilih.
+- **PENTING — Kedudukan tulisan:** tulisan (caption, title, badge, label, CTA) **TIDAK BOLEH tutup muka**, dan sedaya upaya **tidak tutup produk**. Letak di ruang kosong (latar/dinding). Semak dengan `tools/zones.py` + snapshot sebelum render. Jika ruang sempit, kecilkan tulisan daripada menutup muka/produk. (Maklum balas job ujian periuk: badge "HARGA TURUN!" asal menutup muka.)
 - **Video tanpa suara (gaya Sample 5):** masukkan **BGM royalty-free** — Claude cadangkan beberapa pilihan (link untuk didengar) ikut mood. Jika tiada yang sesuai, render dengan **SFX sahaja tanpa BGM** supaya pengguna boleh tambah trending sound sendiri dalam TikTok.
 
 ## BGM (royalty-free) — senarai pendek untuk pengguna pilih
