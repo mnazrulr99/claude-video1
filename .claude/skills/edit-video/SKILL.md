@@ -109,6 +109,15 @@ Hantar video siap + teks kredit BGM (jika perlu).
   Pilih zon kosong (cth. dinding kiri atas) dan set `SAFE` dalam `plan.py` (x, w, gfx_top, cap_top); semua grafik & caption
   diletak dalam zon itu (kecilkan saiz jika perlu). Jika latar sama warna dengan produk, naikkan `smin` dalam `--hsv`.
   Storyboard mesti tunjuk kedudukan sebenar; semak semula dengan `hyperframes snapshot` sebelum render.
+- **Dari /compare-learnedit periuk (lihat LEARNINGS.md R1a–R16):**
+  - `base.py`: zoom asas **1.2×** (bukan 1.0) untuk setiap segmen (R6); punch-in ekstrem (1.5–1.8×) pada produk masa sebut saiz/bahagian (R7).
+  - Hook lalai = klip flash-forward ±1 s (R5). Tamat dengan hitam 0.5–0.7 s + ding (R12). Potong jeda ketat (R11).
+  - Caption: ±54–60 px (R16), boleh di bahagian bawah produk ±72–80% dari atas tapi **jauh dari muka** (R1a) — semak `zones.py`.
+  - Label bahagian produk (cth. "16CM") terus atas bahagian itu (R1b). Title font/warna ikut produk (R8). Callout + doodle sparkle dekat benda disebut (R9).
+  - Satu transition kreatif di tengah (R10, cth. paper-rip). CTA di zon selamat (R13; X2 = jangan tutup produk).
+  - Kelantangan: **loudnorm dua laluan** ke −14 LUFS (R14):
+    `ffmpeg -i in.mp4 -af loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json -f null -` → guna nilai measured_* dalam laluan kedua (`linear=true`).
+  - Nama presenter: tanya/sahkan; jangan teka "akak" (R15).
 - **SFX:** `tools/sfx/` (whoosh, pop, ding, sparkle, impact, chime — disintesis ffmpeg, puncak −6 dB, guna `data-volume` 0.35–0.6).
 - **HyperFrames:** setiap `<audio>`/`<video>` **mesti ada `id`** (tanpa id → SENYAP dalam render). Klip audio tak boleh melepasi
   `data-duration` root. Amaran `nested_structure_needs_subcomposition` boleh diabaikan.

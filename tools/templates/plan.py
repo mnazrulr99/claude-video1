@@ -1,4 +1,4 @@
-# Pelan edit job-test1 (periuk pink). Masa = masa SUMBER (raw.mp4).
+# CONTOH pelan (job periuk). Masa = masa SUMBER (raw.mp4). Ikut LEARNINGS.md: zoom asas 1.2 (R6), hook B (R5), hitam 0.6 (R12).
 HOOK = (10.30, 11.30)            # klip angkat penutup kaca, audio dimatikan, whoosh
 SEGMENTS = [  # (mula, tamat, zoom)
     (0.00, 6.22, 1.00),
@@ -12,7 +12,7 @@ SEGMENTS = [  # (mula, tamat, zoom)
     (48.20, 52.25, 1.00),
 ]
 END_BLACK = 0.6
-FIXES = {"selera": "seller", "enak": "akak", "-mak": "mak", "-kawan": "kawan", "-satu": "satu"}
+FIXES = {"selera": "seller", "enak": "Yana", "-mak": "mak", "-kawan": "kawan", "-satu": "satu"}
 
 # Grafik: (src_mula, src_tamat, jenis, teks)
 GRAPHICS = [

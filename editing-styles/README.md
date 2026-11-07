@@ -43,6 +43,7 @@ _Berdasarkan Sample 1–5:_
 | Ending | Cut hitam | Cut hitam + fade | Cut hitam + ding | Impact + cut hitam | Splash hitam + ding | **Cut ke hitam (+ SFX/fade)** |
 
 **Pemerhatian:**
+- **Edit pengguna sendiri (periuk, /compare-learnedit):** framing ketat 1.2×, label saiz atas produk, title bubbly ikut warna produk, callout + doodle sparkle, satu paper-rip transition di tengah, potongan ketat, −13 LUFS. Butiran: [LEARNINGS.md](LEARNINGS.md).
 - **4 daripada 5 sample ialah kandungan produk/brand** — jenis job utama pengguna. Ada 2 sub-jenis:
   (a) **bercakap ke kamera** (S2, S3, S4) → caption karaoke; (b) **faceless tanpa suara** (S5) → header tetap + teks callout, tiada caption.
 - Transition **splash cecair** muncul dalam S3 & S5; **ding penutup yang sama** dalam S3 & S5 → kemungkinan aset CapCut kegemaran.
