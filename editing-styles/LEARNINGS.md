@@ -34,7 +34,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R13 | **CTA diletak di zon selamat** (tidak tutup muka/produk), cth. pill dengan ikon beg. | CTA | /compare-learnedit periuk (item 12) | 2026-11-07 |
 | R14 | **Kelantangan akhir −13 hingga −14 LUFS** (guna loudnorm dua laluan supaya tepat). | Audio | /compare-learnedit periuk (item 13) | 2026-11-07 |
 | R15 | **Nama presenter:** bila presenter sebut nama sendiri, tanya/sahkan nama dan tulis dalam caption (cth. **"Yana"**, bukan "akak"). Whisper sering salah dengar nama. | Transkrip | /compare-learnedit periuk (item 14) | 2026-11-07 |
-| R16 | **Saiz caption mesti mudah dibaca dalam telefon** (±54–60 px pada 1080 lebar; jangan kecil seperti ±30 px). Warna highlight dicadang ikut R2. | Caption | /compare-learnedit periuk (item 5: "ikut R1") | 2026-11-07 |
+| R16 | **Gaya caption = versi Claude:** word-by-word ALL CAPS, font tebal (Inter ExtraBold) **±54–60 px** pada 1080 lebar, putih + outline hitam tebal, perkataan aktif **tukar warna teks** (bukan kotak highlight; warna dicadang ikut R2, cth. kuning). Kedudukan ikut R1/R1a. | Caption | /compare-learnedit periuk (item 5: "ikut versi Claude") | 2026-11-07 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
