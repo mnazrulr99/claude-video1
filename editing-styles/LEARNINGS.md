@@ -35,6 +35,11 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R14 | **Kelantangan akhir −13 hingga −14 LUFS** (guna loudnorm dua laluan supaya tepat). | Audio | /compare-learnedit periuk (item 13) | 2026-11-07 |
 | R15 | **Nama presenter:** bila presenter sebut nama sendiri, tanya/sahkan nama dan tulis dalam caption (cth. **"Yana"**, bukan "akak"). Whisper sering salah dengar nama. | Transkrip | /compare-learnedit periuk (item 14) | 2026-11-07 |
 | R16 | **Gaya caption = versi Claude:** word-by-word ALL CAPS, font tebal (Inter ExtraBold) **±54–60 px** pada 1080 lebar, putih + outline hitam tebal, perkataan aktif **tukar warna teks** (bukan kotak highlight; warna dicadang ikut R2, cth. kuning). Kedudukan ikut R1/R1a. | Caption | /compare-learnedit periuk (item 5: "ikut versi Claude") | 2026-11-07 |
+| R17 | **Hook alternatif: POV skit** — teks "Pov: …" gaya TikTok (putih kecil, atas) + aksi presenter tanpa/kurang dialog. Cadang bersama Hook B (R5); pengguna pilih ikut video. | Hook | Sample 6 (P1) | 2026-11-07 |
+| R18 | **Label gaya search bar** (pill putih + kursor menaip + ikon ×, teks bertukar berturut) untuk senarai pilihan/lokasi/kegunaan. | Grafik | Sample 6 (P2) | 2026-11-07 |
+| R19 | **Label tulisan tangan + sparkle ✦** untuk harga, ciri (✅) dan nama varian **di sebelah produk** (R1b). Warna ikut tema. | Grafik | Sample 6 (P3) | 2026-11-07 |
+| R20 | **Satu momen lawak: klip B&W reaksi** (presenter berlakon reaksi orang lain) bila skrip ada punchline. | Effect | Sample 6 (P4) | 2026-11-07 |
+| R21 | **Transition kreatif mesti sesuai dengan video** (mood, produk, tema warna) — cth. kad foto berpusing + bintang/reben (feminin/rumah), paper-rip, splash cecair (produk buih), brush stroke. Pilih satu-dua sahaja (R10) dan terangkan sebab dalam storyboard. | Transition | Sample 6 (P5) + arahan pengguna | 2026-11-07 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
@@ -50,10 +55,9 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 ## 🕒 Menunggu keputusan pengguna
 
-_(Cadangan yang belum disahkan — jangan guna sehingga disahkan.)_
+_(Tiada — semua cadangan telah diputuskan.)_
 
-| # | Cadangan | Sumber |
-|---|---|---|
+---|---|---|
 | P1 | Hook alternatif **POV skit** dengan teks "Pov: …" gaya TikTok (selain Hook B) | Sample 6 |
 | P2 | Label pilihan/lokasi gaya **search bar** (pill + kursor menaip + ikon ×) | Sample 6 (juga Sample 2) |
 | P3 | Label **tulisan tangan** (harga, ciri ✅, nama varian sebelah produk) + sparkle | Sample 6 (juga edit pengguna) |
@@ -68,4 +72,4 @@ _(Cadangan yang belum disahkan — jangan guna sehingga disahkan.)_
 |---|---|---|---|---|
 | 2026-11-07 | Maklum balas job | Ujian periuk stainless steel (v1 → v2) | Badge & tulisan tutup muka/produk → semua tulisan dipindah ke zon kosong | R1 diterima |
 | 2026-11-07 | /compare-learnedit | Periuk stainless steel — edit pengguna (45.7 s) vs Claude v2 (52.1 s) | 14 item dibanding; perbandingan dalam `comparisons/2026-11-07-periuk/` | R1a, R1b, R5–R16 diterima; X1, X2 ditolak; item 8 = nota |
-| 2026-11-07 | /sample-baru | Sample 6 — IDECO Smart Diffuser (BettyRahmad) | Caption kotak lime bercanggah R16; −9.9 LUFS bercanggah R14 (tidak dipelajari). 5 cadangan P1–P5 menunggu keputusan | Menunggu |
+| 2026-11-07 | /sample-baru | Sample 6 — IDECO Smart Diffuser (BettyRahmad) | Caption kotak lime bercanggah R16; −9.9 LUFS bercanggah R14 (tidak dipelajari). 5 cadangan P1–P5 | R17–R21 diterima (P5: transition mesti sesuai dengan video) |
