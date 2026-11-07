@@ -12,3 +12,6 @@ Ringkasan:
 Skill tersedia (taip dalam Claude Code):
 - `/edit-video <link video raw>` — prosedur penuh edit video (`.claude/skills/edit-video/SKILL.md`).
 - `/sample-baru <link video siap edit>` — belajar & simpan gaya baharu (`.claude/skills/sample-baru/SKILL.md`).
+- `/banding-edit <link video yang pengguna edit sendiri>` — banding dengan cara Claude, belajar yang okay, tolak yang tak okay (`.claude/skills/banding-edit/SKILL.md`).
+
+**Pembelajaran berterusan:** `editing-styles/LEARNINGS.md` — WAJIB dibaca sebelum setiap edit; ikut Peraturan Diterima, elak Ditolak.

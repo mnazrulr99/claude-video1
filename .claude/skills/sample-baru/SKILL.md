@@ -11,7 +11,7 @@ Balas dalam **Bahasa Melayu santai & mesra**.
 
 ## Langkah 0 — Konteks
 
-1. Baca `editing-styles/README.md` (katalog & Pattern Bersama) dan sekurang-kurangnya satu `sample-N/README.md` sebagai format rujukan.
+1. Baca `editing-styles/README.md` (katalog & Pattern Bersama), `editing-styles/LEARNINGS.md` (peraturan diterima/ditolak) dan sekurang-kurangnya satu `sample-N/README.md` sebagai format rujukan.
 2. Tentukan nombor seterusnya: `ls editing-styles` → `sample-<N+1>`.
 
 ## Langkah 1 — Muat turun & metadata
@@ -63,6 +63,12 @@ Tulis `editing-styles/sample-<N>/README.md` mengikut format sample sedia ada:
 Dalam `editing-styles/README.md`:
 - Tambah baris dalam jadual katalog.
 - Tambah lajur sample baharu dalam **"Pattern Bersama"**, kemas kini lajur Kesimpulan & **Pemerhatian** (pattern berulang = selera pengguna).
+
+## Langkah 5b — Pembelajaran
+
+Jika sample baharu menunjukkan pattern yang bercanggah dengan **Peraturan Diterima** atau mengandungi perkara dalam
+**Ditolak**, nyatakan kepada pengguna (jangan terus belajar perkara itu). Cadangan peraturan baharu → masukkan dalam
+"🕒 Menunggu keputusan pengguna" dalam `LEARNINGS.md` sehingga disahkan.
 
 ## Langkah 6 — Commit & push
 

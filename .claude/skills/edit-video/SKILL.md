@@ -13,7 +13,8 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 
 1. Baca `editing-styles/README.md` (katalog gaya, aliran kerja, Pattern Bersama, citarasa pengguna, senarai BGM).
 2. Baca `editing-styles/sample-N/README.md` untuk gaya yang berkaitan (lihat juga `key-frames.jpg`).
-3. Ikut **"Catatan citarasa pengguna"** — ia mengatasi lalai dalam skill ini.
+3. Baca `editing-styles/LEARNINGS.md` — ikut **semua Peraturan Diterima**, dan **jangan guna** apa-apa dalam **Ditolak**.
+4. Ikut **"Catatan citarasa pengguna"** — ia (dan LEARNINGS.md) mengatasi lalai dalam skill ini.
 
 ## Langkah 0.5 — Semak persekitaran (cloud atau komputer pengguna)
 
@@ -116,6 +117,14 @@ Hantar video siap + teks kredit BGM (jika perlu).
 - Akhir: `loudnorm=I=-14:TP=-1.5:LRA=11`, libx264 crf 18, AAC 192k, `+faststart` → `output/<job>/<nama>-final.mp4`.
 - Video raw resolusi rendah (cth. 464×848) akan lembut bila dibesarkan — maklumkan pengguna awal.
 - Whisper keliru nama/sapaan (cth. "seller"→"selera", "akak"→"enak") — senaraikan tekaan dan minta pengguna sahkan.
+
+## Langkah 5 — Belajar dari maklum balas (pembelajaran berterusan)
+
+- Setiap komen pengguna pada storyboard atau video siap = data pembelajaran. Selepas membetulkan, cadangkan satu
+  peraturan umum (cth. "tulisan tak boleh tutup muka") dan tanya pengguna sama ada mahu simpan sebagai peraturan tetap.
+- Bila disahkan: tambah ke `editing-styles/LEARNINGS.md` (Peraturan Diterima / Ditolak + Log), kemas kini templat/skill
+  jika perlu, commit & push ke branch kerja dan `main`.
+- Jika pengguna kemudian edit sendiri video yang sama, cadangkan `/banding-edit` untuk banding & belajar.
 
 ## Nota
 

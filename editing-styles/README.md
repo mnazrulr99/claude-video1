@@ -52,6 +52,9 @@ _Berdasarkan Sample 1–5:_
 
 ## Catatan citarasa pengguna
 
+> Peraturan terperinci & sejarah pembelajaran: **[LEARNINGS.md](LEARNINGS.md)** (dikemas kini oleh `/banding-edit`, `/edit-video`, `/sample-baru`).
+
+
 - Tidak mahu buka sebarang app editing — Claude render terus.
 - BGM royalty-free sahaja; pengguna pilih dari senarai.
 - Hook wajib, tapi gaya hook mesti kena dengan jenis video.
