@@ -48,6 +48,8 @@ Warna highlight caption nampaknya dipilih **ikut warna produk/brand/mood** (kuni
 - Tidak mahu buka sebarang app editing — Claude render terus.
 - BGM royalty-free sahaja; pengguna pilih dari senarai.
 - Hook wajib, tapi gaya hook mesti kena dengan jenis video.
+- **Warna highlight caption:** Claude cadangkan pilihan (cth. padan warna produk/brand vs warna dari sample) berserta sebab dalam peringkat cadangan gaya/storyboard; **pengguna yang buat keputusan akhir**.
+- Secara umum: untuk pilihan kreatif (gaya, hook, BGM, warna), Claude beri cadangan + sebab, pengguna pilih.
 
 ## BGM (royalty-free) — senarai pendek untuk pengguna pilih
 
