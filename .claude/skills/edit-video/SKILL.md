@@ -15,6 +15,22 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 2. Baca `editing-styles/sample-N/README.md` untuk gaya yang berkaitan (lihat juga `key-frames.jpg`).
 3. Ikut **"Catatan citarasa pengguna"** — ia mengatasi lalai dalam skill ini.
 
+## Langkah 0.5 — Semak persekitaran (cloud atau komputer pengguna)
+
+Pengguna bertukar-tukar antara **session cloud** dan **Claude Code di komputer sendiri**. Semak tool yang ada dahulu:
+
+```bash
+node -v; ffmpeg -version | head -1
+python3 -c "import faster_whisper" 2>/dev/null && echo faster-whisper || (which whisper && echo openai-whisper)
+npx -y hyperframes --version; ls node_modules/.bin/remotion 2>/dev/null || echo "remotion: guna projek sendiri"
+```
+- **Cloud:** Node 22 & ffmpeg sedia ada. Pasang yang tiada: `pip install -q faster-whisper` (±1–2 min, model medium ±1.5 GB);
+  HyperFrames & Remotion jalan melalui `npx` / `npm i` (diuji: hyperframes 0.9.20 dan remotion render berjaya di cloud).
+- **Komputer pengguna (local):** pengguna sudah pasang Node LTS, ffmpeg, Whisper, HyperFrames & Remotion. Guna yang ada;
+  jika `tools/transcribe.py` gagal kerana tiada `faster_whisper`, guna CLI `whisper <fail> --language ms --model medium --word_timestamps True --output_format json`.
+  Simpan video siap dalam folder yang pengguna boleh buka (cth. `output/` dalam repo — **jangan commit**).
+- Nyatakan kepada pengguna persekitaran mana yang sedang digunakan.
+
 ## Langkah 1 — Muat turun & semak video raw
 
 ```bash
@@ -54,13 +70,28 @@ Hantar kepada pengguna (SendUserFile, display render). **Tunggu komen; ulang seh
 
 ## Langkah 4 — Render (selepas setuju sahaja)
 
-- Output: **1080×1920, 9:16**, 30 fps (atau 60 jika sumber 60), H.264 `-crf 18 -preset slow -pix_fmt yuv420p`, AAC 192k, `+faststart`.
-- Potong jeda/silap (jump cut) mengikut transkrip; punch-in dengan `crop`+`scale` per segmen.
-- Caption karaoke: jana fail **ASS** (word-by-word, ALL CAPS, highlight warna/kotak dipilih) dan bakar dengan `subtitles=`/`ass=`.
-- Title/callout: ASS (animasi typewriter = `\k`/beberapa event) atau overlay PNG; sticker/emoji = overlay PNG.
-- SFX pada setiap grafik baru; BGM perlahan (≈ −20 dB di bawah suara, `sidechaincompress` atau volume tetap), fade-out hujung.
-- Ending: cut/fade ke hitam ±0.5–1 s.
-- Semak hasil: ambil beberapa frame & semak loudness sebelum hantar. Hantar video siap + teks kredit BGM (jika perlu).
+**Pembahagian tool:**
+| Tugas | Tool |
+|---|---|
+| Potong jeda/jump cut, crop/punch-in, tonemap HDR, normalisasi audio, gabung akhir | **ffmpeg** |
+| Transkrip masa setiap perkataan | **Whisper** (`tools/transcribe.py` atau CLI whisper) |
+| Caption karaoke, title typewriter, label/pill/badge, checklist ✅, sticker, marquee, transition grafik | **HyperFrames** (lalai — HTML/CSS + animasi boleh-seek) |
+| Animasi kompleks / berasaskan data, atau bila HyperFrames tidak sesuai | **Remotion** (React) |
+
+**Aliran lalai:**
+1. ffmpeg: hasilkan `base.mp4` 1080×1920 yang sudah dipotong (jump cut ikut transkrip, punch-in per segmen, SDR bt709, 30/60 fps).
+2. Laraskan masa transkrip kepada timeline `base.mp4` (selepas potongan).
+3. HyperFrames: `npx -y hyperframes init edit --example blank --resolution portrait --non-interactive --skip-skills --skip-transcribe`
+   → komposisi `index.html` dengan `base.mp4` sebagai trek video + lapisan caption/title/sticker + trek SFX & BGM.
+   Guna `npx hyperframes lint` / `check`, `snapshot` untuk semak frame, kemudian `npx hyperframes render`.
+   (`npx hyperframes docs` untuk rujukan; `hyperframes add <block>` untuk blok sedia ada seperti transition.)
+4. Alternatif Remotion: projek `npm i remotion @remotion/cli react react-dom`, `<OffthreadVideo src=base.mp4>` + lapisan,
+   `npx remotion render src/index.ts <Comp> out.mp4`. (Lesen Remotion: percuma untuk individu/syarikat kecil — rujuk remotion.dev/license.)
+5. ffmpeg akhir: pastikan H.264 `-crf 18 -pix_fmt yuv420p`, AAC 192k, `+faststart`; BGM ≈ −20 dB di bawah suara, fade-out hujung.
+
+**Spesifikasi:** 1080×1920, 9:16; SFX pada setiap grafik baru; ending cut/fade ke hitam ±0.5–1 s.
+**Semak sebelum hantar:** beberapa frame (caption tak terpotong, dalam zon selamat TikTok), loudness, sync caption.
+Hantar video siap + teks kredit BGM (jika perlu).
 
 ## Nota
 
