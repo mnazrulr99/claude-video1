@@ -112,7 +112,10 @@ Hantar video siap + teks kredit BGM (jika perlu).
 
 1. Selepas render (dan semakan dalaman), hasilkan pakej klien dalam `output/<job>/`:
    - `python3 -I tools/client_preview.py <render>.mp4 output/<job>/<job>-PREVIEW-v<n>.mp4` (540p, watermark SATU perkataan "PREVIEW" di tengah sahaja, ±4 MB/50 s)
-   - `python3 -I tools/client_preview.py --image storyboard-<k>.jpg output/<job>/storyboard-<k>-PREVIEW.jpg` untuk setiap halaman storyboard
+   - Storyboard **dua versi** dengan frame SEBENAR dari render: `python3 -I storyboard.py <dir_skrip> <dir_job> output/<job> <render.mp4>`
+     → **A** `storyboard-<k>.jpg` (untuk pengguna, nota teknikal: SFX, punch-in, dll.) dan
+     **B** `storyboard-klien-<k>.jpg` (untuk klien, ringkas: masa + apa yang dilihat, tiada istilah teknikal; isi lajur ke-4 `PANELS`).
+   - Watermark versi B sahaja: `python3 -I tools/client_preview.py --image storyboard-klien-<k>.jpg output/<job>/storyboard-klien-<k>-PREVIEW.jpg`
 2. Hantar kepada pengguna (SendUserFile) — **jangan** hantar fail resolusi penuh tanpa watermark pada peringkat ini.
 3. Pengguna bawa balik feedback klien → betulkan → preview baharu `-PREVIEW-v<n+1>`. Ulang.
 4. Bila pengguna kata klien setuju → **final**: render penuh 1080×1920 tanpa watermark, loudnorm (R14) →

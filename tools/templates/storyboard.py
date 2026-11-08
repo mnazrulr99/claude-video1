@@ -69,48 +69,73 @@ def overlay(im, g, t):
         d.arc((PW/2-tw/2-30, 524, PW/2-tw/2-16, 540), 180, 360, fill=(255,140,0), width=3)
         d.text((PW/2-tw/2, 543), txt, font=font, fill=(20,20,20), anchor="lm")
 
-PANELS = [  # (src_t_for_frame, hook?, nota)
-    (10.70, True,  "HOOK (klip 1s): angkat penutup kaca|Audio asal dimatikan · SFX whoosh di cut|Tiada caption"),
-    (0.80,  False, "Title: Periuk Stainless Steel MURAH!|(serif putih + MURAH! kuning tebal, typewriter)|SFX: sparkle"),
-    (6.60,  False, "Saiz 16·18·20·22·24 pop satu-satu|ikut masa disebut · SFX pop setiap saiz|Punch-in 1.15× (6.45s src)"),
-    (11.80, False, "✓ Penutup kaca solid (pill putih)|SFX: ding"),
-    (17.90, False, "Badge HARGA TURUN! (merah/kuning)|Punch-in 1.12× · SFX: impact"),
-    (25.00, False, "✓ Beli set 5 lagi JIMAT|SFX: ding"),
-    (33.60, False, "✓ Stainless steel  ✓ Warna menarik|ditanda satu-satu · Punch-in 1.15×|SFX: ding ×2"),
-    (40.90, False, "✓ Ada penutup = hygiene|SFX: ding"),
-    (43.60, False, "✓ Sesuai jadi hadiah (ikon hadiah)|Punch-in 1.12× · SFX: chime"),
-    (50.00, False, "CTA: Tekan beg kuning (pill kuning)|SFX: pop · kemudian cut ke hitam 0.6s|+ ding penutup"),
+TITLE = "Periuk Stainless Steel"            # nama job (dipapar pada kedua-dua versi)
+TECH_INFO = "Gaya: Sample 3 + Sample 2  ·  Caption kuning  ·  Tiada BGM"   # versi A sahaja
+DURATION = "±52s"
+# (src_t_for_frame, hook?, nota TEKNIKAL untuk pengguna (A), nota RINGKAS untuk klien (B) — tiada istilah teknikal)
+PANELS = [
+    (10.70, True,  "HOOK (klip 1s): angkat penutup kaca|Audio asal dimatikan · SFX whoosh di cut|Tiada caption",
+                   "Pembuka: tunjuk penutup kaca diangkat"),
+    (0.80,  False, "Title: Periuk Stainless Steel MURAH!|(serif putih + MURAH! kuning tebal, typewriter)|SFX: sparkle",
+                   "Tajuk: \"Periuk Stainless Steel MURAH!\""),
+    (6.60,  False, "Saiz 16·18·20·22·24 pop satu-satu|ikut masa disebut · SFX pop setiap saiz|Punch-in 1.15× (6.45s src)",
+                   "Saiz 16, 18, 20, 22, 24 cm dipaparkan"),
+    (11.80, False, "✓ Penutup kaca solid (pill putih)|SFX: ding", "✓ Penutup kaca solid"),
+    (17.90, False, "Badge HARGA TURUN! (merah/kuning)|Punch-in 1.12× · SFX: impact", "Label: HARGA TURUN!"),
+    (25.00, False, "✓ Beli set 5 lagi JIMAT|SFX: ding", "✓ Beli set 5 lagi JIMAT"),
+    (33.60, False, "✓ Stainless steel  ✓ Warna menarik|ditanda satu-satu · Punch-in 1.15×|SFX: ding ×2",
+                   "✓ Stainless steel|✓ Warna menarik"),
+    (40.90, False, "✓ Ada penutup = hygiene|SFX: ding", "✓ Ada penutup = hygiene"),
+    (43.60, False, "✓ Sesuai jadi hadiah (ikon hadiah)|Punch-in 1.12× · SFX: chime", "Sesuai jadi hadiah"),
+    (50.00, False, "CTA: Tekan beg kuning (pill kuning)|SFX: pop · kemudian cut ke hitam 0.6s|+ ding penutup",
+                   "Ajakan beli: \"Tekan beg kuning\""),
 ]
 def zoom_at(t):
     for a, b, z in P.SEGMENTS:
         if a <= t <= b: return z
     return 1.0
 
-cards = []
-for i, (t, hook, note) in enumerate(PANELS, 1):
-    im = frame(t, 1.0 if hook else zoom_at(t))
-    if hook:
-        d = ImageDraw.Draw(im)
-    else:
-        for g in P.GRAPHICS:
-            if g[0] <= t <= g[1]: overlay(im, g, t)
-        caption(ImageDraw.Draw(im), t)
-    o0 = 0.0 if hook else P.src_to_out(t)
-    # cari had babak
-    card = Image.new("RGB", (PW, PH+150), (24,24,28)); card.paste(im, (0,0)); d = ImageDraw.Draw(card)
-    if hook: rng = "0.0 – 1.0s"
-    else:
-        g = next((g for g in P.GRAPHICS if g[0] <= t <= g[1]), None)
-        rng = f"{P.src_to_out(g[0]):.1f} – {P.src_to_out(g[1]):.1f}s" if g else f"{o0:.1f}s"
-    d.rounded_rectangle((8, PH+8, 70, PH+38), 8, fill=(255,230,0)); d.text((39, PH+23), f"#{i}", font=f(FB,18), fill="black", anchor="mm")
-    d.text((80, PH+23), rng, font=f(FB,20), fill="white", anchor="lm")
-    for j, line in enumerate(note.split("|")):
-        d.text((10, PH+54+j*28), line, font=f(FR,15), fill=(220,220,220), anchor="lm")
-    cards.append(card)
+import math
+# argv[4] (pilihan): video yang dah dirender -> storyboard guna frame sebenar (wajib untuk pakej klien)
+RENDER = sys.argv[4] if len(sys.argv) > 4 else None
+def frame_from(path, t):
+    png = subprocess.run(["ffmpeg","-v","error","-ss",str(t),"-i",path,"-frames:v","1","-f","image2pipe","-vcodec","png","-"],capture_output=True).stdout
+    im = Image.open(io.BytesIO(png)).convert("RGB")
+    return im.resize((PW, round(im.height*PW/im.width)), Image.LANCZOS).crop((0,0,PW,PH))
+def build(mode):
+    cards = []
+    for i, (t, hook, tech, client) in enumerate(PANELS, 1):
+        note = tech if mode == "A" else client
+        if RENDER:   # selepas render: guna frame SEBENAR dari video siap (tepat, tiada mock)
+            ot = 0.5 if hook else P.src_to_out(t)
+            im = frame_from(RENDER, ot)
+        else:
+            im = frame(t, 1.0 if hook else zoom_at(t))
+        if not hook and not RENDER:
+            for g in P.GRAPHICS:
+                if g[0] <= t <= g[1]: overlay(im, g, t)
+            caption(ImageDraw.Draw(im), t)
+        o0 = 0.0 if hook else P.src_to_out(t)
+        card = Image.new("RGB", (PW, PH+150), (24,24,28)); card.paste(im, (0,0)); d = ImageDraw.Draw(card)
+        if hook: rng = f"0.0 – {P.HOOK[1]-P.HOOK[0]:.1f}s"
+        else:
+            g = next((g for g in P.GRAPHICS if g[0] <= t <= g[1]), None)
+            rng = f"{P.src_to_out(g[0]):.1f} – {P.src_to_out(g[1]):.1f}s" if g else f"{o0:.1f}s"
+        d.rounded_rectangle((8, PH+8, 70, PH+38), 8, fill=(255,230,0)); d.text((39, PH+23), f"#{i}", font=f(FB,18), fill="black", anchor="mm")
+        d.text((80, PH+23), rng, font=f(FB,20), fill="white", anchor="lm")
+        fs = 15 if mode == "A" else 18
+        for j, line in enumerate(note.split("|")):
+            d.text((10, PH+56+j*30), line, font=f(FR,fs), fill=(220,220,220), anchor="lm")
+        cards.append(card)
+    pages = math.ceil(len(cards)/5)
+    for p in range(pages):
+        sheet = Image.new("RGB", (5*PW+6*16, PH+150+90), (14,14,16)); d = ImageDraw.Draw(sheet)
+        head = f"STORYBOARD — {TITLE}  ·  halaman {p+1}/{pages}  ·  " + (f"{TECH_INFO}  ·  {DURATION}" if mode == "A" else f"Tempoh {DURATION}")
+        d.text((16, 45), head, font=f(FB,26), fill="white", anchor="lm")
+        for k, c in enumerate(cards[p*5:(p+1)*5]): sheet.paste(c, (16 + k*(PW+16), 80))
+        name = f"storyboard-{p+1}.jpg" if mode == "A" else f"storyboard-klien-{p+1}.jpg"
+        sheet.save(f"{sys.argv[3]}/{name}", quality=90)
 
-for p in range(2):
-    sheet = Image.new("RGB", (5*PW+6*16, PH+150+90), (14,14,16)); d = ImageDraw.Draw(sheet)
-    d.text((16, 45), f"STORYBOARD — Periuk Stainless Steel (Ujian)  ·  halaman {p+1}/2  ·  Gaya: Sample 3 + Sample 2  ·  Caption kuning  ·  Tiada BGM  ·  ±52s", font=f(FB,26), fill="white", anchor="lm")
-    for k, c in enumerate(cards[p*5:(p+1)*5]): sheet.paste(c, (16 + k*(PW+16), 80))
-    sheet.save(f"{sys.argv[3]}/storyboard-{p+1}.jpg", quality=90)
+build("A")   # untuk pengguna (nota teknikal)
+build("B")   # untuk klien (ringkas, tanpa istilah teknikal) -> kemudian watermark dengan tools/client_preview.py --image
 print("ok")
