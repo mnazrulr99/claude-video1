@@ -13,7 +13,10 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 4. Claude hasilkan **STORYBOARD dalam bentuk imej**
    (frame setiap babak + masa, teks caption, title callout, zoom, effect, SFX, BGM, jenis hook).
 5. **JANGAN render** sebelum pengguna setuju. Ulang storyboard ikut komen pengguna sehingga setuju.
-6. Baru render video akhir 1080×1920 dan hantar kepada pengguna.
+6. Render, kemudian hasilkan **pakej untuk klien**: storyboard + **video preview resolusi rendah (540p) dengan watermark
+   "PREVIEW"** (`tools/client_preview.py`). Video penuh resolusi **tidak** diberi lagi.
+7. Pengguna hantar kepada klien → bawa balik **feedback klien** → Claude betulkan → preview baharu (v2, v3…).
+8. Bila klien setuju → **final render** 1080×1920 tanpa watermark → hantar kepada pengguna.
 
 ## Belajar berterusan
 

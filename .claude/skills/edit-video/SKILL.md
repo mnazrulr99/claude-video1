@@ -108,6 +108,17 @@ Hantar kepada pengguna (SendUserFile, display render). **Tunggu komen; ulang seh
 **Semak sebelum hantar:** beberapa frame (caption tak terpotong, dalam zon selamat TikTok), loudness, sync caption.
 Hantar video siap + teks kredit BGM (jika perlu).
 
+## Langkah 4b — Preview untuk klien (WAJIB, R22)
+
+1. Selepas render (dan semakan dalaman), hasilkan pakej klien dalam `output/<job>/`:
+   - `python3 -I tools/client_preview.py <render>.mp4 output/<job>/<job>-PREVIEW-v<n>.mp4` (540p, watermark "PREVIEW" pepenjuru + jalur "BUKAN VERSI AKHIR", ±4 MB/50 s)
+   - `python3 -I tools/client_preview.py --image storyboard-<k>.jpg output/<job>/storyboard-<k>-PREVIEW.jpg` untuk setiap halaman storyboard
+2. Hantar kepada pengguna (SendUserFile) — **jangan** hantar fail resolusi penuh tanpa watermark pada peringkat ini.
+3. Pengguna bawa balik feedback klien → betulkan → preview baharu `-PREVIEW-v<n+1>`. Ulang.
+4. Bila pengguna kata klien setuju → **final**: render penuh 1080×1920 tanpa watermark, loudnorm (R14) →
+   `output/<job>/<job>-FINAL.mp4`. Simpan render penuh dalam scratchpad supaya final tak perlu render semula jika tiada perubahan.
+5. Feedback klien yang boleh jadi peraturan umum → cadang kepada pengguna untuk `LEARNINGS.md` (Langkah 5).
+
 ## Pengajaran dari job ujian pertama (periuk, 52 s) — WAJIB ikut
 
 - **Templat sedia guna** dalam `tools/templates/` (salin ke scratchpad, sunting `plan.py` untuk job baru):
