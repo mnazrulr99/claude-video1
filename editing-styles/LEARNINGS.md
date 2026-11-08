@@ -40,7 +40,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R19 | **Label tulisan tangan + sparkle ✦** untuk harga, ciri (✅) dan nama varian **di sebelah produk** (R1b). Warna ikut tema. | Grafik | Sample 6 (P3) | 2026-11-07 |
 | R20 | **Satu momen lawak: klip B&W reaksi** (presenter berlakon reaksi orang lain) bila skrip ada punchline. | Effect | Sample 6 (P4) | 2026-11-07 |
 | R21 | **Transition kreatif mesti sesuai dengan video** (mood, produk, tema warna) dan **tidak rigid** — contoh dalam sample (kad foto + bintang/reben, paper-rip, splash cecair, brush stroke) hanyalah **alternatif/inspirasi**; Claude bebas guna **kreativiti sendiri** untuk cipta transition yang paling kena. Satu-dua sahaja (R10); terangkan sebab dalam storyboard. | Transition | Sample 6 (P5) + arahan pengguna | 2026-11-07 |
-| R22 | **Preview klien sebelum final:** selepas render, beri pengguna **storyboard + video preview 540p bertanda "PREVIEW"** (`tools/client_preview.py`, juga `--image` untuk storyboard). Final render tanpa watermark **hanya selepas klien setuju**. Nama fail: `<job>-PREVIEW-v<n>.mp4`, `<job>-FINAL.mp4`. | Proses | Arahan pengguna | 2026-11-08 |
+| R22 | **Preview klien sebelum final:** selepas render, beri pengguna **storyboard + video preview 540p dengan SATU watermark "PREVIEW" di tengah** (tiada jalur atas, tiada corak berulang) (`tools/client_preview.py`, juga `--image` untuk storyboard). Final render tanpa watermark **hanya selepas klien setuju**. Nama fail: `<job>-PREVIEW-v<n>.mp4`, `<job>-FINAL.mp4`. | Proses | Arahan pengguna | 2026-11-08 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 

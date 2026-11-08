@@ -111,7 +111,7 @@ Hantar video siap + teks kredit BGM (jika perlu).
 ## Langkah 4b — Preview untuk klien (WAJIB, R22)
 
 1. Selepas render (dan semakan dalaman), hasilkan pakej klien dalam `output/<job>/`:
-   - `python3 -I tools/client_preview.py <render>.mp4 output/<job>/<job>-PREVIEW-v<n>.mp4` (540p, watermark "PREVIEW" pepenjuru + jalur "BUKAN VERSI AKHIR", ±4 MB/50 s)
+   - `python3 -I tools/client_preview.py <render>.mp4 output/<job>/<job>-PREVIEW-v<n>.mp4` (540p, watermark SATU perkataan "PREVIEW" di tengah sahaja, ±4 MB/50 s)
    - `python3 -I tools/client_preview.py --image storyboard-<k>.jpg output/<job>/storyboard-<k>-PREVIEW.jpg` untuk setiap halaman storyboard
 2. Hantar kepada pengguna (SendUserFile) — **jangan** hantar fail resolusi penuh tanpa watermark pada peringkat ini.
 3. Pengguna bawa balik feedback klien → betulkan → preview baharu `-PREVIEW-v<n+1>`. Ulang.

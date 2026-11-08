@@ -3,7 +3,7 @@
 
 Guna: python3 -I tools/client_preview.py <video_input> <video_output> [--width 540] [--label "PREVIEW"]
       python3 -I tools/client_preview.py --image <storyboard.jpg> <output.jpg>   (watermark pada imej storyboard)
-Watermark: corak "PREVIEW" pepenjuru berulang (lutsinar ±30%) + jalur kecil "PREVIEW • BUKAN VERSI AKHIR" di atas.
+Watermark: SATU perkataan "PREVIEW" di tengah (condong, lutsinar ±43%). Tiada jalur/teks lain.
 """
 import argparse, os, subprocess, tempfile
 from PIL import Image, ImageDraw, ImageFont
@@ -20,16 +20,13 @@ if not os.path.exists(FONT):
 def font(sz): return ImageFont.truetype(FONT, sz) if FONT else ImageFont.load_default()
 
 def watermark(w, h):
-    big = Image.new("RGBA", (w*2, h*2), (0, 0, 0, 0)); d = ImageDraw.Draw(big)
-    fs = max(18, w // 7); f = font(fs); step_x = int(fs * 5.2); step_y = int(fs * 2.6)
-    for row, y in enumerate(range(0, h*2, step_y)):
-        for x in range(-step_x + (row % 2) * step_x // 2, w*2, step_x):
-            d.text((x, y), a.label, font=f, fill=(255, 255, 255, 80), stroke_width=max(1, fs//18), stroke_fill=(0, 0, 0, 60))
-    big = big.rotate(30, resample=Image.BICUBIC)
-    wm = big.crop((w//2, h//2, w//2 + w, h//2 + h))
-    d = ImageDraw.Draw(wm); bh = max(22, h // 28)
-    d.rectangle((0, 0, w, bh), fill=(214, 40, 122, 200))
-    d.text((w//2, bh//2), f"{a.label} • BUKAN VERSI AKHIR", font=font(int(bh*0.55)), fill="white", anchor="mm")
+    """Satu perkataan "PREVIEW" sahaja di tengah, condong sedikit, lutsinar."""
+    wm = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    fs = max(24, w // 5); f = font(fs)
+    txt = Image.new("RGBA", (w*2, fs*2), (0, 0, 0, 0)); d = ImageDraw.Draw(txt)
+    d.text((w, fs), a.label, font=f, fill=(255, 255, 255, 110), stroke_width=max(2, fs//14), stroke_fill=(0, 0, 0, 70), anchor="mm")
+    txt = txt.rotate(25, resample=Image.BICUBIC, expand=True)
+    wm.alpha_composite(txt, ((w - txt.width)//2, (h - txt.height)//2))
     return wm
 
 if a.image:
