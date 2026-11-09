@@ -16,6 +16,17 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 3. Baca `editing-styles/LEARNINGS.md` — ikut **semua Peraturan Diterima**, dan **jangan guna** apa-apa dalam **Ditolak**.
 4. Ikut **"Catatan citarasa pengguna"** — ia (dan LEARNINGS.md) mengatasi lalai dalam skill ini.
 
+## ⛔ Urutan WAJIB terkini (R23–R28) — ikut sebelum langkah lain
+
+1. **Semak audio dahulu:** `python3 -I tools/audio_check.py <video>` → jika **BERHENTI**, berhenti & beritahu pengguna
+   (nyatakan angka: LUFS, puncak, % senyap). AMARAN → maklumkan & tanya. (R23)
+2. **Transkrip:** biasa (`tools/transcribe.py`, untuk caption) + verbatim (`--verbatim`) → `python3 -I tools/stutter.py transcript-verbatim.json`
+   → tunjuk **senarai bernombor** ayat tersangkut/ulang/isian/jeda. **Jangan potong** — pengguna pilih nombor yang dibuang. (R24)
+3. **Pelan edit dalam jadual** `Saat | Layout | Visual | Kenapa`, visual bertukar setiap **2–4 s**. (R25)
+4. **Papan layout:** SATU imej mengandungi semua layout/babak (grid) — tunggu kelulusan sebelum render. (R26)
+5. Caption **1–3 perkataan**; perkataan penting **dibesarkan masa close-up**. (R27)
+6. SFX: **`whoosh-soft.wav`** setiap tukar visual (`data-volume` ±0.5). **Jangan** sparkle/impact/chime/riser dramatik (X3). (R28)
+
 ## Langkah 0.5 — Semak persekitaran (cloud atau komputer pengguna)
 
 Pengguna bertukar-tukar antara **session cloud** dan **Claude Code di komputer sendiri**. Semak tool yang ada dahulu:
