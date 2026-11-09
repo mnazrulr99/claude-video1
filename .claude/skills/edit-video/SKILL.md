@@ -25,7 +25,9 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 3. **Pelan edit dalam jadual** `Saat | Layout | Visual | Kenapa`, visual bertukar setiap **2–4 s**. (R25)
 4. **Papan layout:** SATU imej mengandungi semua layout/babak (grid) — tunggu kelulusan sebelum render. (R26)
 5. Caption **1–3 perkataan**; perkataan penting **dibesarkan masa close-up**. (R27)
-6. SFX: **`whoosh-soft.wav`** setiap tukar visual (`data-volume` ±0.5). **Jangan** sparkle/impact/chime/riser dramatik (X3). (R28)
+6. SFX: **`whoosh-soft.wav`** setiap tukar visual (`data-volume` ±0.5); bunyi lain dibenarkan ikut kesesuaian. (R28)
+7. **Aliran kelulusan (R29):** storyboard + papan layout (sebelum render) → pengguna OK → render **PREVIEW** (Langkah 4b) →
+   klien semak → feedback/ulang → klien OK → render **FINAL**. Jangan langkau pintu kelulusan.
 
 ## Langkah 0.5 — Semak persekitaran (cloud atau komputer pengguna)
 

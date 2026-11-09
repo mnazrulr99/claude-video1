@@ -46,7 +46,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R25 | **Pelan edit dalam jadual**: lajur **Saat · Layout · Visual · Kenapa**. **Visual bertukar setiap 2–4 saat** (punch-in, sudut, close-up produk, B-roll, grafik). | Perancangan | Idea pengguna | 2026-11-09 |
 | R26 | **Papan layout (layout board)** sebelum render: lukis **semua layout dalam SATU papan imej** (semua babak) untuk kelulusan pengguna. Render hanya selepas diluluskan. | Proses | Idea pengguna | 2026-11-09 |
 | R27 | **Subtitle 1–3 perkataan** sahaja setiap paparan. **Perkataan penting dibesarkan semasa close-up** (cth. 1.6–2× saiz, warna highlight). | Caption | Idea pengguna | 2026-11-09 |
-| R28 | **SFX: whoosh LEMBUT** (`tools/sfx/whoosh-soft.wav`, puncak −12 dB) setiap kali visual bertukar. **Jangan guna bunyi magic atau dramatik** (lihat X3). | SFX | Idea pengguna | 2026-11-09 |
+| R28 | **SFX: whoosh LEMBUT** (`tools/sfx/whoosh-soft.wav`, puncak −12 dB) setiap kali visual bertukar. Bunyi lain (ding, pop, sparkle, dll.) **dibenarkan** ikut kesesuaian video. | SFX | Idea pengguna (larangan bunyi magic/dramatik dibuang 2026-11-09) | 2026-11-09 |
+| R29 | **Aliran kelulusan (menggantikan susunan dalam R3/R22):** (1) selepas pelan edit → beri **storyboard + papan layout** (sebelum render) → (2) pengguna OK → **render PREVIEW** (540p + satu "PREVIEW" di tengah) + storyboard klien (B) → (3) pengguna bawa kepada klien → feedback → ulang preview → (4) klien OK semua → **render FINAL** (1080×1920 tanpa watermark). Jangan langkau mana-mana pintu kelulusan. | Proses | Arahan pengguna | 2026-11-09 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
@@ -54,7 +55,6 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 |---|---|---|---|---|
 | X1 | Caption terlalu kecil (sukar dibaca di telefon) | Kebolehbacaan | /compare-learnedit periuk (item 5) | 2026-11-07 |
 | X2 | CTA / teks besar yang **menutup produk** (cth. teks skrip "Tengok dekat beg kuning" atas periuk) | Bercanggah R1 | /compare-learnedit periuk (item 12) | 2026-11-07 |
-| X3 | **Bunyi magic / dramatik**: sparkle/chime "magic", impact/boom, riser dramatik (`sparkle.wav`, `impact.wav`, `chime.wav`) — juga yang ada dalam sample lama | Arahan pengguna (R28) | Idea pengguna | 2026-11-09 |
 
 ## 📝 Nota (bukan peraturan)
 
@@ -84,3 +84,4 @@ _(Tiada — semua cadangan telah diputuskan.)_
 | 2026-11-07 | /compare-learnedit | Periuk stainless steel — edit pengguna (45.7 s) vs Claude v2 (52.1 s) | 14 item dibanding; perbandingan dalam `comparisons/2026-11-07-periuk/` | R1a, R1b, R5–R16 diterima; X1, X2 ditolak; item 8 = nota |
 | 2026-11-07 | /sample-baru | Sample 6 — IDECO Smart Diffuser (BettyRahmad) | Caption kotak lime bercanggah R16; −9.9 LUFS bercanggah R14 (tidak dipelajari). 5 cadangan P1–P5 | R17–R21 diterima (P5: transition mesti sesuai dengan video) |
 | 2026-11-09 | Idea pengguna | Penambahbaikan proses | Semak audio dulu, senarai sangkut tanpa potong, pelan jadual, papan layout, subtitle 1–3 perkataan, whoosh lembut | R23–R28, X3 diterima |
+| 2026-11-09 | Arahan pengguna | Kemas kini peraturan | X3 (larangan bunyi magic/dramatik) DIBUANG; R28 dikemas kini; R29 aliran kelulusan storyboard+papan layout → preview → klien → final | X3 dibuang, R29 diterima |

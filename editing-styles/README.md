@@ -4,19 +4,17 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 ## Aliran kerja WAJIB (setiap job editing)
 
-1. Pengguna hantar **video mentah** (+ gambar produk PNG jika ada; jika tiada, pengguna akan maklumkan
-   → Claude potong gambar produk dari video sebagai alternatif).
-2. **Analisis dulu, jangan terus edit.** Claude analisis video mentah (durasi, kandungan, transkrip,
-   jenis video: edukasi/sembang vs iklan produk, mood, kualiti audio) dan beri **cadangan gaya**
-   (Sample mana yang paling sesuai + sebab + apa yang perlu diubah suai, cadangan hook & BGM).
-3. Pengguna pilih/setuju gaya.
-4. Claude hasilkan **STORYBOARD dalam bentuk imej**
-   (frame setiap babak + masa, teks caption, title callout, zoom, effect, SFX, BGM, jenis hook).
-5. **JANGAN render** sebelum pengguna setuju. Ulang storyboard ikut komen pengguna sehingga setuju.
-6. Render, kemudian hasilkan **pakej untuk klien**: storyboard + **video preview resolusi rendah (540p) dengan watermark
-   "PREVIEW"** (`tools/client_preview.py`). Video penuh resolusi **tidak** diberi lagi.
-7. Pengguna hantar kepada klien → bawa balik **feedback klien** → Claude betulkan → preview baharu (v2, v3…).
-8. Bila klien setuju → **final render** 1080×1920 tanpa watermark → hantar kepada pengguna.
+1. Pengguna hantar **video mentah** (+ gambar produk jika ada).
+2. **Semak audio dahulu** (`tools/audio_check.py`) — jika terlalu perlahan/senyap → berhenti & beritahu pengguna (R23).
+3. **Analisis & transkrip**; tunjuk **senarai ayat tersangkut/ulang** (jangan potong dulu, R24) + **cadangan gaya**
+   (Sample, hook, warna caption, BGM). Pengguna pilih.
+4. **Pelan edit dalam jadual** (Saat · Layout · Visual · Kenapa; visual tukar 2–4 s, R25).
+5. **Storyboard + papan layout** (satu papan semua layout) sebelum render → pengguna luluskan (R26, R29).
+6. **Render PREVIEW**: video 540p dengan satu "PREVIEW" di tengah + storyboard versi klien (R22).
+7. Pengguna hantar kepada **klien** → feedback → betulkan → preview baharu (ulang).
+8. Klien OK semua → **render FINAL** 1080×1920 tanpa watermark.
+
+Peraturan penuh: [LEARNINGS.md](LEARNINGS.md).
 
 ## Belajar berterusan
 
