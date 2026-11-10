@@ -51,6 +51,9 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R30 | **Kategori "Highlight Acara"**: **WAJIB tanya pengguna dulu — landscape (1920×1080) atau 9:16 (1080×1920)** (atau kedua-dua). Tiada caption bila tiada suara; logo acara tetap kecil (ikut R1); montaj ±0.5–1.5 s ikut beat BGM. | Format | Sample 7–9 (P6) + arahan pengguna | 2026-11-10 |
 | R31 | Highlight acara: **susun babak ikut aturcara acara** (pembuka drone/penjenama → aktiviti → klimaks → penutup); **boleh guna lebih banyak transition kreatif** (ikut R21). R10 (satu transition di tengah) hanya untuk UGC. | Struktur | Sample 7–9 (P7) | 2026-11-10 |
 | R32 | **Siri video dari satu acara** guna identiti sama (logo, warna, keluarga BGM) supaya konsisten. | Konsistensi | Sample 7–9 (P8) | 2026-11-10 |
+| R33 | **Logo kedai/app + label kempen** (cth. logo + "BACK TO SCHOOL") pop sekali bila brand disebut (ikut R1). | Grafik | Sample 11–13 (P12) | 2026-11-10 |
+| R34 | **Genre servis/premis:** voiceover + B-roll lawatan (POV masuk pintu → logo → lokasi/landmark → bilik → rawatan sebenar → bukti: scan/sebelum-selepas/testimoni) → waktu operasi & harga promo dalam **teks skrip elegan** → CTA. | Struktur | Sample 13 (P13) | 2026-11-10 |
+| R35 | **Genre skit + vlog shopping:** hook skit masalah (keluarga) + teks tulisan tangan → talking head masalah → logo/kempen → POV masuk kedai → produk + tag harga → kaunter → talking head CTA. | Struktur | Sample 12 (P14) | 2026-11-10 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
@@ -73,9 +76,6 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | P9 | **Warna highlight caption berselang** (merah → hijau → kuning) sebagai pilihan selain satu warna (R16 masih: tukar warna teks, bukan kotak). Claude cadang, pengguna pilih (R2). | Sample 10–13 |
 | P10 | **Emoji kecil di atas caption** ikut maksud perkataan (😯 📦 🛒 🏫), jarang-jarang. | Sample 11–13 |
 | P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
-| P12 | **Logo kedai/app + label kempen** (cth. "BACK TO SCHOOL") pop sekali bila brand disebut. | Sample 11–13 |
-| P13 | **Genre servis/premis:** voiceover + B-roll lawatan (POV masuk pintu → bilik → rawatan → bukti), info waktu/harga dalam **teks skrip elegan**. | Sample 13 |
-| P14 | **Genre skit + vlog shopping:** hook skit masalah (keluarga) → talking head → POV masuk kedai → produk + tag harga → kaunter → CTA. | Sample 12 |
 
 ---|---|
 | P6 | **Kategori job "Highlight Acara" (landscape 1920×1080)**: tanya platform sasaran di awal; jika landscape → tiada caption bila tiada suara, logo acara tetap kecil, montaj ±0.5–1.5 s ikut beat BGM. (Peraturan kedudukan teks R1 tetap terpakai pada logo.) | Sample 7–9 |
@@ -101,4 +101,4 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | 2026-11-09 | Idea pengguna | Penambahbaikan proses | Semak audio dulu, senarai sangkut tanpa potong, pelan jadual, papan layout, subtitle 1–3 perkataan, whoosh lembut | R23–R28, X3 diterima |
 | 2026-11-09 | Arahan pengguna | Kemas kini peraturan | X3 (larangan bunyi magic/dramatik) DIBUANG; R28 dikemas kini; R29 aliran kelulusan storyboard+papan layout → preview → klien → final | X3 dibuang, R29 diterima |
 | 2026-11-10 | /sample-baru | Sample 7, 8, 9 — highlight Karnival Insolvensi MITC Melaka (landscape) | Kategori baharu; −7 hingga −9 LUFS bercanggah R14 (tidak dipelajari); P6–P8 | R30–R32 diterima (tanya landscape/9:16 dulu) |
-| 2026-11-10 | /sample-baru | Sample 10–13 (food review, unboxing, skit+vlog, premis) | Kelantangan −7 hingga −21 LUFS bercanggah R14; S11 tanpa hitam & S13 pudar putih bercanggah R12 (tidak dipelajari). P9–P14 menunggu | Menunggu |
+| 2026-11-10 | /sample-baru | Sample 10–13 (food review, unboxing, skit+vlog, premis) | Kelantangan −7 hingga −21 LUFS bercanggah R14; S11 tanpa hitam & S13 pudar putih bercanggah R12 (tidak dipelajari). P12–P14 → R33–R35 diterima; P9–P11 masih menunggu | Sebahagian |
