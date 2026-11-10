@@ -18,6 +18,7 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 
 ## ⛔ Urutan WAJIB terkini (R23–R28) — ikut sebelum langkah lain
 
+0. **Format:** tanya pengguna landscape (1920×1080) atau 9:16 jika job highlight acara/footage landscape (R30).
 1. **Semak audio dahulu:** `python3 -I tools/audio_check.py <video>` → jika **BERHENTI**, berhenti & beritahu pengguna
    (nyatakan angka: LUFS, puncak, % senyap). AMARAN → maklumkan & tanya. (R23)
 2. **Transkrip:** biasa (`tools/transcribe.py`, untuk caption) + verbatim (`--verbatim`) → `python3 -I tools/stutter.py transcript-verbatim.json`

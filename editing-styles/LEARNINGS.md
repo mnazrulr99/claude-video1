@@ -28,7 +28,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R7 | **Punch-in ekstrem pada produk** bila menyebut butiran fizikal (saiz/bahagian), digabung dengan label R1b. | Framing | /compare-learnedit periuk (item 3) | 2026-11-07 |
 | R8 | **Font & warna title ikut produk/mood** (cth. produk pink → font bulat/bubbly pink, outline putih, doodle hati). | Title | /compare-learnedit periuk (item 6) | 2026-11-07 |
 | R9 | **Callout dengan doodle sparkle** (garis kecil ✦ di tepi pill) dan diletak **dekat benda yang disebut** (tertakluk R1). Teks pendek boleh condong sedikit. | Grafik | /compare-learnedit periuk (item 7) | 2026-11-07 |
-| R10 | **Satu transition kreatif di pertengahan video** (cth. paper-rip/koyak kertas + strip B&W + bunyi koyak); selebihnya hard cut. | Transition | /compare-learnedit periuk (item 9) | 2026-11-07 |
+| R10 | **(UGC)** **Satu transition kreatif di pertengahan video** (cth. paper-rip/koyak kertas + strip B&W + bunyi koyak); selebihnya hard cut. | Transition | /compare-learnedit periuk (item 9) | 2026-11-07 |
 | R11 | **Potongan jeda lebih ketat** — buang semua ruang antara ayat (sasaran: rentak sepadat edit pengguna, ±45 s untuk raw 56 s). | Rentak | /compare-learnedit periuk (item 10) | 2026-11-07 |
 | R12 | **Tamat dengan skrin hitam** (±0.5–0.7 s) + ding penutup. | Ending | /compare-learnedit periuk (item 11) | 2026-11-07 |
 | R13 | **CTA diletak di zon selamat** (tidak tutup muka/produk), cth. pill dengan ikon beg. | CTA | /compare-learnedit periuk (item 12) | 2026-11-07 |
@@ -48,6 +48,9 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R27 | **Subtitle 1–3 perkataan** sahaja setiap paparan. **Perkataan penting dibesarkan semasa close-up** (cth. 1.6–2× saiz, warna highlight). | Caption | Idea pengguna | 2026-11-09 |
 | R28 | **SFX: whoosh LEMBUT** (`tools/sfx/whoosh-soft.wav`, puncak −12 dB) setiap kali visual bertukar. Bunyi lain (ding, pop, sparkle, dll.) **dibenarkan** ikut kesesuaian video. | SFX | Idea pengguna (larangan bunyi magic/dramatik dibuang 2026-11-09) | 2026-11-09 |
 | R29 | **Aliran kelulusan (menggantikan susunan dalam R3/R22):** (1) selepas pelan edit → beri **storyboard + papan layout** (sebelum render) → (2) pengguna OK → **render PREVIEW** (540p + satu "PREVIEW" di tengah) + storyboard klien (B) → (3) pengguna bawa kepada klien → feedback → ulang preview → (4) klien OK semua → **render FINAL** (1080×1920 tanpa watermark). Jangan langkau mana-mana pintu kelulusan. | Proses | Arahan pengguna | 2026-11-09 |
+| R30 | **Kategori "Highlight Acara"**: **WAJIB tanya pengguna dulu — landscape (1920×1080) atau 9:16 (1080×1920)** (atau kedua-dua). Tiada caption bila tiada suara; logo acara tetap kecil (ikut R1); montaj ±0.5–1.5 s ikut beat BGM. | Format | Sample 7–9 (P6) + arahan pengguna | 2026-11-10 |
+| R31 | Highlight acara: **susun babak ikut aturcara acara** (pembuka drone/penjenama → aktiviti → klimaks → penutup); **boleh guna lebih banyak transition kreatif** (ikut R21). R10 (satu transition di tengah) hanya untuk UGC. | Struktur | Sample 7–9 (P7) | 2026-11-10 |
+| R32 | **Siri video dari satu acara** guna identiti sama (logo, warna, keluarga BGM) supaya konsisten. | Konsistensi | Sample 7–9 (P8) | 2026-11-10 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
@@ -65,8 +68,9 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 ## 🕒 Menunggu keputusan pengguna
 
-| # | Cadangan | Sumber |
-|---|---|---|
+_(Tiada — semua cadangan telah diputuskan.)_
+
+---|---|
 | P6 | **Kategori job "Highlight Acara" (landscape 1920×1080)**: tanya platform sasaran di awal; jika landscape → tiada caption bila tiada suara, logo acara tetap kecil, montaj ±0.5–1.5 s ikut beat BGM. (Peraturan kedudukan teks R1 tetap terpakai pada logo.) | Sample 7–9 |
 | P7 | Untuk highlight acara, **susun babak ikut aturcara acara** (pembuka drone/penjenama → aktiviti → momen klimaks → penutup) dan beri **lebih banyak transition kreatif** (light leak, kolaj, bingkai foto, filem, flash) — tetap ikut R21 (sesuai dengan video). R10 ("satu transition di tengah") hanya untuk UGC. | Sample 7–9 |
 | P8 | **Siri video dari satu acara** (cth. siang / perasmian / malam) guna identiti sama (logo, warna, BGM keluarga sama) supaya konsisten. | Sample 7–9 |
@@ -89,4 +93,4 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | 2026-11-07 | /sample-baru | Sample 6 — IDECO Smart Diffuser (BettyRahmad) | Caption kotak lime bercanggah R16; −9.9 LUFS bercanggah R14 (tidak dipelajari). 5 cadangan P1–P5 | R17–R21 diterima (P5: transition mesti sesuai dengan video) |
 | 2026-11-09 | Idea pengguna | Penambahbaikan proses | Semak audio dulu, senarai sangkut tanpa potong, pelan jadual, papan layout, subtitle 1–3 perkataan, whoosh lembut | R23–R28, X3 diterima |
 | 2026-11-09 | Arahan pengguna | Kemas kini peraturan | X3 (larangan bunyi magic/dramatik) DIBUANG; R28 dikemas kini; R29 aliran kelulusan storyboard+papan layout → preview → klien → final | X3 dibuang, R29 diterima |
-| 2026-11-10 | /sample-baru | Sample 7, 8, 9 — highlight Karnival Insolvensi MITC Melaka (landscape) | Kategori baharu; −7 hingga −9 LUFS bercanggah R14 (tidak dipelajari); P6–P8 menunggu | Menunggu |
+| 2026-11-10 | /sample-baru | Sample 7, 8, 9 — highlight Karnival Insolvensi MITC Melaka (landscape) | Kategori baharu; −7 hingga −9 LUFS bercanggah R14 (tidak dipelajari); P6–P8 | R30–R32 diterima (tanya landscape/9:16 dulu) |
