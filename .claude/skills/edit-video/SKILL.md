@@ -169,6 +169,14 @@ Hantar video siap + teks kredit BGM (jika perlu).
 - Video raw resolusi rendah (cth. 464×848) akan lembut bila dibesarkan — maklumkan pengguna awal.
 - Whisper keliru nama/sapaan (cth. "seller"→"selera", "akak"→"enak") — senaraikan tekaan dan minta pengguna sahkan.
 
+## Job acara / majlis (dari job raya 2026-11-10 — lihat LEARNINGS R36–R44)
+
+- Tanya dulu: format (R30), **highlight bercerita vs slideshow** (R41), nama acara & brand klien (R38, R39), suara asal kekal atau muzik penuh (R40).
+- Tiada SFX transition untuk acara (R36). Footage ≤720p: frame penuh, tiada zoom 1.2× (R43). Label mesti sepadan dengan shot (R37).
+- BGM bertema: lagu popular berhak cipta → fail berlesen dari pengguna, `tools/music_raya.py` (muzik asal, 120 BPM, 1 bar = 2 s), atau plugin AI; potong tepat pada bar (R44).
+- Templat multi-klip: `tools/templates/event/` (base.py potong shot satu-satu ±1 min; slideshow HyperFrames; caption 1–3 perkataan).
+- Penghantaran fail: jika pengguna tak nampak kad fail, hantar semula dengan `display: attach`/`render` dan nyatakan laluan `output/<job>/`.
+
 ## Langkah 5 — Belajar dari maklum balas (pembelajaran berterusan)
 
 - Setiap komen pengguna pada storyboard atau video siap = data pembelajaran. Selepas membetulkan, cadangkan satu
