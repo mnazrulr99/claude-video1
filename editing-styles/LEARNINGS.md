@@ -68,7 +68,14 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 ## 🕒 Menunggu keputusan pengguna
 
-_(Tiada — semua cadangan telah diputuskan.)_
+| # | Cadangan | Sumber |
+|---|---|---|
+| P9 | **Warna highlight caption berselang** (merah → hijau → kuning) sebagai pilihan selain satu warna (R16 masih: tukar warna teks, bukan kotak). Claude cadang, pengguna pilih (R2). | Sample 10–13 |
+| P10 | **Emoji kecil di atas caption** ikut maksud perkataan (😯 📦 🛒 🏫), jarang-jarang. | Sample 11–13 |
+| P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
+| P12 | **Logo kedai/app + label kempen** (cth. "BACK TO SCHOOL") pop sekali bila brand disebut. | Sample 11–13 |
+| P13 | **Genre servis/premis:** voiceover + B-roll lawatan (POV masuk pintu → bilik → rawatan → bukti), info waktu/harga dalam **teks skrip elegan**. | Sample 13 |
+| P14 | **Genre skit + vlog shopping:** hook skit masalah (keluarga) → talking head → POV masuk kedai → produk + tag harga → kaunter → CTA. | Sample 12 |
 
 ---|---|
 | P6 | **Kategori job "Highlight Acara" (landscape 1920×1080)**: tanya platform sasaran di awal; jika landscape → tiada caption bila tiada suara, logo acara tetap kecil, montaj ±0.5–1.5 s ikut beat BGM. (Peraturan kedudukan teks R1 tetap terpakai pada logo.) | Sample 7–9 |
@@ -94,3 +101,4 @@ _(Tiada — semua cadangan telah diputuskan.)_
 | 2026-11-09 | Idea pengguna | Penambahbaikan proses | Semak audio dulu, senarai sangkut tanpa potong, pelan jadual, papan layout, subtitle 1–3 perkataan, whoosh lembut | R23–R28, X3 diterima |
 | 2026-11-09 | Arahan pengguna | Kemas kini peraturan | X3 (larangan bunyi magic/dramatik) DIBUANG; R28 dikemas kini; R29 aliran kelulusan storyboard+papan layout → preview → klien → final | X3 dibuang, R29 diterima |
 | 2026-11-10 | /sample-baru | Sample 7, 8, 9 — highlight Karnival Insolvensi MITC Melaka (landscape) | Kategori baharu; −7 hingga −9 LUFS bercanggah R14 (tidak dipelajari); P6–P8 | R30–R32 diterima (tanya landscape/9:16 dulu) |
+| 2026-11-10 | /sample-baru | Sample 10–13 (food review, unboxing, skit+vlog, premis) | Kelantangan −7 hingga −21 LUFS bercanggah R14; S11 tanpa hitam & S13 pudar putih bercanggah R12 (tidak dipelajari). P9–P14 menunggu | Menunggu |
