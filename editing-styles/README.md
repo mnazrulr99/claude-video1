@@ -27,23 +27,24 @@ Peraturan penuh: [LEARNINGS.md](LEARNINGS.md).
 
 ## Pattern Bersama (dikemas kini setiap sample baharu)
 
-_Berdasarkan Sample 1–6:_
+_Berdasarkan Sample 1–9 (S7–S9 = satu siri highlight acara landscape, diringkaskan sebagai satu lajur):_
 
-| Pattern | S1 (edukasi) | S2 (iklan UGC) | S3 (iklan feminin) | S4 (skit brand) | S5 (showcase senyap) | S6 (UGC rumah, POV) | Kesimpulan |
-|---|---|---|---|---|---|---|---|
-| Format | 9:16 | 9:16, 60 fps | ≈9:16 | ≈9:16 | 9:16 | 9:16 | **Sentiasa vertical 9:16, 1080×1920** |
-| Hook | Flash + B&W, soalan | Produk + colour bars/beep | Title soalan + sticker emoji | Makan ASMR tanpa caption | Unboxing + header + sparkle | POV skit + teks "Pov:" + sparkle | **Hook < 3.5 s: visual luar biasa/menarik + SFX; soalan atau aksi** |
-| Potongan | Jump cut laju | Jump cut 1–3 s | Take lebih panjang masa demo | Take lakonan 2–4 s | Klip 2–12 s ikut proses | Jump cut ketat | **Buang jeda; laju, perlahan sedikit masa demo** |
-| Framing | Punch-in 2–4 s | Punch-in ekstrem | Produk rapat ke lensa + wide | Medium + top-down + crash zoom | Close-up tangan, top-down, split 3 panel | Produk ditolak ke lensa, extreme close-up | **Variasi framing kerap** |
-| Caption | ALL CAPS, teks kuning | ALL CAPS, kotak lime | ALL CAPS condensed, teks pink | ALL CAPS, kotak biru | Tiada (tiada suara) | ALL CAPS, kotak lime | **Jika ada suara:** karaoke word-by-word, ALL CAPS, putih + 1 warna highlight (teks/kotak) ikut brand/mood, 60–78% dari atas. **Tiada suara:** tiada caption, guna teks callout |
-| Title/grafik | Title + ❌/‼️ | Title + ❌/✅ + label pelbagai | Serif + skrip, 🎀 ✅, sticker | Title gaya brand + doodle animasi | Header tetap + checklist ✅ + sticker sudut | Search-bar pill, tulisan tangan, ✅, sparkle | **Title poin utama + emoji/doodle; gaya title ikut brand/mood** |
-| SFX | Pop/ding/impact | Beep/chime/click/ding | Sparkle + pop berulang + ASMR | Whoosh/ding + ASMR + foley | Sparkle/ding sahaja, selebihnya senyap | Sparkle/ding/riser setiap label | **Setiap grafik = SFX; kekalkan bunyi ASMR/foley produk** |
-| Transition | Hard cut | + 2 khas | + 3 khas (blur, mirror, splash) | + whip/zoom blur, crash zoom | Splash cecair putih/hitam, split screen | Kad foto berpusing, brush stroke, B&W reaksi | **Hard cut dominan; blur-type transition di pertukaran babak** |
-| BGM | Tiada | Perlahan | Perlahan | Sangat perlahan / mungkin tiada | Tiada dalam eksport (trending sound di TikTok) | Kemungkinan tiada | **Suara sentiasa dominan; BGM perlahan atau tiada. Video tanpa suara: BGM royalty-free; jika tiada yang sesuai → SFX sahaja (pengguna tambah trending sound di TikTok)** |
-| Struktur | Hook → senarai → twist | Masalah → Produk → Manfaat → CTA | Masalah → Punca → Demo → CTA | Masalah (lakonan) → Produk → Kempen → CTA | Unboxing → Guna → Manfaat → Proses | POV → Keperluan → Produk → Ciri → Harga → Varian → CTA | **Masalah → Produk/solusi → Bukti/demo → CTA** |
-| Ending | Cut hitam | Cut hitam + fade | Cut hitam + ding | Impact + cut hitam | Splash hitam + ding | Cut hitam + ding | **Cut ke hitam (+ SFX/fade)** |
+| Pattern | S1 (edukasi) | S2 (iklan UGC) | S3 (iklan feminin) | S4 (skit brand) | S5 (showcase senyap) | S6 (UGC rumah, POV) | S7–S9 (highlight acara, landscape) | Kesimpulan |
+|---|---|---|---|---|---|---|---|---|
+| Format | 9:16 | 9:16, 60 fps | ≈9:16 | ≈9:16 | 9:16 | 9:16 | **Landscape 1920×1080** | **9:16 untuk UGC/TikTok; landscape 1920×1080 untuk highlight acara** (tanya platform) |
+| Hook | Flash + B&W, soalan | Produk + colour bars/beep | Title soalan + sticker emoji | Makan ASMR tanpa caption | Unboxing + header + sparkle | POV skit + teks "Pov:" + sparkle | Logo intro / drone / momen VIP | **Hook < 3.5 s: visual luar biasa/menarik + SFX; soalan atau aksi** |
+| Potongan | Jump cut laju | Jump cut 1–3 s | Take lebih panjang masa demo | Take lakonan 2–4 s | Klip 2–12 s ikut proses | Jump cut ketat | Montaj ±0.6 s/klip ikut beat | **Buang jeda; laju, perlahan sedikit masa demo** |
+| Framing | Punch-in 2–4 s | Punch-in ekstrem | Produk rapat ke lensa + wide | Medium + top-down + crash zoom | Close-up tangan, top-down, split 3 panel | Produk ditolak ke lensa, extreme close-up | Gimbal, drone, push-in sinematik | **Variasi framing kerap** |
+| Caption | ALL CAPS, teks kuning | ALL CAPS, kotak lime | ALL CAPS condensed, teks pink | ALL CAPS, kotak biru | Tiada (tiada suara) | ALL CAPS, kotak lime | Tiada (tiada suara) | **Jika ada suara:** karaoke word-by-word, ALL CAPS, putih + 1 warna highlight (teks/kotak) ikut brand/mood, 60–78% dari atas. **Tiada suara:** tiada caption, guna teks callout |
+| Title/grafik | Title + ❌/‼️ | Title + ❌/✅ + label pelbagai | Serif + skrip, 🎀 ✅, sticker | Title gaya brand + doodle animasi | Header tetap + checklist ✅ + sticker sudut | Search-bar pill, tulisan tangan, ✅, sparkle | Logo acara tetap (atas tengah / bawah kanan) | **Title poin utama + emoji/doodle; gaya title ikut brand/mood** |
+| SFX | Pop/ding/impact | Beep/chime/click/ding | Sparkle + pop berulang + ASMR | Whoosh/ding + ASMR + foley | Sparkle/ding sahaja, selebihnya senyap | Sparkle/ding/riser setiap label | Tiada ketara (muzik dominan) | **Setiap grafik = SFX; kekalkan bunyi ASMR/foley produk** |
+| Transition | Hard cut | + 2 khas | + 3 khas (blur, mirror, splash) | + whip/zoom blur, crash zoom | Splash cecair putih/hitam, split screen | Kad foto berpusing, brush stroke, B&W reaksi | Banyak: light leak, kolaj, bingkai foto, filem, glitch, flash, tint | **Hard cut dominan; blur-type transition di pertukaran babak** |
+| BGM | Tiada | Perlahan | Perlahan | Sangat perlahan / mungkin tiada | Tiada dalam eksport (trending sound di TikTok) | Kemungkinan tiada | Muzik penuh, tiada voiceover | **Suara sentiasa dominan; BGM perlahan atau tiada. Video tanpa suara: BGM royalty-free; jika tiada yang sesuai → SFX sahaja (pengguna tambah trending sound di TikTok)** |
+| Struktur | Hook → senarai → twist | Masalah → Produk → Manfaat → CTA | Masalah → Punca → Demo → CTA | Masalah (lakonan) → Produk → Kempen → CTA | Unboxing → Guna → Manfaat → Proses | POV → Keperluan → Produk → Ciri → Harga → Varian → CTA | Ikut aturcara acara | **Masalah → Produk/solusi → Bukti/demo → CTA** |
+| Ending | Cut hitam | Cut hitam + fade | Cut hitam + ding | Impact + cut hitam | Splash hitam + ding | Cut hitam + ding | Fade ke hitam | **Cut ke hitam (+ SFX/fade)** |
 
 **Pemerhatian:**
+- **Kategori job baharu (S7–S9): video highlight/recap acara korporat/kerajaan, landscape.** Ciri: tiada presenter/caption, montaj laju ikut muzik, logo acara tetap, transition kreatif lebih banyak berbanding UGC. Satu acara boleh dipecah kepada beberapa video (siang, perasmian, malam).
 - **5 daripada 6 sample ialah produk UGC/affiliate** dengan CTA beg kuning. Label harga, ✅, sparkle dan tulisan tangan makin kerap (S5, S6, edit pengguna). Transition kreatif sekali-dua (kad foto, brush, paper-rip, splash).
 - **Edit pengguna sendiri (periuk, /compare-learnedit):** framing ketat 1.2×, label saiz atas produk, title bubbly ikut warna produk, callout + doodle sparkle, satu paper-rip transition di tengah, potongan ketat, −13 LUFS. Butiran: [LEARNINGS.md](LEARNINGS.md).
 - **4 daripada 5 sample ialah kandungan produk/brand** — jenis job utama pengguna. Ada 2 sub-jenis:
@@ -91,3 +92,6 @@ Pilihan pengguna: _(belum dipilih)_
 | **Sample 4** | Skit lakonan komedi tajaan brand (makanan), hook makan ASMR tanpa caption, flashback masalah, title gaya brand, doodle animasi + tint merah "pedas", whip/zoom blur, segmen kempen dengan poster atas latar blur, caption kotak biru | [sample-4/](sample-4/README.md) |
 | **Sample 5** | Showcase produk faceless tanpa suara (unboxing + proses), header tetap font bubbly, sticker hiasan sudut, checklist ✅ ditanda, split screen 3 panel, splash cecair putih/hitam, SFX sahaja (trending sound ditambah di TikTok) | [sample-5/](sample-5/README.md) |
 | **Sample 6** | UGC produk rumah (diffuser), hook POV skit + teks "Pov:", transition kad foto berpusing + bintang/reben pink, label search-bar lokasi, label tulisan tangan (USB ✅, harga, varian), reaksi B&W lawak, brush stroke, caption kotak lime | [sample-6/](sample-6/README.md) |
+| **Sample 7** | Highlight acara **landscape** (siang: gerai, agensi, lelongan, makanan, kanak-kanak) — montaj ±0.6 s ikut muzik, logo acara atas tengah, tiada caption, drone, light leak, kolaj surat khabar, bingkai foto, filem | [sample-7/](sample-7/README.md) |
+| **Sample 8** | Highlight acara **landscape** (majlis perasmian VIP) — glitch RGB/B&W, penjenama sinematik + light leak, gimik pelancaran dengan tint merah, lawatan gerai | [sample-8/](sample-8/README.md) |
+| **Sample 9** | Highlight acara **landscape** (konsert malam + cabutan bertuah) — logo bawah kanan, drone malam, whiteout/flare antara segmen, artis ↔ reaksi penonton | [sample-9/](sample-9/README.md) |

@@ -65,7 +65,11 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 ## 🕒 Menunggu keputusan pengguna
 
-_(Tiada — semua cadangan telah diputuskan.)_
+| # | Cadangan | Sumber |
+|---|---|---|
+| P6 | **Kategori job "Highlight Acara" (landscape 1920×1080)**: tanya platform sasaran di awal; jika landscape → tiada caption bila tiada suara, logo acara tetap kecil, montaj ±0.5–1.5 s ikut beat BGM. (Peraturan kedudukan teks R1 tetap terpakai pada logo.) | Sample 7–9 |
+| P7 | Untuk highlight acara, **susun babak ikut aturcara acara** (pembuka drone/penjenama → aktiviti → momen klimaks → penutup) dan beri **lebih banyak transition kreatif** (light leak, kolaj, bingkai foto, filem, flash) — tetap ikut R21 (sesuai dengan video). R10 ("satu transition di tengah") hanya untuk UGC. | Sample 7–9 |
+| P8 | **Siri video dari satu acara** (cth. siang / perasmian / malam) guna identiti sama (logo, warna, BGM keluarga sama) supaya konsisten. | Sample 7–9 |
 
 ---|---|---|
 | P1 | Hook alternatif **POV skit** dengan teks "Pov: …" gaya TikTok (selain Hook B) | Sample 6 |
@@ -85,3 +89,4 @@ _(Tiada — semua cadangan telah diputuskan.)_
 | 2026-11-07 | /sample-baru | Sample 6 — IDECO Smart Diffuser (BettyRahmad) | Caption kotak lime bercanggah R16; −9.9 LUFS bercanggah R14 (tidak dipelajari). 5 cadangan P1–P5 | R17–R21 diterima (P5: transition mesti sesuai dengan video) |
 | 2026-11-09 | Idea pengguna | Penambahbaikan proses | Semak audio dulu, senarai sangkut tanpa potong, pelan jadual, papan layout, subtitle 1–3 perkataan, whoosh lembut | R23–R28, X3 diterima |
 | 2026-11-09 | Arahan pengguna | Kemas kini peraturan | X3 (larangan bunyi magic/dramatik) DIBUANG; R28 dikemas kini; R29 aliran kelulusan storyboard+papan layout → preview → klien → final | X3 dibuang, R29 diterima |
+| 2026-11-10 | /sample-baru | Sample 7, 8, 9 — highlight Karnival Insolvensi MITC Melaka (landscape) | Kategori baharu; −7 hingga −9 LUFS bercanggah R14 (tidak dipelajari); P6–P8 menunggu | Menunggu |
