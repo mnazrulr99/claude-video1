@@ -23,12 +23,12 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R2 | Pilihan kreatif (gaya, hook, warna caption, BGM): Claude cadang + sebab, pengguna putuskan. | Proses | Arahan pengguna | 2026-11-07 |
 | R3 | Storyboard imej dahulu; render hanya selepas pengguna setuju. | Proses | Arahan pengguna | 2026-11-07 |
 | R4 | Video tanpa suara: BGM royalty-free; jika tiada yang sesuai → SFX sahaja (pengguna tambah trending sound di TikTok). | Audio | Arahan pengguna | 2026-11-07 |
-| R5 | **Hook lalai = Hook B**: klip ±1 s momen paling menarik (flash-forward, cth. demo produk) dengan audio dimatikan + whoosh, kemudian cut ke awal video. (Masih cadang alternatif jika jenis video lain.) | Hook | /compare-learnedit periuk (item 1) | 2026-11-07 |
+| R5 | **(Lalai diganti oleh R45 — kekal sebagai alternatif)** **Hook B**: klip ±1 s momen paling menarik (flash-forward, cth. demo produk) dengan audio dimatikan + whoosh, kemudian cut ke awal video. (Masih cadang alternatif jika jenis video lain.) | Hook | /compare-learnedit periuk (item 1) | 2026-11-07 |
 | R6 | **(UGC; acara ≤720p lihat R43)** **Framing asas lebih ketat (±1.2× crop)** supaya muka & produk penuhkan skrin; elak ruang kosong (meja/lantai) yang banyak. Punch-in tambahan di atas itu. | Framing | /compare-learnedit periuk (item 2) | 2026-11-07 |
 | R7 | **Punch-in ekstrem pada produk** bila menyebut butiran fizikal (saiz/bahagian), digabung dengan label R1b. | Framing | /compare-learnedit periuk (item 3) | 2026-11-07 |
-| R8 | **Font & warna title ikut produk/mood** (cth. produk pink → font bulat/bubbly pink, outline putih, doodle hati). | Title | /compare-learnedit periuk (item 6) | 2026-11-07 |
+| R8 | **(Diperhalusi oleh R50/R51)** **Font & warna title ikut produk/mood** (cth. produk pink → font bulat/bubbly pink, outline putih, doodle hati). | Title | /compare-learnedit periuk (item 6) | 2026-11-07 |
 | R9 | **Callout dengan doodle sparkle** (garis kecil ✦ di tepi pill) dan diletak **dekat benda yang disebut** (tertakluk R1). Teks pendek boleh condong sedikit. | Grafik | /compare-learnedit periuk (item 7) | 2026-11-07 |
-| R10 | **(UGC)** **Satu transition kreatif di pertengahan video** (cth. paper-rip/koyak kertas + strip B&W + bunyi koyak); selebihnya hard cut. | Transition | /compare-learnedit periuk (item 9) | 2026-11-07 |
+| R10 | **(Diperhalusi oleh R53 — transition kreatif kini pilihan, bukan wajib)** **(UGC)** **Satu transition kreatif di pertengahan video** (cth. paper-rip/koyak kertas + strip B&W + bunyi koyak); selebihnya hard cut. | Transition | /compare-learnedit periuk (item 9) | 2026-11-07 |
 | R11 | **Potongan jeda lebih ketat** — buang semua ruang antara ayat (sasaran: rentak sepadat edit pengguna, ±45 s untuk raw 56 s). | Rentak | /compare-learnedit periuk (item 10) | 2026-11-07 |
 | R12 | **Tamat dengan skrin hitam** (±0.5–0.7 s) + ding penutup. | Ending | /compare-learnedit periuk (item 11) | 2026-11-07 |
 | R13 | **CTA diletak di zon selamat** (tidak tutup muka/produk), cth. pill dengan ikon beg. | CTA | /compare-learnedit periuk (item 12) | 2026-11-07 |
@@ -46,7 +46,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R25 | **Pelan edit dalam jadual**: lajur **Saat · Layout · Visual · Kenapa**. **Visual bertukar setiap 2–4 saat** (punch-in, sudut, close-up produk, B-roll, grafik). | Perancangan | Idea pengguna | 2026-11-09 |
 | R26 | **Papan layout (layout board)** sebelum render: lukis **semua layout dalam SATU papan imej** (semua babak) untuk kelulusan pengguna. Render hanya selepas diluluskan. | Proses | Idea pengguna | 2026-11-09 |
 | R27 | **Subtitle 1–3 perkataan** sahaja setiap paparan. **Perkataan penting dibesarkan semasa close-up** (cth. 1.6–2× saiz, warna highlight). | Caption | Idea pengguna | 2026-11-09 |
-| R28 | **(UGC; untuk acara lihat R36)** **SFX: whoosh LEMBUT** (`tools/sfx/whoosh-soft.wav`, puncak −12 dB) setiap kali visual bertukar. Bunyi lain (ding, pop, sparkle, dll.) **dibenarkan** ikut kesesuaian video. | SFX | Idea pengguna (larangan bunyi magic/dramatik dibuang 2026-11-09) | 2026-11-09 |
+| R28 | **(DIGANTI oleh R48 — jangan whoosh setiap tukar visual)** **(UGC; untuk acara lihat R36)** **SFX: whoosh LEMBUT** (`tools/sfx/whoosh-soft.wav`, puncak −12 dB) setiap kali visual bertukar. Bunyi lain (ding, pop, sparkle, dll.) **dibenarkan** ikut kesesuaian video. | SFX | Idea pengguna (larangan bunyi magic/dramatik dibuang 2026-11-09) | 2026-11-09 |
 | R29 | **Aliran kelulusan (menggantikan susunan dalam R3/R22):** (1) selepas pelan edit → beri **storyboard + papan layout** (sebelum render) → (2) pengguna OK → **render PREVIEW** (540p + satu "PREVIEW" di tengah) + storyboard klien (B) → (3) pengguna bawa kepada klien → feedback → ulang preview → (4) klien OK semua → **render FINAL** (1080×1920 tanpa watermark). Jangan langkau mana-mana pintu kelulusan. | Proses | Arahan pengguna | 2026-11-09 |
 | R30 | **Kategori "Highlight Acara"**: **WAJIB tanya pengguna dulu — landscape (1920×1080) atau 9:16 (1080×1920)** (atau kedua-dua). Tiada caption bila tiada suara; logo acara tetap kecil (ikut R1); montaj ±0.5–1.5 s ikut beat BGM. | Format | Sample 7–9 (P6) + arahan pengguna | 2026-11-10 |
 | R31 | Highlight acara: **susun babak ikut aturcara acara** (pembuka drone/penjenama → aktiviti → klimaks → penutup); **boleh guna lebih banyak transition kreatif** (ikut R21). R10 (satu transition di tengah) hanya untuk UGC. | Struktur | Sample 7–9 (P7) | 2026-11-10 |
@@ -64,6 +64,19 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R43 | **Footage acara ≤ 720p: kekal frame penuh** (tiada zoom asas 1.2×; R6 untuk UGC) supaya gambar tajam dan suasana/tetamu nampak. Punch-in hanya sekali-sekala jika perlu. | Framing | Edit pengguna raya | 2026-11-10 |
 | R44 | **BGM bertema (cth. lagu raya):** lagu popular berhak cipta — jangan guna/reupload "No Copyright" YouTube tanpa lesen jelas. Pilihan: (a) pengguna sediakan fail berlesen (Pixabay, beli lesen), (b) **muzik asal Claude** (`tools/music_raya.py`, tiada kredit), (c) plugin AI muzik. **Potongan/tukar slide tepat pada beat/bar** muzik. | Audio | Job raya | 2026-11-10 |
 
+| R45 | **Hook lalai (UGC bercakap) = ayat paling kuat/punchline terus di 0 s** — buang mukadimah ("Korang tahu kan…"); mula dengan kenyataan yang mengejutkan/emosi (cth. "Rejuran ni bapak mahal."). R5 (flash-forward) & R17 (POV) kekal sebagai alternatif. | Hook | /compare-learnedit Rejuran (item 1: pengguna tak suka hook flash-forward) | 2026-11-12 |
+| R46 | **Hook interrupt: colour bars (SMPTE) + beep 1 kHz ±1 s** sejurus selepas punchline hook (lawak "siaran rosak" kerana terkejut harga/fakta), kemudian sambung video. Guna bila hook ada punchline. | Hook | /compare-learnedit Rejuran (item 2) + Sample 2 | 2026-11-12 |
+| R47 | **Percepat suara 1.1–1.15×** (pitch kekal, `atempo`) untuk talking-head UGC supaya rentak bertenaga; digabung dengan potongan jeda ketat (R11). | Rentak | /compare-learnedit Rejuran (item 3: edit pengguna 1.14×) | 2026-11-12 |
+| R48 | **SFX jarang & bermakna (menggantikan R28):** hanya pada grafik/momen penting (title, punch-in penekanan, label/sticker, CTA, ending) — sasaran ±1 SFX setiap 6–8 s (±7 untuk 50 s). **Tiada whoosh pada setiap cut.** | SFX | /compare-learnedit Rejuran (item 4) | 2026-11-12 |
+| R49 | **Riser/boing naik** pada punch-in penekanan (cth. zoom ke pori/kulit masa "nampak tak?"). | SFX | /compare-learnedit Rejuran (item 5) | 2026-11-12 |
+| R50 | **Gaya title "cute aesthetic":** gabung **skrip italic elegan** (cth. "Berbaloi", "worth it!") + **tulisan bulat tebal** (cth. "Set Rejuran", "duit korang"), hiasan bintang ✦/sparkle, animasi tulis/typewriter; diletak dekat muka (paras bahu/dada, tak tutup muka — R1). | Title | /compare-learnedit Rejuran (item 6) | 2026-11-12 |
+| R51 | **Warna grafik mesti KONTRAS dengan produk** (cth. produk lavender → grafik pink/putih), bukan sama warna produk (tenggelam). Memperhalusi R8. | Title/Grafik | /compare-learnedit Rejuran (item 7) | 2026-11-12 |
+| R52 | **Sticker nama produk = pill putih kecil, teks warna tema (pink), sedikit condong**, muncul dekat produk masa disebut (R1b), cth. "Toner", "cleansing balm", "ampoule". | Grafik | /compare-learnedit Rejuran (item 8) | 2026-11-12 |
+| R53 | **Transition kreatif tidak wajib** — hard cut + punch-in pada momen penting sudah memadai; hook interrupt (R46) boleh jadi satu-satunya "effect". Memperhalusi R10/R21. | Transition | /compare-learnedit Rejuran (item 9) | 2026-11-12 |
+| R54 | **Transkrip mesti ikut perkataan SEBENAR:** Whisper `--lang ms` menterjemah slang/English ke BM baku (cth. "worth it"→"berbaloi", "korang"→"anda", "Yana dah"→"yang nak"). Guna transkrip **verbatim** sebagai asas caption, semak dengan telinga/potongan audio, dan betulkan sebelum storyboard. | Transkrip | /compare-learnedit Rejuran (item 11) | 2026-11-12 |
+| R56 | **Ujian hook (WAJIB untuk setiap hook):** hook mesti (a) **sangat menarik** — menimbulkan rasa ingin tahu/terkejut/lawak dalam < 3 s, dan (b) **berkait terus dengan isi/janji video** (masalah utama, harga, hasil, punchline). Tujuan hook = buat orang **berhenti scroll dan terus tengok**. Visual cantik tanpa makna (cth. buka kotak tanpa konteks) **tidak lulus**. Dalam cadangan gaya, beri 2–3 calon hook + sebab setiap satu lulus (a) & (b). | Hook | Arahan pengguna (Rejuran) | 2026-11-12 |
+| R55 | **UGC bercakap ke kamera: lalai TIADA BGM** — suara + SFX jarang (R48) sahaja; BGM hanya jika pengguna minta. | Audio | /compare-learnedit Rejuran (item 10) + pilihan pengguna | 2026-11-12 |
+
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
 | ID | Perkara | Sebab | Sumber | Tarikh |
@@ -72,6 +85,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | X2 | CTA / teks besar yang **menutup produk** (cth. teks skrip "Tengok dekat beg kuning" atas periuk) | Bercanggah R1 | /compare-learnedit periuk (item 12) | 2026-11-07 |
 | X4 | Kelantangan **−7.3 LUFS** (terlalu kuat; platform akan normalisasi & bunyi pecah) | Bercanggah R14 | /compare-learnedit raya | 2026-11-10 |
 | X5 | Teks dialog/caption **±30 px** pada lebar 1080 (terlalu kecil di telefon) — konsep R40 diterima, saiz ini tidak | Kebolehbacaan (X1) | /compare-learnedit raya | 2026-11-10 |
+| X7 | Caption **±30 px 2 baris** (edit Rejuran) dan kelantangan **−8.9 LUFS / puncak +0.6 dBFS** — mengulangi X5 & X4 | Kebolehbacaan / clipping | /compare-learnedit Rejuran (item 12, 14) | 2026-11-12 |
+| X8 | Typo dalam title (cth. "lebih hygine!") — semak ejaan setiap teks grafik | Kualiti | /compare-learnedit Rejuran (item 15) | 2026-11-12 |
 | X6 | Branding/teks tetap di **±89% dari atas** (jalur UI bawah TikTok/Reels — tertutup deskripsi & butang) | Zon selamat | /compare-learnedit raya | 2026-11-10 |
 
 ## 📝 Nota (bukan peraturan)
@@ -87,6 +102,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 |---|---|---|
 | P9 | **Warna highlight caption berselang** (merah → hijau → kuning) sebagai pilihan selain satu warna (R16 masih: tukar warna teks, bukan kotak). Claude cadang, pengguna pilih (R2). | Sample 10–13 |
 | P10 | **Emoji kecil di atas caption** ikut maksud perkataan (😯 📦 🛒 🏫), jarang-jarang. | Sample 11–13 |
+| P15 | **Highlight caption = kotak warna di belakang perkataan aktif** (edit Rejuran) vs tukar warna teks (R16, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 13) |
+| P16 | **Kekalkan isian natural** (cth. "Aa," sebelum ayat) vs buang semua (R11, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 16) |
 | P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
 
 ---|---|
@@ -114,4 +131,5 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | 2026-11-09 | Arahan pengguna | Kemas kini peraturan | X3 (larangan bunyi magic/dramatik) DIBUANG; R28 dikemas kini; R29 aliran kelulusan storyboard+papan layout → preview → klien → final | X3 dibuang, R29 diterima |
 | 2026-11-10 | /sample-baru | Sample 7, 8, 9 — highlight Karnival Insolvensi MITC Melaka (landscape) | Kategori baharu; −7 hingga −9 LUFS bercanggah R14 (tidak dipelajari); P6–P8 | R30–R32 diterima (tanya landscape/9:16 dulu) |
 | 2026-11-10 | /sample-baru | Sample 10–13 (food review, unboxing, skit+vlog, premis) | Kelantangan −7 hingga −21 LUFS bercanggah R14; S11 tanpa hitam & S13 pudar putih bercanggah R12 (tidak dipelajari). P12–P14 → R33–R35 diterima; P9–P11 masih menunggu | Sebahagian |
+| 2026-11-12 | /compare-learnedit | Rejuran (Yana) — edit pengguna (50.7 s: hook punchline + colour bars/beep, suara 1.14×, ±7 SFX, title skrip+bulat pink, tiada BGM) vs Claude PREVIEW v1 (61.3 s) | Perbandingan dalam `comparisons/2026-11-12-rejuran/`; pengguna tak suka hook flash-forward | R45–R55 diterima (R5 lalai & R28 diganti, R8/R10 diperhalusi); X7, X8 ditolak; P15, P16 menunggu |
 | 2026-11-10 | /compare-learnedit | Majlis raya — edit pengguna (59.9 s, take panjang + header tetap + teks dialog + muzik) vs Claude FINAL v4 (slideshow 36 s) | Perbandingan dalam `comparisons/2026-11-10-raya/`; pengguna serahkan keputusan kepada Claude | R36–R44 diterima; X4–X6 ditolak |

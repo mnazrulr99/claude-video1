@@ -25,8 +25,13 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
    → tunjuk **senarai bernombor** ayat tersangkut/ulang/isian/jeda. **Jangan potong** — pengguna pilih nombor yang dibuang. (R24)
 3. **Pelan edit dalam jadual** `Saat | Layout | Visual | Kenapa`, visual bertukar setiap **2–4 s**. (R25)
 4. **Papan layout:** SATU imej mengandungi semua layout/babak (grid) — tunggu kelulusan sebelum render. (R26)
-5. Caption **1–3 perkataan**; perkataan penting **dibesarkan masa close-up**. (R27)
-6. SFX: **`whoosh-soft.wav`** setiap tukar visual (`data-volume` ±0.5); bunyi lain dibenarkan ikut kesesuaian. (R28)
+5. Caption **1–3 perkataan**; perkataan penting **dibesarkan masa close-up**. (R27) Caption ikut transkrip **verbatim** yang disemak —
+   Whisper `ms` menterjemah slang/English ("worth it"→"berbaloi", "korang"→"anda"); betulkan sebelum storyboard. (R54)
+6. SFX **jarang** (±1 setiap 6–8 s) hanya pada grafik/momen penting + riser masa punch-in penekanan; **tiada whoosh setiap cut**. (R48, R49 — R28 diganti)
+6b. **Hook mesti lulus ujian R56:** sangat menarik (berhenti scroll < 3 s) **dan** berkait terus dengan isi video; cadang 2–3 calon + sebab.
+    **Hook lalai:** ayat punchline terus di 0 s (buang mukadimah) + colour bars & beep ±1 s jika ada punchline (R45, R46).
+    Suara 1.1–1.15× (`atempo`, R47). Grafik: skrip italic + bulat tebal, warna **kontras** dengan produk, sticker pill putih (R50–R52).
+    Transition kreatif tidak wajib (R53). UGC bercakap: tiada BGM secara lalai (R55).
 7. **Aliran kelulusan (R29):** storyboard + papan layout (sebelum render) → pengguna OK → render **PREVIEW** (Langkah 4b) →
    klien semak → feedback/ulang → klien OK → render **FINAL**. Jangan langkau pintu kelulusan.
 
