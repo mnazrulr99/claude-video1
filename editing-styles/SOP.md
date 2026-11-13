@@ -83,7 +83,13 @@
      BGM (UGC bercakap lalai **tiada BGM** R55; video senyap → BGM royalty-free + link R4) · perkataan/nama tak pasti.
    - Peta peluang (B) diringkaskan; butiran penuh masuk pelan edit Fasa 4.
 
-⛔ **G3:** 🧑 pengguna jawab: gaya, hook, warna, BGM, **nombor ayat yang dibuang**, ejaan nama.
+7. **Selepas pengguna pilih trim → PDF transkrip untuk semakan (R58):**
+   `python3 -I tools/transcript_pdf.py tv.json output/<job>/transkrip-<job>.pdf --map speech-map.json --cut <nombor> --title "<job>" --keywords "..." [--fixes fixes.json]`
+   — setiap perkataan dengan saat mula, masa asal & selepas trim, bahagian dibuang bergaris merah, perkataan tak pasti
+   kuning, lajur "Pembetulan". Pengguna semak & beri pembetulan → kemas kini `fixes.json` → PDF baharu jika perlu.
+   Caption mesti ikut transkrip yang sudah disahkan.
+
+⛔ **G3:** 🧑 pengguna jawab: gaya, hook, warna, BGM, **nombor ayat yang dibuang**, ejaan nama, **pembetulan dalam PDF transkrip**.
 
 ## Fasa 4 — Pelan edit + storyboard + papan layout 🤖 → 🧑
 
