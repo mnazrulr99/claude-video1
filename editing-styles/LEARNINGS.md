@@ -79,6 +79,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R57 | **Video bercakap/berskrip: transkrip dulu** (verbatim) dan jana **peta ucapan** (`tools/speech_map.py`) **sebelum trim atau rancang grafik**: (A) senarai trim — senyap, tersasul, ulang, filler words, filled pauses, disfluency lain (pengguna pilih, R24); (B) peta peluang — di mana letak motion grafik, animasi, SFX, transition; (C) calon hook (uji R56). Pelan edit (R25) dibina daripada peta ini. | Proses | Arahan pengguna | 2026-11-13 |
 | R58 | **PDF transkrip untuk semakan** selepas trim dipilih (`tools/transcript_pdf.py`): setiap perkataan + saat mula, masa asal & selepas trim, trim bergaris merah, tak pasti kuning, nama biru, pembetulan hijau, lajur "Pembetulan". Caption guna transkrip yang disahkan pengguna. | Transkrip | Arahan pengguna | 2026-11-13 |
 | R59 | **Semua output dihantar dalam chat** (SendUserFile) — tiada muat naik ke Google Drive. (Asalnya: muat naik ke folder Drive; dibatalkan 2026-11-13 kerana connector tak boleh muat naik video besar.) | Penghantaran | Arahan pengguna | 2026-11-13 |
+| R60 | **Pemilihan transition & SFX:** dalam pelan edit, senaraikan setiap momen dengan **pilihan Claude + 2 alternatif + sebab**, guna kod katalog (SOP Lampiran D: T1–T18, S1–S12). Pengguna pilih/tukar ikut kod. | Transition/SFX | Arahan pengguna | 2026-11-13 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
