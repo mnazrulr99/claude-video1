@@ -7,4 +7,6 @@ sahkan dengan pengguna, kemudian **padam fail dari outbox** dan commit.
 
 | Fail | Job | Ditambah |
 |---|---|---|
-| periuk-yana/transkrip-periuk.pdf | Ujian periuk stainless steel (PDF transkrip R58) | 2026-11-13 |
+| _(kosong)_ | | |
+
+**Sejarah:** 2026-11-13 — `periuk-yana/transkrip-periuk.pdf` dimuat naik ke Drive `Output/periuk-yana/` (7,249 bait, disahkan).

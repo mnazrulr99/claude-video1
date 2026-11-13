@@ -266,6 +266,13 @@ Google Drive pengguna: https://drive.google.com/drive/folders/1KpxasVOJ_EX85dn6W
 — satu subfolder setiap job (`<job>/`). Salinan tempatan kekal dalam `output/<job>/` (tidak masuk git).
 
 - Perlu connector **Google Drive** disambung di claude.ai (session baharu selepas sambung). Semak di Fasa 0.
+- **Cara upload (diuji 2026-11-13):** `create_file` dengan `parentId` subfolder job, `contentMimeType`,
+  `disableConversionToGoogleType: true`, dan `base64Content`. Subfolder: `create_file` mimeType folder dalam
+  folder Output (`1KpxasVOJ_EX85dn6WH-KCfMZ-uWE_XEL`). Sahkan `fileSize` sama dengan fail tempatan.
+- **Had saiz:** isi fail dihantar sebagai base64 melalui perbualan → praktikal untuk fail **kecil sahaja (±≤ 50 KB)**.
+  PDF transkrip: guna `tools/transcript_pdf.py --compact` (±7 KB). Storyboard/papan layout: eksport JPG kecil
+  (cth. lebar 1200 px, kualiti 70) dan semak saiz. **Video (preview/final) TIDAK boleh** dimuat naik melalui connector
+  ini → hantar dalam chat (SendUserFile); pengguna simpan ke Drive sendiri.
 - Jika connector tiada / upload gagal → **beritahu pengguna**, hantar fail terus dalam chat (SendUserFile) sebagai sandaran,
   dan simpan fail kecil (PDF/imej, bukan video klien) dalam `outbox/<job>/` untuk dimuat naik oleh session seterusnya.
 - Fasa 0: jika `outbox/` ada fail dan connector tersedia → muat naik dahulu, kemudian kosongkan outbox.
