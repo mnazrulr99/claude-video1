@@ -24,11 +24,17 @@ ap.add_argument("transcript"); ap.add_argument("out")
 ap.add_argument("--map"); ap.add_argument("--cut", default="")
 ap.add_argument("--title", default="Transkrip"); ap.add_argument("--keywords", default="")
 ap.add_argument("--fixes")
+ap.add_argument("--compact", action="store_true", help="fon terbina Helvetica (fail kecil, untuk upload Drive); hanya aksara Latin")
 a = ap.parse_args()
 
-for name, f in (("DV", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"), ("DVB", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")):
-    pdfmetrics.registerFont(TTFont(name, f))
-pdfmetrics.registerFontFamily("DV", normal="DV", bold="DVB", italic="DV", boldItalic="DVB")
+if a.compact:
+    from reportlab.lib.fonts import addMapping
+    FN, FB = "Helvetica", "Helvetica-Bold"
+else:
+    for name, f in (("DV", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"), ("DVB", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")):
+        pdfmetrics.registerFont(TTFont(name, f))
+    pdfmetrics.registerFontFamily("DV", normal="DV", bold="DVB", italic="DV", boldItalic="DVB")
+    FN, FB = "DV", "DVB"
 
 segs = json.load(open(a.transcript))
 fixes = json.load(open(a.fixes)) if a.fixes else {}
@@ -58,8 +64,8 @@ raw_end = max(w["end"] for sg in segs for w in sg["words"]) if segs else 0
 removed = sum(e - s for s, e in merged)
 
 # ---- gaya ----
-S = lambda **k: ParagraphStyle("x", **{"fontName": "DV", **k})
-st_title = S(fontSize=16, leading=20, fontName="DVB")
+S = lambda **k: ParagraphStyle("x", **{"fontName": FN, **k})
+st_title = S(fontSize=16, leading=20, fontName=FB)
 st_small = S(fontSize=8, leading=11, textColor=colors.HexColor("#555555"))
 st_body = S(fontSize=9.5, leading=17)
 st_cell = S(fontSize=8, leading=10)
@@ -133,7 +139,7 @@ if trims:
     story.append(t2)
 
 def footer(c, d):
-    c.setFont("DV", 7); c.setFillColor(colors.grey)
+    c.setFont(FN, 7); c.setFillColor(colors.grey)
     c.drawRightString(A4[0] - 12*mm, 8*mm, f"Halaman {d.page}")
 SimpleDocTemplate(a.out, pagesize=A4, leftMargin=12*mm, rightMargin=12*mm, topMargin=12*mm, bottomMargin=14*mm,
                   title=f"{a.title} — Transkrip").build(story, onFirstPage=footer, onLaterPages=footer)
