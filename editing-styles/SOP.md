@@ -101,10 +101,10 @@
 3. **Senarai transition & SFX** ikut **Lampiran D3**: setiap momen → **pilihan Claude + 2 alternatif + sebab** (kod T/S dari katalog D1/D2) (R60).
 4. Ikut **Lampiran B** (spesifikasi) untuk saiz, zon & rentak. Semakan kendiri 🤖 sebelum hantar:
    - [ ] Tulisan tak tutup muka; produk sedaya upaya (R1, R1a, R1b, R13)
-   - [ ] Caption 1–3 perkataan, ±54–60 px, tukar warna teks (R16, R27; X1)
+   - [ ] Caption 1–3 perkataan, ±48 px & digeser kiri (x < ±900), tukar warna teks (R16, R27, R62; X1); callout ikut masa subtitle (R63)
    - [ ] Label sepadan dengan shot (R37); ejaan semua teks betul (X8)
    - [ ] Tiada teks dalam jalur UI bawah TikTok (> ±85% dari atas) (X6)
-   - [ ] Hook lulus ujian R56; SFX jarang & bermakna (R48); tamat hitam (R12)
+   - [ ] Hook lulus ujian R56; video bersih tanpa SFX/BGM + jadual masa SFX (R65, R66); tamat hitam (R12)
 
 ⛔ **G4:** 🧑 pengguna "OK" pelan (termasuk pilihan transition & SFX — boleh tukar ikut kod, cth. "#2 guna Alternatif 1"). Komen → betulkan → hantar semula. **Jangan render sebelum OK** (R29).
 
@@ -157,7 +157,7 @@
 
 | Jenis video | Sample rujukan | Hook lalai | Caption / teks | Audio | SFX | Transition | Struktur |
 |---|---|---|---|---|---|---|---|
-| **UGC bercakap (review/jual produk)** | S1, S2, S3, S6 | Punchline di 0 s (R45) + colour bars/beep jika ada punchline (R46); alternatif flash-forward (R5) / POV (R17) | Karaoke 1–3 perkataan (R16, R27) | Suara dipercepat 1.1–1.15× (R47); **tiada BGM** (R55) | Jarang, ±1 setiap 6–8 s (R48); riser pada punch-in (R49) | Hard cut + punch-in; kreatif tidak wajib (R53) | Masalah → produk → ciri/bukti → harga → CTA |
+| **UGC bercakap (review/jual produk)** | S1, S2, S3, S6 | Punchline di 0 s (R45) + colour bars/beep jika ada punchline (R46); alternatif flash-forward (R5) / POV (R17) | Karaoke 1–3 perkataan (R16, R27) | **Suara asal** — tiada denoise/percepat (R61); **tiada BGM** (R55); filter ringan (R64) | **Tidak dibakar** — jadual masa SFX untuk pengguna: title utama + penutup (R65, R66) | Hard cut + punch-in; kreatif tidak wajib (R53) | Masalah → produk → ciri/bukti → harga → CTA |
 | **Faceless / tanpa suara** | S5 | Unboxing/aksi paling menarik + header nama produk | Header tetap + label/checklist ✅, tiada karaoke | **BGM royalty-free** (R4) atau SFX sahaja untuk trending sound | Pada label/checklist | Splash/kreatif sesuai produk (R21) | Unboxing → guna → manfaat → proses → hasil |
 | **Review makanan** | S10 | Shot makanan paling menggoda + title soalan | Karaoke + label nama menu dekat makanan (R1b, R37) | Suara; BGM hanya jika diminta (R55) | Jarang (R48) | Hard cut | Hook → lokasi/logo → rasa (close-up) → menu lain → CTA (URL/order) |
 | **Unboxing / haul** | S11 | Teaser item paling menarik (R5) | Karaoke + sticker nama produk (R52) | Suara (R55) | Jarang (R48) | Hard cut | Hook → title + logo app/kedai (R33) → item demi item (buka → tunjuk → harga → reaksi) → penutup |
@@ -199,7 +199,7 @@
 
 | Jenis | Saiz (lebar 1080) | Gaya |
 |---|---|---|
-| Caption karaoke | **54–60 px**; perkataan penting 1.6–2× masa close-up | Inter ExtraBold ALL CAPS, putih + outline hitam, perkataan aktif tukar warna teks (R16, R27) |
+| Caption karaoke | **±48 px**, tengah digeser kiri (cx ≈ 480), x < ±900 (R62); perkataan penting 1.5–2× masa close-up | Inter ExtraBold ALL CAPS, putih + outline hitam, perkataan aktif tukar warna teks (R16, R27) |
 | Teks dialog acara | **≥ 44 px** | Serif italic putih + bayang, typewriter (R40) |
 | Title | 64–150 px | Skrip italic + bulat tebal, ✦ (R50); warna **kontras** dengan produk (R51) |
 | Sticker produk | 34–40 px | Pill putih, teks warna tema, condong (R52) |
@@ -211,8 +211,8 @@
 |---|---|
 | Visual bertukar | Setiap 2–4 s (R25); montaj acara 0.6–1.5 s ikut beat |
 | Jeda antara ayat | Dibuang (R11) — kecuali isian natural jika pengguna mahu (P16, menunggu) |
-| Kelajuan suara (UGC) | 1.1–1.15×, pitch kekal (R47) |
-| SFX | ±1 setiap 6–8 s, hanya momen penting (R48); acara: tiada (R36) |
+| Kelajuan suara (UGC) | **Asal 1.0×** (R61); 1.1–1.15× hanya jika diminta (R47) |
+| SFX | Lalai **tidak dibakar** — beri jadual masa (R66); tempat: title utama + penutup (R65); acara: tiada (R36) |
 | Ending | Hitam 0.5–0.7 s + ding (R12); acara: fade hitam (R42) |
 
 ---

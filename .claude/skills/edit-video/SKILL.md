@@ -31,10 +31,10 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 4. **Papan layout:** SATU imej mengandungi semua layout/babak (grid) — tunggu kelulusan sebelum render. (R26)
 5. Caption **1–3 perkataan**; perkataan penting **dibesarkan masa close-up**. (R27) Caption ikut transkrip **verbatim** yang disemak —
    Whisper `ms` menterjemah slang/English ("worth it"→"berbaloi", "korang"→"anda"); betulkan sebelum storyboard. (R54)
-6. SFX **jarang** (±1 setiap 6–8 s) hanya pada grafik/momen penting + riser masa punch-in penekanan; **tiada whoosh setiap cut**. (R48, R49 — R28 diganti)
+6. **Lalai: video BERSIH tanpa SFX & BGM** + jadual masa momen SFX (title utama + penutup) untuk pengguna tambah sendiri (R65, R66). Jika diminta SFX: jarang, tiada whoosh setiap cut (R48).
 6b. **Hook mesti lulus ujian R56:** sangat menarik (berhenti scroll < 3 s) **dan** berkait terus dengan isi video; cadang 2–3 calon + sebab.
     **Hook lalai:** ayat punchline terus di 0 s (buang mukadimah) + colour bars & beep ±1 s jika ada punchline (R45, R46).
-    Suara 1.1–1.15× (`atempo`, R47). Grafik: skrip italic + bulat tebal, warna **kontras** dengan produk, sticker pill putih (R50–R52).
+    **Suara asal** — tiada denoise & tiada percepat (R61; 1.1× hanya jika diminta). Filter warna ringan sahaja (R64). Grafik: skrip italic + bulat tebal, warna **kontras** dengan produk, sticker pill putih (R50–R52).
     Transition kreatif tidak wajib (R53). UGC bercakap: tiada BGM secara lalai (R55).
 7. **Aliran kelulusan (R29):** storyboard + papan layout (sebelum render) → pengguna OK → render **PREVIEW** (Langkah 4b) →
    klien semak → feedback/ulang → klien OK → render **FINAL**. Jangan langkau pintu kelulusan.
@@ -165,7 +165,7 @@ Hantar video siap + teks kredit BGM (jika perlu).
 - **Dari /compare-learnedit periuk (lihat LEARNINGS.md R1a–R16):**
   - `base.py`: zoom asas **1.2×** (bukan 1.0) untuk setiap segmen (R6); punch-in ekstrem (1.5–1.8×) pada produk masa sebut saiz/bahagian (R7).
   - Hook lalai = klip flash-forward ±1 s (R5). Tamat dengan hitam 0.5–0.7 s + ding (R12). Potong jeda ketat (R11).
-  - Caption **gaya versi Claude** (R16): ALL CAPS Inter ExtraBold ±54–60 px, putih + outline hitam, perkataan aktif tukar warna teks (bukan kotak);  boleh di bahagian bawah produk ±72–80% dari atas tapi **jauh dari muka** (R1a) — semak `zones.py`.
+  - Caption **gaya versi Claude** (R16): ALL CAPS Inter ExtraBold **±48 px, tengah digeser kiri cx≈480, x < ±900** (R62), putih + outline hitam, perkataan aktif tukar warna teks (bukan kotak);  boleh di bahagian bawah produk ±72–80% dari atas tapi **jauh dari muka** (R1a) — semak `zones.py`.
   - Label bahagian produk (cth. "16CM") terus atas bahagian itu (R1b). Title font/warna ikut produk (R8). Callout + doodle sparkle dekat benda disebut (R9).
   - Satu transition kreatif di tengah (R10, cth. paper-rip). CTA di zon selamat (R13; X2 = jangan tutup produk).
   - Kelantangan: **loudnorm dua laluan** ke −14 LUFS (R14):

@@ -89,7 +89,7 @@ html, body {{ width:1080px; height:1920px; overflow:hidden; background:#000; }}
 #base {{ position:absolute; inset:0; width:1080px; height:1920px; object-fit:cover; z-index:0; }}
 #endblack {{ position:absolute; inset:0; background:#000; z-index:50; }}
 .cap {{ position:absolute; left:{SX}px; width:{SW}px; top:{CT}px; text-align:left; z-index:20;
-  font-family:"InterXB"; font-size:54px; line-height:1.12; color:#fff; letter-spacing:0.3px;
+  font-family:"InterXB"; font-size:48px; line-height:1.12; color:#fff; letter-spacing:0.3px;
   -webkit-text-stroke:9px #000; paint-order:stroke fill; text-shadow:0 5px 12px rgba(0,0,0,.45); }}
 .gfx {{ position:absolute; left:{SX}px; width:{SW}px; top:{GT}px; z-index:10; text-align:left; }}
 .title .t1 {{ font-family:"SerifBI"; font-size:64px; line-height:1.05; color:#fff; -webkit-text-stroke:8px #2a0a1a; paint-order:stroke fill; }}
