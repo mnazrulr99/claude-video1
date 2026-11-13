@@ -308,6 +308,7 @@ UGC: hard cut dominan, 0–1 transition kreatif · Acara: lebih banyak dibenarka
 | S10 | `beep-1khz.wav` | Beep 1 kHz | Colour bars hook interrupt (R46) |
 | S11 | `click.wav` | Klik | Kursor/search-bar (R18), typewriter |
 | S12 | `paper-rip.wav` | Koyak kertas | Transition paper rip (T12) |
+| S13 | `tinggg.wav` | Loceng nyaring "Tinggg!!" (C7, dengung ±1 s) | Penutup ganti ding (job herba-headspa); beri hitam ±0.9 s |
 
 Prinsip: **R48** — SFX jarang & bermakna (±1 setiap 6–8 s), tiada whoosh pada setiap cut · Acara: tiada SFX transition (R36).
 SFX disintesis sendiri (asas). Jika pengguna ada pustaka SFX berlesen, letak dalam `tools/sfx/` dan tambah dalam jadual ini.
