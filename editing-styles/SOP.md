@@ -266,7 +266,9 @@ Google Drive pengguna: https://drive.google.com/drive/folders/1KpxasVOJ_EX85dn6W
 — satu subfolder setiap job (`<job>/`). Salinan tempatan kekal dalam `output/<job>/` (tidak masuk git).
 
 - Perlu connector **Google Drive** disambung di claude.ai (session baharu selepas sambung). Semak di Fasa 0.
-- Jika connector tiada / upload gagal → **beritahu pengguna**, hantar fail terus dalam chat (SendUserFile) sebagai sandaran.
+- Jika connector tiada / upload gagal → **beritahu pengguna**, hantar fail terus dalam chat (SendUserFile) sebagai sandaran,
+  dan simpan fail kecil (PDF/imej, bukan video klien) dalam `outbox/<job>/` untuk dimuat naik oleh session seterusnya.
+- Fasa 0: jika `outbox/` ada fail dan connector tersedia → muat naik dahulu, kemudian kosongkan outbox.
 
 ## Struktur folder job
 
