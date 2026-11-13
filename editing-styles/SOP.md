@@ -30,7 +30,6 @@
 2. 🤖 `git pull origin main` (cloud: automatik) supaya guna peraturan terkini.
 3. 🤖 `bash tools/setup.sh` — semak/pasang semua tool. Mana-mana ❌ → beritahu pengguna sebelum mula.
 4. 🤖 Baca `editing-styles/README.md`, `LEARNINGS.md`, dan SOP ini.
-5. 🤖 Semak connector **Google Drive** tersedia untuk muat naik output (lihat "Destinasi output"); jika tiada → maklumkan pengguna di awal.
 
 ## Fasa 1 — Terima job & bahan 🧑🤖
 
@@ -261,21 +260,9 @@
 
 ## Destinasi output (WAJIB)
 
-**Semua output** (storyboard, papan layout, PDF transkrip, preview, final, feedback.md) dimuat naik ke folder
-Google Drive pengguna: https://drive.google.com/drive/folders/1KpxasVOJ_EX85dn6WH-KCfMZ-uWE_XEL
-— satu subfolder setiap job (`<job>/`). Salinan tempatan kekal dalam `output/<job>/` (tidak masuk git).
-
-- Perlu connector **Google Drive** disambung di claude.ai (session baharu selepas sambung). Semak di Fasa 0.
-- **Cara upload (diuji 2026-11-13):** `create_file` dengan `parentId` subfolder job, `contentMimeType`,
-  `disableConversionToGoogleType: true`, dan `base64Content`. Subfolder: `create_file` mimeType folder dalam
-  folder Output (`1KpxasVOJ_EX85dn6WH-KCfMZ-uWE_XEL`). Sahkan `fileSize` sama dengan fail tempatan.
-- **Had saiz:** isi fail dihantar sebagai base64 melalui perbualan → praktikal untuk fail **kecil sahaja (±≤ 50 KB)**.
-  PDF transkrip: guna `tools/transcript_pdf.py --compact` (±7 KB). Storyboard/papan layout: eksport JPG kecil
-  (cth. lebar 1200 px, kualiti 70) dan semak saiz. **Video (preview/final) TIDAK boleh** dimuat naik melalui connector
-  ini → hantar dalam chat (SendUserFile); pengguna simpan ke Drive sendiri.
-- Jika connector tiada / upload gagal → **beritahu pengguna**, hantar fail terus dalam chat (SendUserFile) sebagai sandaran,
-  dan simpan fail kecil (PDF/imej, bukan video klien) dalam `outbox/<job>/` untuk dimuat naik oleh session seterusnya.
-- Fasa 0: jika `outbox/` ada fail dan connector tersedia → muat naik dahulu, kemudian kosongkan outbox.
+**Semua output dihantar terus dalam chat** (SendUserFile): storyboard, papan layout, PDF transkrip, preview, final.
+Salinan tempatan kekal dalam `output/<job>/` (tidak masuk git). **Tiada muat naik ke Google Drive** (R59, dikemas kini
+2026-11-13 — connector Drive tak boleh muat naik video besar).
 
 ## Struktur folder job
 
