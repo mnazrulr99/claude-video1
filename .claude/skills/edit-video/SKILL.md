@@ -37,6 +37,8 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 
 ## Langkah 0.5 — Semak persekitaran (cloud atau komputer pengguna)
 
+**Mula-mula jalankan `bash tools/setup.sh`** — semak & pasang semua tool (faster-whisper + model medium, OpenCV, Pillow, gdown, HyperFrames, model muka, SFX, fon). Selamat diulang; ±1 min jika semua dah ada, ±3–5 min dalam container baharu.
+
 Pengguna bertukar-tukar antara **session cloud** dan **Claude Code di komputer sendiri**. Semak tool yang ada dahulu:
 
 ```bash

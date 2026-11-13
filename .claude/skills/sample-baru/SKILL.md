@@ -11,6 +11,8 @@ Balas dalam **Bahasa Melayu santai & mesra**.
 
 ## Langkah 0 — Konteks
 
+0. Jalankan `bash tools/setup.sh` dahulu (pasang tool yang tiada dalam container baharu).
+
 1. Baca `editing-styles/README.md` (katalog & Pattern Bersama), `editing-styles/LEARNINGS.md` (peraturan diterima/ditolak) dan sekurang-kurangnya satu `sample-N/README.md` sebagai format rujukan.
 2. Tentukan nombor seterusnya: `ls editing-styles` → `sample-<N+1>`.
 

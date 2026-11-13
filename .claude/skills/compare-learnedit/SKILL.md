@@ -13,6 +13,8 @@ sebagai peraturan sebelum pengguna sahkan.
 
 ## Langkah 0 — Konteks
 
+0. Jalankan `bash tools/setup.sh` dahulu (pasang tool yang tiada dalam container baharu).
+
 1. Baca `editing-styles/LEARNINGS.md` (peraturan diterima, ditolak, menunggu) dan `editing-styles/README.md`
    (katalog, Pattern Bersama, citarasa).
 2. Tentukan **asas perbandingan** (tanya pengguna jika tak jelas):
