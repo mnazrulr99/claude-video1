@@ -106,18 +106,6 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | P16 | **Kekalkan isian natural** (cth. "Aa," sebelum ayat) vs buang semua (R11, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 16) |
 | P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
 
----|---|
-| P6 | **Kategori job "Highlight Acara" (landscape 1920×1080)**: tanya platform sasaran di awal; jika landscape → tiada caption bila tiada suara, logo acara tetap kecil, montaj ±0.5–1.5 s ikut beat BGM. (Peraturan kedudukan teks R1 tetap terpakai pada logo.) | Sample 7–9 |
-| P7 | Untuk highlight acara, **susun babak ikut aturcara acara** (pembuka drone/penjenama → aktiviti → momen klimaks → penutup) dan beri **lebih banyak transition kreatif** (light leak, kolaj, bingkai foto, filem, flash) — tetap ikut R21 (sesuai dengan video). R10 ("satu transition di tengah") hanya untuk UGC. | Sample 7–9 |
-| P8 | **Siri video dari satu acara** (cth. siang / perasmian / malam) guna identiti sama (logo, warna, BGM keluarga sama) supaya konsisten. | Sample 7–9 |
-
----|---|---|
-| P1 | Hook alternatif **POV skit** dengan teks "Pov: …" gaya TikTok (selain Hook B) | Sample 6 |
-| P2 | Label pilihan/lokasi gaya **search bar** (pill + kursor menaip + ikon ×) | Sample 6 (juga Sample 2) |
-| P3 | Label **tulisan tangan** (harga, ciri ✅, nama varian sebelah produk) + sparkle | Sample 6 (juga edit pengguna) |
-| P4 | Satu momen lawak **klip B&W reaksi** | Sample 6 |
-| P5 | Transition **kad foto berpusing** + bintang/reben warna tema selepas hook | Sample 6 |
-
 ---
 
 ## Log perbandingan & maklum balas

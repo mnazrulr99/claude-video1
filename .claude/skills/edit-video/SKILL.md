@@ -11,6 +11,8 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 
 ## Langkah 0 — Baca rujukan dahulu (WAJIB)
 
+**Ikut `editing-styles/SOP.md` (Fasa 0–8 + pintu kelulusan G1–G6).** Langkah di bawah ialah butiran teknikal setiap fasa.
+
 1. Baca `editing-styles/README.md` (katalog gaya, aliran kerja, Pattern Bersama, citarasa pengguna, senarai BGM).
 2. Baca `editing-styles/sample-N/README.md` untuk gaya yang berkaitan (lihat juga `key-frames.jpg`).
 3. Baca `editing-styles/LEARNINGS.md` — ikut **semua Peraturan Diterima**, dan **jangan guna** apa-apa dalam **Ditolak**.

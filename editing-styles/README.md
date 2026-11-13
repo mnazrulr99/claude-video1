@@ -4,6 +4,8 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 ## Aliran kerja WAJIB (setiap job editing)
 
+> **SOP penuh dengan pintu kelulusan: [SOP.md](SOP.md).** Ringkasan:
+
 1. Pengguna hantar **video mentah** (+ gambar produk jika ada).
 2. **Semak audio dahulu** (`tools/audio_check.py`) — jika terlalu perlahan/senyap → berhenti & beritahu pengguna (R23).
 3. **Analisis & transkrip**; tunjuk **senarai ayat tersangkut/ulang** (jangan potong dulu, R24) + **cadangan gaya**

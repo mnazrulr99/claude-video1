@@ -1,6 +1,6 @@
 # Arahan untuk Claude (projek editing video)
 
-Repo ini menyimpan rujukan gaya editing video pengguna. **Baca `editing-styles/README.md` dahulu** sebelum
+Repo ini menyimpan rujukan gaya editing video pengguna. **Baca `editing-styles/SOP.md` (prosedur WAJIB setiap job) dan `editing-styles/README.md` dahulu** sebelum
 sebarang tugas editing atau analisis sample — ia mengandungi aliran kerja wajib, katalog gaya
 (Sample 1, Sample 2, …), pattern bersama dan citarasa pengguna.
 
