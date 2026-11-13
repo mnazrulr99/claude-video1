@@ -64,19 +64,31 @@
 
 ## Fasa 3 — Analisis, transkrip & cadangan 🤖 → 🧑
 
-1. Contact sheet (setiap 0.5 s) — fahami isi, momen terbaik, produk, ekspresi.
-2. Transkrip **verbatim** (`tools/transcribe.py --verbatim`, R54) → `tools/stutter.py` → **senarai bernombor** ayat
-   tersangkut/ulang/isian/jeda/tak pasti. **Jangan potong lagi** (R24).
-3. `tools/zones.py` — kesan muka & produk (R1).
-4. **Bentang cadangan** ikut **Lampiran A** (resepi jenis video) — Claude cadang + sebab, pengguna pilih (R2):
-   - Gaya (Sample mana / gabungan) · **Hook** (lulus ujian hook R56; lalai punchline R45) · warna highlight caption ·
+> **Video bercakap/berskrip: TRANSKRIP DULU sebelum apa-apa trim atau rancang grafik (R57).**
+
+1. **Transkrip verbatim:** `python3 -I tools/transcribe.py <video> tv.json --verbatim` (R54).
+2. **Peta ucapan:** `python3 -I tools/speech_map.py tv.json <video> --keywords "<produk>,<brand>,<nama>" --md speech-map.md` →
+   - **A. Senarai TRIM bernombor** — senyap, filled pause (aa/erm), filler words, ulang perkataan, ulang frasa /
+     mula semula (false start), tersasul (perkataan terpotong), jeda tengah/antara ayat, perkataan tak pasti.
+     **Jangan potong lagi** (R24) — pengguna pilih nombor.
+   - **B. Peta peluang** setiap ayat — di mana letak **motion grafik** (angka/harga), **sticker/logo** (nama produk/brand),
+     **punch-in + SFX** (perkataan emosi), **close-up** ("tengok/nampak/macam ni"), **animasi teks** (soalan),
+     **CTA**, dan **titik transition / tukar visual** (pertukaran topik, jeda panjang).
+   - **C. Calon hook** (ranking) → uji setiap satu dengan R56.
+3. **Dengar semula** perkataan "TAK PASTI" & nama (Whisper tersilap dengar, cth. "Yana"→"enak") — R15, R54.
+4. Contact sheet (setiap 0.5 s) — padankan peta peluang dengan apa yang **kelihatan** (R37), momen terbaik, ekspresi.
+5. `tools/zones.py` — kesan muka & produk (R1).
+6. **Bentang cadangan** ikut **Lampiran A** (resepi jenis video) — Claude cadang + sebab, pengguna pilih (R2):
+   - Senarai TRIM (A) · 2–3 calon **hook** lulus R56 (lalai punchline R45) · gaya · warna highlight caption ·
      BGM (UGC bercakap lalai **tiada BGM** R55; video senyap → BGM royalty-free + link R4) · perkataan/nama tak pasti.
+   - Peta peluang (B) diringkaskan; butiran penuh masuk pelan edit Fasa 4.
 
 ⛔ **G3:** 🧑 pengguna jawab: gaya, hook, warna, BGM, **nombor ayat yang dibuang**, ejaan nama.
 
 ## Fasa 4 — Pelan edit + storyboard + papan layout 🤖 → 🧑
 
-1. **Pelan edit dalam jadual** (R25): `Saat | Layout | Visual | Kenapa` — visual bertukar setiap **2–4 s**.
+1. **Pelan edit dalam jadual** (R25): `Saat | Layout | Visual | Kenapa` — visual bertukar setiap **2–4 s**;
+   isi lajur Visual/Kenapa daripada **peta peluang (B)** selepas trim yang pengguna pilih.
 2. **Storyboard** (versi A untuk pengguna, dengan nota teknikal) + **papan layout** (SATU imej semua babak) (R26).
 3. Ikut **Lampiran B** (spesifikasi) untuk saiz, zon & rentak. Semakan kendiri 🤖 sebelum hantar:
    - [ ] Tulisan tak tutup muka; produk sedaya upaya (R1, R1a, R1b, R13)

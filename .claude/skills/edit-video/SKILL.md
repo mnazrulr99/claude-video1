@@ -23,8 +23,9 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 0. **Format:** tanya pengguna landscape (1920×1080) atau 9:16 jika job highlight acara/footage landscape (R30).
 1. **Semak audio dahulu:** `python3 -I tools/audio_check.py <video>` → jika **BERHENTI**, berhenti & beritahu pengguna
    (nyatakan angka: LUFS, puncak, % senyap). AMARAN → maklumkan & tanya. (R23)
-2. **Transkrip:** biasa (`tools/transcribe.py`, untuk caption) + verbatim (`--verbatim`) → `python3 -I tools/stutter.py transcript-verbatim.json`
-   → tunjuk **senarai bernombor** ayat tersangkut/ulang/isian/jeda. **Jangan potong** — pengguna pilih nombor yang dibuang. (R24)
+2. **Transkrip dulu + peta ucapan (R57):** `tools/transcribe.py --verbatim` → `python3 -I tools/speech_map.py tv.json <video> --keywords "..." --md speech-map.md`
+   → tunjuk **A. senarai TRIM bernombor** (senyap, tersasul, ulang, filler, filled pause, jeda — **jangan potong**, R24),
+   **B. peta peluang** (motion grafik/SFX/transition) dan **C. calon hook**. Transkrip biasa hanya jika perlu untuk caption.
 3. **Pelan edit dalam jadual** `Saat | Layout | Visual | Kenapa`, visual bertukar setiap **2–4 s**. (R25)
 4. **Papan layout:** SATU imej mengandungi semua layout/babak (grid) — tunggu kelulusan sebelum render. (R26)
 5. Caption **1–3 perkataan**; perkataan penting **dibesarkan masa close-up**. (R27) Caption ikut transkrip **verbatim** yang disemak —
