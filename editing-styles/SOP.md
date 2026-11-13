@@ -15,7 +15,7 @@
 | 0 | Persediaan session | — |
 | 1 | Terima job & bahan | ⛔ G1: brief lengkap |
 | 2 | Semak teknikal (audio, video) | ⛔ G2: lulus semakan / pengguna setuju teruskan |
-| 3 | Analisis, transkrip & cadangan | ⛔ G3: pengguna pilih gaya, hook, warna, BGM, ayat dibuang |
+| 3 | Transkrip → senarai trim → **PDF transkrip** & cadangan | ⛔ G3a: pilih trim, gaya, hook, warna, BGM · ⛔ G3b: sahkan PDF transkrip |
 | 4 | Pelan edit + storyboard + papan layout | ⛔ G4: pengguna lulus pelan |
 | 5 | Render PREVIEW + pakej klien | ⛔ G5: pengguna setuju hantar ke klien |
 | 6 | Semakan & feedback klien (ulang) | ⛔ G6: klien OK semua |
@@ -83,13 +83,15 @@
      BGM (UGC bercakap lalai **tiada BGM** R55; video senyap → BGM royalty-free + link R4) · perkataan/nama tak pasti.
    - Peta peluang (B) diringkaskan; butiran penuh masuk pelan edit Fasa 4.
 
-7. **Selepas pengguna pilih trim → PDF transkrip untuk semakan (R58):**
+⛔ **G3a:** 🧑 pengguna pilih **nombor trim** + gaya, hook, warna, BGM, ejaan nama.
+
+7. **WAJIB: selepas trim dipilih → hantar SATU PDF transkrip dalam chat untuk disemak (R58):**
    `python3 -I tools/transcript_pdf.py tv.json output/<job>/transkrip-<job>.pdf --map speech-map.json --cut <nombor> --title "<job>" --keywords "..." [--fixes fixes.json]`
    — setiap perkataan dengan saat mula, masa asal & selepas trim, bahagian dibuang bergaris merah, perkataan tak pasti
    kuning, lajur "Pembetulan". Pengguna semak & beri pembetulan → kemas kini `fixes.json` → PDF baharu jika perlu.
-   Caption mesti ikut transkrip yang sudah disahkan.
+   Caption mesti ikut transkrip yang sudah disahkan. Satu PDF bagi setiap pusingan (versi baharu: `-v2`, `-v3`).
 
-⛔ **G3:** 🧑 pengguna jawab: gaya, hook, warna, BGM, **nombor ayat yang dibuang**, ejaan nama, **pembetulan dalam PDF transkrip**.
+⛔ **G3b:** 🧑 pengguna sahkan PDF transkrip ("OK" atau senarai pembetulan). **Jangan mula Fasa 4 sebelum PDF disahkan.**
 
 ## Fasa 4 — Pelan edit + storyboard + papan layout 🤖 → 🧑
 
