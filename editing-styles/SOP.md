@@ -30,6 +30,7 @@
 2. 🤖 `git pull origin main` (cloud: automatik) supaya guna peraturan terkini.
 3. 🤖 `bash tools/setup.sh` — semak/pasang semua tool. Mana-mana ❌ → beritahu pengguna sebelum mula.
 4. 🤖 Baca `editing-styles/README.md`, `LEARNINGS.md`, dan SOP ini.
+5. 🤖 Semak connector **Google Drive** tersedia untuk muat naik output (lihat "Destinasi output"); jika tiada → maklumkan pengguna di awal.
 
 ## Fasa 1 — Terima job & bahan 🧑🤖
 
@@ -257,6 +258,15 @@
 - [ ] Teks kredit BGM disertakan jika perlu
 
 ---
+
+## Destinasi output (WAJIB)
+
+**Semua output** (storyboard, papan layout, PDF transkrip, preview, final, feedback.md) dimuat naik ke folder
+Google Drive pengguna: https://drive.google.com/drive/folders/1KpxasVOJ_EX85dn6WH-KCfMZ-uWE_XEL
+— satu subfolder setiap job (`<job>/`). Salinan tempatan kekal dalam `output/<job>/` (tidak masuk git).
+
+- Perlu connector **Google Drive** disambung di claude.ai (session baharu selepas sambung). Semak di Fasa 0.
+- Jika connector tiada / upload gagal → **beritahu pengguna**, hantar fail terus dalam chat (SendUserFile) sebagai sandaran.
 
 ## Struktur folder job
 
