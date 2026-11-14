@@ -188,6 +188,16 @@ Hantar video siap + teks kredit BGM (jika perlu).
 - Templat multi-klip: `tools/templates/event/` (base.py potong shot satu-satu ±1 min; slideshow HyperFrames; caption 1–3 perkataan).
 - Penghantaran fail: jika pengguna tak nampak kad fail, hantar semula dengan `display: attach`/`render` dan nyatakan laluan `output/<job>/`.
 
+## Job kenangan / travel pemandangan (dari job kenangan-airterjun 2026-11-14 — LEARNINGS R67–R71)
+
+- G1: **tanya klien foto/video diri mereka** (R67), nama tempat (ejaan!) & tarikh untuk title, format.
+- Tiada ucapan → langkau transkrip/trim; pilih shot terbaik (contact sheet + ukur goyang), buang shot berulang.
+- Gaya: crossfade 0.8 s, Ken Burns ≤5% pada shot statik, filter ringan, fade dari/ke hitam 1 s, ±45–60 s.
+- Foto klien: 2 kumpulan bookend (R68), ±2 s + zoom perlahan (R69), light leak **hanya** masuk/keluar foto (R70; X10).
+- Title intro gaya poskad: serif italic (InstrumentSerif) + huruf besar berjarak (NationalPark) + garis emas, atas langit,
+  gradient gelap lembut di atas; hilang sebelum babak 2 masuk (fon: `/mnt/skills/examples/canvas-design/canvas-fonts/`, OFL).
+- Audio: bunyi alam asal −26 LUFS untuk BGM pengguna (R71); eksport H.264 30 fps (X11).
+
 ## Langkah 5 — Belajar dari maklum balas (pembelajaran berterusan)
 
 - Setiap komen pengguna pada storyboard atau video siap = data pembelajaran. Selepas membetulkan, cadangkan satu

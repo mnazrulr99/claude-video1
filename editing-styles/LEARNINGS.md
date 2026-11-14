@@ -86,6 +86,11 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R64 | **Filter warna ringan sahaja** — maksimum ±separuh tahap edit herba (kontras ≈ +2, saturasi ≈ +2 pada skala 0–255, sedikit hangat). Filter kuat ditolak klien ("kurangkan filter"). | Warna | /compare-learnedit herba-headspa (item 2) | 2026-11-13 |
 | R65 | **Tempat SFX = title utama + penutup sahaja** (cth. chime/sparkle menaik pada title utama, loceng "ting" di skrin hitam penutup) — ±2 SFX bagi ±24 s. Memperhalusi R48. | SFX | /compare-learnedit herba-headspa (item 4) | 2026-11-13 |
 | R66 | **Claude hantar video BERSIH (tanpa SFX & tanpa BGM dibakar)** + **jadual masa** momen untuk SFX (ikut R65) — pengguna tambah SFX/BGM sendiri dalam app. Claude masukkan SFX/BGM hanya jika diminta. | Proses/Audio | /compare-learnedit herba-headspa (item 6) | 2026-11-13 |
+| R67 | **Video kenangan / travel / pemandangan:** di G1 **tanya klien foto/video diri mereka** (orang dalam frame = "kenangan"). Footage pemandangan sahaja terasa seperti video stok. | Bahan/Proses | /compare-learnedit kenangan-airterjun (item 1: klien minta tambah gambar) | 2026-11-14 |
+| R68 | **Susunan foto klien = bookend bercerita:** kumpulan 1 selepas shot "sampai/pengunjung" (±⅓ video), kumpulan 2 sebelum shot penutup. | Struktur | /compare-learnedit kenangan-airterjun (item 2) | 2026-11-14 |
+| R69 | **Foto dalam video:** ±2 s setiap foto + zoom perlahan (Ken Burns ≤5%), 2–3 foto setiap kumpulan (selaras R41). | Rentak | /compare-learnedit kenangan-airterjun (item 3) | 2026-11-14 |
+| R70 | **Light leak / flare HANYA untuk masuk & keluar kumpulan foto orang** (tanda peralihan pemandangan → momen peribadi). Babak pemandangan lain: crossfade biasa. | Transition | /compare-learnedit kenangan-airterjun (item 4, 5) | 2026-11-14 |
+| R71 | **Video pemandangan tanpa suara + pengguna tambah BGM:** kekalkan bunyi alam asal tetapi **diperlahankan ±−26 LUFS** (−12 dB dari −14) supaya BGM duduk di atas; hasil akhir pengguna −13.2 LUFS (lulus R14). | Audio | /compare-learnedit kenangan-airterjun (item 6) | 2026-11-14 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
@@ -99,6 +104,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | X8 | Typo dalam title (cth. "lebih hygine!") — semak ejaan setiap teks grafik | Kualiti | /compare-learnedit Rejuran (item 15) | 2026-11-12 |
 | X6 | Branding/teks tetap di **±89% dari atas** (jalur UI bawah TikTok/Reels — tertutup deskripsi & butang) | Zon selamat | /compare-learnedit raya | 2026-11-10 |
 | X9 | Kelantangan **−6.3 LUFS / puncak +1.8 dBFS** (edit herba-headspa) — clipping, mengulangi X4/X7 | Bercanggah R14 | /compare-learnedit herba-headspa (item 5) | 2026-11-13 |
+| X10 | **Light leak terlalu kerap** (±9 dalam 58 s, termasuk babak pemandangan biasa) dan **tint pink-cyan** yang menukar warna air terjun — hadkan ikut R70 | Rentak visual / warna | /compare-learnedit kenangan-airterjun (item 5) | 2026-11-14 |
+| X11 | **Eksport HEVC 60 fps** sebagai standard — sesetengah phone/PC lama & WhatsApp Web tak boleh main; standard Claude kekal H.264 30 fps | Keserasian | /compare-learnedit kenangan-airterjun (item 7) | 2026-11-14 |
 
 ## 📝 Nota (bukan peraturan)
 
@@ -134,3 +141,4 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | 2026-11-13 | Maklum balas job | herba-headspa — UGC vlog kedai herba (raw 34.9 s → FINAL 24.2 s, 6 preview) | Tiada hook (pilihan pengguna); caption magenta (kontras terbaik atas hud kelabu & rak hijau); transkrip dibanding dengan caption CapCut (Whisper tukar "I"→"saya", "kita"→"dia"). Maklum balas: suara ASAL (tiada denoise, tiada 1.12×); buang title "heaven"; "Serbuk" huruf besar; callout mesti muncul tepat ikut subtitle; caption 58→48 px & geser kiri elak butang TikTok; akhirnya SEMUA SFX dibuang (pengguna tambah sendiri) | Calon peraturan diputuskan dalam /compare-learnedit herba-headspa → R61–R66 |
 | 2026-11-13 | /compare-learnedit | herba-headspa — edit pengguna (FINAL Claude + filter + BGM + 2 SFX, −6.3 LUFS) vs Claude FINAL v6 | Frame selari tepat; pengguna kekalkan visual/caption Claude; klien minta kurangkan filter → versi 50% diluluskan klien. Perbandingan dalam `comparisons/2026-11-13-herba-headspa/` | R61–R66 diterima (R47 jadi pilihan, R16 saiz diganti, R48 diperhalusi); X9 ditolak; R55 (tiada BGM) KEKAL |
 | 2026-11-10 | /compare-learnedit | Majlis raya — edit pengguna (59.9 s, take panjang + header tetap + teks dialog + muzik) vs Claude FINAL v4 (slideshow 36 s) | Perbandingan dalam `comparisons/2026-11-10-raya/`; pengguna serahkan keputusan kepada Claude | R36–R44 diterima; X4–X6 ditolak |
+| 2026-11-14 | /compare-learnedit | kenangan-airterjun (Sukali Waterfall, Myanmar) — edit pengguna (58.8 s: + 5 foto klien, ±9 light leak, BGM, −13.2 LUFS) vs Claude FINAL v2 (48.6 s: 10 babak crossfade, intro poskad, bunyi air −26 LUFS) | Jenis job baharu: video kenangan pemandangan tanpa suara. Perbandingan dalam `comparisons/2026-11-14-kenangan-airterjun/` (muka klien di-blur, tiada video) | R67–R71 diterima; X10, X11 ditolak |

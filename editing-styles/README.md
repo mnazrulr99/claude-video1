@@ -71,6 +71,7 @@ _Berdasarkan Sample 1–13 (S7–S9 satu siri highlight acara; S10–S13 diringk
 - Secara umum: untuk pilihan kreatif (gaya, hook, BGM, warna), Claude beri cadangan + sebab, pengguna pilih.
 - **PENTING — Kedudukan tulisan:** tulisan (caption, title, badge, label, CTA) **TIDAK BOLEH tutup muka**, dan sedaya upaya **tidak tutup produk**. Letak di ruang kosong (latar/dinding). Semak dengan `tools/zones.py` + snapshot sebelum render. Jika ruang sempit, kecilkan tulisan daripada menutup muka/produk. (Maklum balas job ujian periuk: badge "HARGA TURUN!" asal menutup muka.)
 - **UGC bercakap (job herba-headspa, 2026-11-13):** suara **asal** (tiada denoise/percepat, R61); caption ±48 px digeser kiri supaya tak bertindih butang TikTok (R62); callout ikut masa subtitle (R63); filter ringan sahaja (R64); Claude hantar video **bersih tanpa SFX/BGM** + jadual masa SFX — pengguna tambah sendiri (R65, R66). Tiada BGM lalai kekal (R55).
+- **Video kenangan / pemandangan (job kenangan-airterjun, 2026-11-14):** tanya foto klien awal (R67); foto sebagai bookend dengan light leak masuk/keluar sahaja (R68–R70); bunyi alam diperlahankan untuk BGM pengguna (R71).
 - **Video tanpa suara (gaya Sample 5):** masukkan **BGM royalty-free** — Claude cadangkan beberapa pilihan (link untuk didengar) ikut mood. Jika tiada yang sesuai, render dengan **SFX sahaja tanpa BGM** supaya pengguna boleh tambah trending sound sendiri dalam TikTok.
 
 ## BGM (royalty-free) — senarai pendek untuk pengguna pilih
