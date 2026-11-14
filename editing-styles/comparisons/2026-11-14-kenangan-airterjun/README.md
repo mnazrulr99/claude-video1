@@ -17,5 +17,5 @@ Pengguna tambah: 5 foto klien (atas permintaan klien), ±9 light leak, BGM. Susu
 | 6 | Audio | BGM atas bunyi air yang Claude perlahankan; −13.2 LUFS / −2.1 dBTP | Bunyi air −26 LUFS, tiada BGM | ✅ | ✅ → R71 |
 | 7 | Eksport | HEVC 60 fps | H.264 30 fps | ❌ | ❌ → X11 |
 
-Fail: `banding-pengguna-vs-claude.jpg` (A Claude | B pengguna, 1 frame/s). **Muka klien di-blur** (YuNet) — privasi;
-`preview-540p.mp4` sengaja **tidak** disimpan (pilihan arkib b2 pengguna).
+Fail: `banding-pengguna-vs-claude.jpg` (A Claude | B pengguna, 1 frame/s), `preview-540p.mp4` (video pengguna).
+Arkib disimpan macam biasa (pilihan a pengguna).
