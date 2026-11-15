@@ -72,7 +72,8 @@ Tiada jeda — ayat bersambung rapat (jump cut tersembunyi di bawah B-roll).
 | Jenis | Contoh | Gaya | Animasi |
 |---|---|---|---|
 | Label kegunaan | "Content ✅", "Date ✅", "Business Meeting ✅" | **Teks kuning** (Title Case), outline hitam + emoji ✅ hijau, **di tempat caption** (±22% atas) | Muncul ikut perkataan, ganti satu demi satu (bukan senarai bertimbun) |
-| Watermark | TikTok `@supercarhijab` | — | (dari repost TikTok, bukan sebahagian edit) |
+
+> ⚠️ **Watermark TikTok `@supercarhijab` BUKAN sebahagian gaya** — ia dari muat turun TikTok. **Jangan masukkan** dalam edit.
 
 Tiada title hook, tiada logo, tiada harga di skrin, tiada kad CTA. Grafik **minimum** — kereta sendiri ialah "grafik".
 

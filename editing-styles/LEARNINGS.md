@@ -114,6 +114,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 - **Jumlah grafik fleksibel** — pengguna suka dua-dua (±5 grafik/45 s atau ±9 grafik/52 s). Claude tentukan ikut kandungan dan tunjuk dalam storyboard. (/compare-learnedit periuk item 8)
 - **Presenter dikenali:** "Yana" (video periuk stainless steel pink, bilik dinding pink); **"Emcee Hafiz"** (pengacara lelaki baju Melayu biru kotak, majlis raya — klien servis pengacara; rakan pengacara wanita tudung teal, nama belum disahkan).
 
+- **Watermark TikTok/app dalam sample** (logo TikTok + @username, cth. Sample 14) **bukan sebahagian gaya** — jangan tiru/masukkan dalam edit. (Arahan pengguna 2026-11-15)
+
 ## 🕒 Menunggu keputusan pengguna
 
 | # | Cadangan | Sumber |
