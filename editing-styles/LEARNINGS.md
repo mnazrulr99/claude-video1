@@ -122,6 +122,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | P10 | **Emoji kecil di atas caption** ikut maksud perkataan (😯 📦 🛒 🏫), jarang-jarang. | Sample 11–13 |
 | P15 | **Highlight caption = kotak warna di belakang perkataan aktif** (edit Rejuran) vs tukar warna teks (R16, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 13) |
 | P16 | **Kekalkan isian natural** (cth. "Aa," sebelum ayat) vs buang semua (R11, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 16) |
+| P17 | **Caption 1 perkataan, putih, di ATAS (±22% dari atas)** bila separuh bawah frame dipenuhi produk besar (kereta, perabot) — alternatif kepada caption bawah R16/R62. Highlight warna hanya pada label (kuning + ✅). | Sample 14 (sampel potential client) |
+| P18 | **Label senarai kegunaan = teks kuning + ✅, muncul satu demi satu di tempat caption** (ganti, bukan bertimbun) + ding setiap label. | Sample 14 |
 | P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
 
 ---
