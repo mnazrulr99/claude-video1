@@ -91,6 +91,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | R69 | **Foto dalam video:** ±2 s setiap foto + zoom perlahan (Ken Burns ≤5%), 2–3 foto setiap kumpulan (selaras R41). | Rentak | /compare-learnedit kenangan-airterjun (item 3) | 2026-11-14 |
 | R70 | **Light leak / flare HANYA untuk masuk & keluar kumpulan foto orang** (tanda peralihan pemandangan → momen peribadi). Babak pemandangan lain: crossfade biasa. | Transition | /compare-learnedit kenangan-airterjun (item 4, 5) | 2026-11-14 |
 | R71 | **Video pemandangan tanpa suara + pengguna tambah BGM:** kekalkan bunyi alam asal tetapi **diperlahankan ±−26 LUFS** (−12 dB dari −14) supaya BGM duduk di atas; hasil akhir pengguna −13.2 LUFS (lulus R14). | Audio | /compare-learnedit kenangan-airterjun (item 6) | 2026-11-14 |
+| R72 | **Gaya caption WAJIB tanya pengguna dulu setiap job** (kedudukan atas/bawah, bilangan perkataan, warna/highlight, saiz) — Claude beri pilihan dari sample/peraturan (cth. R16/R62 bawah + highlight, P17 atas 1 perkataan putih) + cadangan & sebab, **tunggu jawapan sebelum storyboard/render**. Jangan anggap lalai. | Caption/Proses | Arahan pengguna (selepas Sample 14) | 2026-11-15 |
 
 ## ❌ Ditolak (JANGAN belajar / jangan guna)
 
@@ -124,7 +125,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | P10 | **Emoji kecil di atas caption** ikut maksud perkataan (😯 📦 🛒 🏫), jarang-jarang. | Sample 11–13 |
 | P15 | **Highlight caption = kotak warna di belakang perkataan aktif** (edit Rejuran) vs tukar warna teks (R16, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 13) |
 | P16 | **Kekalkan isian natural** (cth. "Aa," sebelum ayat) vs buang semua (R11, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 16) |
-| P17 | **Caption 1 perkataan, putih, di ATAS (±22% dari atas)** bila separuh bawah frame dipenuhi produk besar (kereta, perabot) — alternatif kepada caption bawah R16/R62. Highlight warna hanya pada label (kuning + ✅). | Sample 14 (sampel potential client) |
+| P17 | **Caption 1 perkataan, putih, di ATAS (±22% dari atas)** bila separuh bawah frame dipenuhi produk besar (kereta, perabot) — alternatif kepada caption bawah R16/R62 — **ditawarkan sebagai pilihan bila tanya pengguna (R72)**. Highlight warna hanya pada label (kuning + ✅). | Sample 14 (sampel potential client) |
 | P18 | **Label senarai kegunaan = teks kuning + ✅, muncul satu demi satu di tempat caption** (ganti, bukan bertimbun) + ding setiap label. | Sample 14 |
 | P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
 
