@@ -106,9 +106,9 @@ Kelantangan **−8.2 LUFS / +0.9 dBFS** → clipping; jangan tiru (R14 kekal −
 | Sample 15 | Peraturan | Nota |
 |---|---|---|
 | Branding "Emcee Medina" **±93% dari atas** | R39 (±75–80%), **X6 ditolak** (±89%) | Jangan tiru — kekal R39 |
-| Caption testimoni ≈36 px | R40/X5 (≥44 px) | Konsep diterima (P20), saiz ikut ≥44 px |
+| Caption testimoni ≈36 px | R40/X5 (≥44 px) | Konsep diterima (**R74**), saiz ikut ≥44 px |
 | −8.2 LUFS, +0.9 dBFS | R14, X4/X7/X9 | **Ditolak** |
-| Tamat **pudar krim/peach** | R12 / R42 (fade hitam) | Cadang sebagai pilihan mood majlis kahwin (P22) — menunggu keputusan |
+| Tamat **pudar krim/peach** | R12 / R42 (fade hitam) | Diterima sebagai **pilihan** untuk majlis kahwin pastel (**R76**) |
 | Highlight: suara asal dimatikan + BGM lagu; testimoni: suara asal + BGM perlahan | R40 | **Selari** R40 — dan menambah: BGM diperlahankan (ducking) masa testimoni |
 
 ## Checklist cepat
