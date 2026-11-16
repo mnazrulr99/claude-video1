@@ -79,7 +79,8 @@
 4. Contact sheet (setiap 0.5 s) — padankan peta peluang dengan apa yang **kelihatan** (R37), momen terbaik, ekspresi.
 5. `tools/zones.py` — kesan muka & produk (R1).
 6. **Bentang cadangan** ikut **Lampiran A** (resepi jenis video) — Claude cadang + sebab, pengguna pilih (R2):
-   - **WAJIB tanya gaya caption (R72):** kedudukan (bawah R16/R62 vs atas P17), bilangan perkataan, warna/highlight, saiz — beri pilihan + cadangan, **tunggu jawapan**.
+   - **WAJIB tanya gaya caption (R72):** kedudukan (bawah R16/R62 vs atas R81f), bilangan perkataan, warna/highlight, saiz — beri pilihan + cadangan, **tunggu jawapan**.
+   - **Pilihan R79–R81:** untuk setiap pilihan yang relevan dengan video, nyatakan **cadangan Claude + sebab dahulu**, pengguna putuskan.
    - Senarai TRIM (A) · 2–3 calon **hook** lulus R56 (lalai punchline R45) · gaya ·
      BGM (UGC bercakap lalai **tiada BGM** R55; video senyap → BGM royalty-free + link R4) · perkataan/nama tak pasti.
    - Peta peluang (B) diringkaskan; butiran penuh masuk pelan edit Fasa 4.
@@ -212,7 +213,7 @@
 | Item | Nilai |
 |---|---|
 | Visual bertukar | Setiap 2–4 s (R25); montaj acara 0.6–1.5 s ikut beat |
-| Jeda antara ayat | Dibuang (R11) — kecuali isian natural jika pengguna mahu (P16, menunggu) |
+| Jeda antara ayat | Dibuang (R11) — kecuali isian natural jika pengguna pilih (R81e — Claude cadang dulu) |
 | Kelajuan suara (UGC) | **Asal 1.0×** (R61); 1.1–1.15× hanya jika diminta (R47) |
 | SFX | Lalai **tidak dibakar** — beri jadual masa (R66); tempat: title utama + penutup (R65); acara: tiada (R36) |
 | Ending | Hitam 0.5–0.7 s + ding (R12); acara: fade hitam (R42) |
