@@ -12,6 +12,7 @@
 ## Pilihan pengguna
 
 - ✅ **Pengguna nak guna format green-screen ini untuk klien** (2026-11-16) → peraturan **R78** dalam LEARNINGS.md.
+- Gaya teks (caption karaoke vs teks langkah bernombor) → **tanya setiap job** (R79).
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini). Aliran R29; gaya caption tanya dulu (R72).
 - Sample ini **bukan UGC/affiliate** dan **bukan bahasa Melayu** — ia rujukan **format** (green-screen tutorial), bukan rujukan caption karaoke.
