@@ -68,11 +68,16 @@
 > Sebelum cadang apa-apa gaya, Claude **WAJIB tengok & analisis semua bahan** (video raw, gambar, logo, PNG, brief) dan
 > **cadang hanya editing yang bahan itu mampu sokong** — setiap cadangan mesti sebut **bukti dari bahan** (fail + saat).
 
-1. 🤖 Untuk **setiap fail**: contact sheet bertanda masa (0.5 s) + `tools/zones.py` (muka/produk) + semak audio. Isi **Jadual Analisis Bahan**:
+1. 🤖 **Video bercakap/berskrip → TRANSKRIP VERBATIM DULU, serentak dengan analisis visual:**
+   jalankan `python3 -I tools/transcribe.py <video> tv.json --verbatim` **di latar belakang** (R54/R57) sambil buat contact sheet
+   bertanda masa (0.5 s) + `tools/zones.py` (muka/produk) + semak audio. Transkrip ini **satu-satunya** — Fasa 3 guna semula
+   `tv.json` yang sama (tiada transkrip kedua). **Video tanpa suara** (faceless, highlight acara, pemandangan) → analisis visual sahaja.
+   Isi **Jadual Analisis Bahan** (gabung apa yang **kelihatan** + apa yang **dicakap**):
 
 | Perkara | Apa dinilai | Kesan pada cadangan |
 |---|---|---|
 | Jenis & isi | Bercakap ke kamera / faceless / acara / demo; topik; mood | Pilih resepi Lampiran A + Sample terdekat |
+| Isi percakapan (dari transkrip) | Topik, struktur (tips bernombor / testimoni / demo), sebut harga/produk/senarai, istilah penting, calon hook (saat) | Checklist/label langkah, kad soalan (R82a), pill harga, item pop (R83c), kata kunci gergasi (R83d), hook (R45/R56) |
 | Bilangan take & sudut | Satu take statik vs multi-angle; ada B-roll/close-up? | Satu take → caption/grafik jadi "gerak" (S24, R83d/e); multi-angle → cut on motion (S26); tiada B-roll → cadang stok/minta klien |
 | Framing & ruang kosong | Di mana ruang kosong untuk teks (atas/bawah/sisi); kedudukan muka & produk | Kedudukan caption/title (R1, R72, R81f) |
 | Latar | Kemas/rata/green screen vs sibuk | Boleh cut-out? → teks belakang subjek (R83h), presenter atas grid (R83b), green-screen (R78) |
@@ -96,7 +101,7 @@
 
 > **Video bercakap/berskrip: TRANSKRIP DULU sebelum apa-apa trim atau rancang grafik (R57).**
 
-1. **Transkrip verbatim:** `python3 -I tools/transcribe.py <video> tv.json --verbatim` (R54).
+1. **Transkrip verbatim:** guna semula `tv.json` dari Fasa 2b (jika belum ada: `python3 -I tools/transcribe.py <video> tv.json --verbatim`, R54).
 2. **Peta ucapan:** `python3 -I tools/speech_map.py tv.json <video> --keywords "<produk>,<brand>,<nama>" --md speech-map.md` →
    - **A. Senarai TRIM bernombor** — senyap, filled pause (aa/erm), filler words, ulang perkataan, ulang frasa /
      mula semula (false start), tersasul (perkataan terpotong), jeda tengah/antara ayat, perkataan tak pasti.

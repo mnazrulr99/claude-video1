@@ -23,7 +23,7 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 0. **Format:** tanya pengguna landscape (1920×1080) atau 9:16 jika job highlight acara/footage landscape (R30).
 1. **Semak audio dahulu:** `python3 -I tools/audio_check.py <video>` → jika **BERHENTI**, berhenti & beritahu pengguna
    (nyatakan angka: LUFS, puncak, % senyap). AMARAN → maklumkan & tanya. (R23)
-2. **Transkrip dulu + peta ucapan (R57):** `tools/transcribe.py --verbatim` → `python3 -I tools/speech_map.py tv.json <video> --keywords "..." --md speech-map.md`
+2. **Transkrip dulu + peta ucapan (R57):** guna semula transkrip Fasa 2b (`tools/transcribe.py --verbatim`) → `python3 -I tools/speech_map.py tv.json <video> --keywords "..." --md speech-map.md`
    → tunjuk **A. senarai TRIM bernombor** (senyap, tersasul, ulang, filler, filled pause, jeda — **jangan potong**, R24),
    **B. peta peluang** (motion grafik/SFX/transition) dan **C. calon hook**. Transkrip biasa hanya jika perlu untuk caption.
    Selepas pengguna pilih trim → `tools/transcript_pdf.py` → hantar **PDF transkrip** (R58) untuk semakan & pembetulan.
@@ -85,8 +85,9 @@ di-overlay pada babak mana & kenapa) dalam peringkat cadangan/storyboard. Gambar
 
 ## Langkah 2 — Analisis & CADANG gaya (jangan edit lagi)
 
-> **R84 — ANALISIS BAHAN DAHULU (SOP Fasa 2b):** sebelum cadang gaya, analisis **semua** bahan (setiap video raw, gambar, logo, PNG, brief)
-> dan isi Jadual Analisis Bahan (jenis/isi · take & sudut · B-roll · ruang kosong teks · latar boleh cut-out? · produk · gerakan ·
+> **R84 — ANALISIS BAHAN DAHULU (SOP Fasa 2b):** sebelum cadang gaya, analisis **semua** bahan (setiap video raw, gambar, logo, PNG, brief).
+> **Video bercakap: mulakan `transcribe.py --verbatim` di latar belakang SERENTAK dengan contact sheet/zones** — transkrip ini diguna semula
+> dalam Fasa 3 (jangan transkrip dua kali). Video tanpa suara: visual sahaja. Isi Jadual Analisis Bahan (jenis/isi · isi percakapan · take & sudut · B-roll · ruang kosong teks · latar boleh cut-out? · produk · gerakan ·
 > kualiti teknikal · bahan tambahan · apa kurang). Bentang: **✅ boleh dibuat** (2–3 arah + bukti fail/saat) · **❌ tak sesuai** + sebab ·
 > **📥 bahan tambahan** yang membantu · cadangan utama. Tunggu pengguna pilih (G2b) sebelum teruskan.
 
