@@ -10,7 +10,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
-- Effect di bawah → **🕒 P40** (tambah ke katalog transition/effect SOP Lampiran D sebagai pilihan, Claude cadang ikut job).
+- Effect di bawah → **R83 (f)** — kod E1–E17, tanya ikut job, Claude cadang dulu.
 
 Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 effect), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, kad akhir TikTok dibuang).

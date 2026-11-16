@@ -80,7 +80,7 @@
 5. `tools/zones.py` — kesan muka & produk (R1).
 6. **Bentang cadangan** ikut **Lampiran A** (resepi jenis video) — Claude cadang + sebab, pengguna pilih (R2):
    - **WAJIB tanya gaya caption (R72):** kedudukan (bawah R16/R62 vs atas R81f), bilangan perkataan, warna/highlight, saiz — beri pilihan + cadangan, **tunggu jawapan**.
-   - **Pilihan R79–R82:** untuk setiap pilihan yang relevan dengan video, nyatakan **cadangan Claude + sebab dahulu**, pengguna putuskan.
+   - **Pilihan R79–R83** (termasuk effect E1–E17 Sample 25): untuk setiap pilihan yang relevan dengan video, nyatakan **cadangan Claude + sebab dahulu**, pengguna putuskan.
    - Senarai TRIM (A) · 2–3 calon **hook** lulus R56 (lalai punchline R45) · gaya ·
      BGM (UGC bercakap lalai **tiada BGM** R55; video senyap → BGM royalty-free + link R4) · perkataan/nama tak pasti.
    - Peta peluang (B) diringkaskan; butiran penuh masuk pelan edit Fasa 4.

@@ -12,7 +12,7 @@
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
 - Kategori **talking head promosi/pengumuman** → R16/R62 (caption), R63 (grafik ikut masa perkataan), R72 (tanya gaya caption).
-- Gaya baharu dalam sample ini → **🕒 P35–P37** (menunggu keputusan pengguna).
+- Gaya baharu dalam sample ini → **R83 (a)–(c)** (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, kad akhir TikTok dibuang).

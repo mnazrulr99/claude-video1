@@ -12,7 +12,7 @@
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
 - Kategori **tutorial/edukasi kreator** → R72/R79 (tanya gaya teks), R37 (B-roll ikut perkataan).
-- Gaya baharu → **🕒 P41–P42** (menunggu keputusan pengguna).
+- Gaya baharu → **R83 (g)–(i)** (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg` … `timeline-4.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, kad akhir TikTok dibuang).

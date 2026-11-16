@@ -12,7 +12,7 @@
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
 - Kategori **talking head edukasi/pakar** → R72 (tanya gaya caption), R37 (B-roll ikut perkataan), R1 (teks tak tutup muka).
-- Gaya baharu → **🕒 P38–P39** (menunggu keputusan pengguna).
+- Gaya baharu → **R83 (d)–(e)** (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, dengan audio).
@@ -84,10 +84,10 @@ Kelantangan **−15.7 LUFS** — sedikit perlahan (R14: −13/−14).
 
 | Sample 24 | Peraturan | Nota |
 |---|---|---|
-| Caption kata kunci gergasi + kecil | R16/R62 (karaoke + highlight warna) | **Gaya baharu** → P38 (tanya R72) |
+| Caption kata kunci gergasi + kecil | R16/R62 (karaoke + highlight warna) | **Gaya baharu** → R83d (tanya R72) |
 | Baris kecil ±3.5% lebar | X1/X5 | Baris kecil terlalu kecil — jika tiru, ≥44 px |
 | B-roll ikut perkataan | R37 | **Selari** |
-| B-roll jalur atas + feather | — | **Baharu** → P39 |
+| B-roll jalur atas + feather | — | **Baharu** → R83e |
 | Tiada SFX | R65/R66 | Selari |
 
 ## Checklist cepat
