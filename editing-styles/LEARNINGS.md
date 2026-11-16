@@ -126,13 +126,22 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 - **Presenter dikenali:** "Yana" (video periuk stainless steel pink, bilik dinding pink); **"Emcee Medina"** (pengacara wanita, Sample 15 — majlis resepsi Hakimi & Balqis); **"Emcee Hafiz"** (pengacara lelaki baju Melayu biru kotak, majlis raya — klien servis pengacara; rakan pengacara wanita tudung teal, nama belum disahkan).
 
 - **Watermark TikTok/app dalam sample** (logo TikTok + @username, cth. Sample 14) **bukan sebahagian gaya** — jangan tiru/masukkan dalam edit. (Arahan pengguna 2026-11-15) Begitu juga **kad akhir/logo Instagram @username** (Sample 17).
+- **Bingkai "portfolio" editor by.miyun** (video dalam kad bucu bulat atas latar kabur/grid + "by.miyun" di bawah, Sample 23–24) dan **kad akhir TikTok** (logo + search bar @username, S23–S26) **bukan gaya** — lapisan pameran/platform (kesimpulan). Jangan tiru.
 - **Kreator BettyRahmad** (watermark "bettyrahmad") muncul dalam **Sample 5, 6 & 16** — kemungkinan kreator tetap pengguna; gaya beliau: caption karaoke putih + kuning, label bubbly, CTA beg kuning.
 
 ## 🕒 Menunggu keputusan pengguna
 
 | # | Cadangan | Sumber |
 |---|---|---|
-| — | _(tiada — P29–P34 diputuskan 2026-11-16: lihat R82)_ | — |
+| P35 | **Hook kinetic typography:** 3–4 frasa besar ditaip/pop satu-satu di atas (font display tebal, warna berbeza, perkataan kunci merah "TANPA BELI!!") + **1 flash putih** + 1 punch-in, ≤4.5 s. | Sample 23 |
+| P36 | **Presenter cut-out (tepi koyak kertas putih) atas latar grid/warna jenama** untuk segmen senarai/pengumuman (buang latar R78 cara b). | Sample 23 |
+| P37 | **PNG item/hadiah pop BERTIMBUN** (kekal & bertambah) di atas kepala presenter tepat masa disebut (R63), bukan ganti satu-satu. | Sample 23 |
+| P38 | **Caption hierarki "kata kunci gergasi":** 1 kata kunci setiap ayat ALL CAPS gergasi tebal putih + perkataan sekeliling kecil sentence case; baris biasa kecil (≥44 px, X5). Penekanan melalui saiz, tiada warna. Paras dada ±55–60%. Pilihan dalam soalan R72. | Sample 24 (+ S25/S26 penekanan saiz) |
+| P39 | **B-roll stok di ⅓ atas frame dengan tepi bawah pudar (feather)** ke video presenter — muka pakar kekal di skrin (video pakar/edukasi). | Sample 24 |
+| P40 | **Katalog effect Sample 25** (orbit, couch wall, ui world, frame break, digital zoom, phone mockup, checklist, headline wall, zoom-through cut, chart grow, pull-back reveal, green screen, paper cut, doodle boil, vertigo, cover story, glass type) → tambah ke SOP Lampiran D sebagai kod E1–E17; Claude cadang 1–3 sahaja setiap video ikut fungsi (X10). | Sample 25 |
+| P41 | **Title editorial 2 lapis:** perkataan kecil tulisan tangan putih (stroke reveal) + ALL CAPS condensed kuning gergasi selebar frame, **blur-in/blur-out** ±1–2 s, untuk 4–8 kata kunci. | Sample 26 |
+| P42 | **Teks di belakang subjek** (text-behind-subject, perlu cut-out setiap frame) untuk title utama/hook — muka di depan teks (selari R1). Juga "cover story" S25. | Sample 25, 26 |
+| P43 | **CTA "komen kata kunci"** ("comment STUDIO / COLLEGE … I'll send you the link") + UI ruangan komen pop — alternatif CTA untuk kreator/servis (bukan produk beg kuning R13). | Sample 25, 26 |
 
 ---|---|---|
 | P9 | **Warna highlight caption berselang** (merah → hijau → kuning) sebagai pilihan selain satu warna (R16 masih: tukar warna teks, bukan kotak). Claude cadang, pengguna pilih (R2). | Sample 10–13 |
