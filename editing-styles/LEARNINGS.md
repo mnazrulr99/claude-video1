@@ -119,6 +119,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | X9 | Kelantangan **−6.3 LUFS / puncak +1.8 dBFS** (edit herba-headspa) — clipping, mengulangi X4/X7 | Bercanggah R14 | /compare-learnedit herba-headspa (item 5) | 2026-11-13 |
 | X10 | **Light leak terlalu kerap** (±9 dalam 58 s, termasuk babak pemandangan biasa) dan **tint pink-cyan** yang menukar warna air terjun — hadkan ikut R70 | Rentak visual / warna | /compare-learnedit kenangan-airterjun (item 5) | 2026-11-14 |
 | X11 | **Eksport HEVC 60 fps** sebagai standard — sesetengah phone/PC lama & WhatsApp Web tak boleh main; standard Claude kekal H.264 30 fps | Keserasian | /compare-learnedit kenangan-airterjun (item 7) | 2026-11-14 |
+| X12 | **Logo/kad akhir TikTok** (logo TikTok + search bar @username di hujung video) dan **watermark TikTok + nama @username** di tepi frame — ini tambahan platform semasa muat turun, **bukan gaya editing**. Jangan analisis sebagai gaya, jangan masukkan dalam Pattern Bersama/Ending, jangan tiru dalam edit. Preview sample: potong kad akhir TikTok. | Bukan gaya (platform) | Arahan pengguna (Sample 23–30) | 2026-11-16 |
 
 ## 📝 Nota (bukan peraturan)
 

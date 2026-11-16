@@ -43,6 +43,10 @@ Kemudian lihat semua contact sheet + spectrogram, dan ekstrak ~10 **key frames**
 
 ## Langkah 3 — Analisis (bahagian wajib dalam README)
 
+> **X12 — JANGAN belajar logo/kad akhir TikTok & watermark TikTok @username.** Abaikan dalam analisis (bukan Ending, bukan grafik,
+> bukan Pattern Bersama). Kesan kad akhir (skrin gelap + logo TikTok + search bar, biasanya 3–4 s terakhir, YAVG ≈ 33–35) dan
+> **potong** dari `preview-540p.mp4` (`-t <masa sebelum kad akhir>`). Sama untuk watermark app lain (CapCut, Instagram @username).
+
 Tulis `editing-styles/sample-<N>/README.md` mengikut format sample sedia ada:
 1. Tajuk + ringkasan ciri paling ketara + "Cara guna".
 2. Pilihan pengguna (salin dari sample lain).
