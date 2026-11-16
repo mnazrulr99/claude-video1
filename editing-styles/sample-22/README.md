@@ -11,7 +11,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
-- Kategori **Highlight Acara** → R30 (tanya 9:16 atau landscape), R31, R36, R38, R41, R42. Gaya ini → **🕒 P34** untuk logo condong di atas.
+- Kategori **Highlight Acara** → R30 (tanya 9:16 atau landscape), R31, R36, R38, R41, R42. Gaya ini → **R82** untuk logo condong di atas (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg` (**setiap 1 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, **tonemap HDR→SDR**, dengan audio).

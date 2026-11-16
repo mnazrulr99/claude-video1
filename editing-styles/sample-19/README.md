@@ -10,7 +10,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini). Aliran R29.
-- Sub-jenis **"tanpa suara"** → ikut R4 (BGM royalty-free / SFX sahaja). Gaya teks estetik → **🕒 P31** (menunggu keputusan; saiz mesti ikut X5).
+- Sub-jenis **"tanpa suara"** → ikut R4 (BGM royalty-free / SFX sahaja). Gaya teks estetik → **R82** (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg` (**setiap 1 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, dengan audio).
@@ -89,7 +89,7 @@ Struktur: **Masalah → produk → langkah 1 (manfaat) → cerita peribadi → l
 | SFX hanya pada produk/manfaat | R48/R65 | Selari |
 | Light leak sekali untuk lompat masa | R70/X10 | Selari (jarang & bermakna) |
 | Label produk skrip + anak panah | R19/R52 | Selari keluarga label tulisan tangan |
-| Day 1 → Day 14 | — | **Baharu → P31** (bukti hasil) |
+| Day 1 → Day 14 | — | **Baharu → R82** (pilihan) (bukti hasil) |
 | −17.8 LUFS / +1.2 dBTP | R14 | **Jangan tiru** |
 
 ## Checklist cepat

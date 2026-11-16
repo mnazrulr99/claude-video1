@@ -14,7 +14,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini). Aliran R29; gaya caption tanya dulu (R72).
-- Cadangan baharu dari sample ini (kad soalan, kad akhir vendor) masih **🕒 menunggu keputusan pengguna** — lihat P29–P30 dalam LEARNINGS.md.
+- Cadangan baharu dari sample ini (kad soalan, kad akhir vendor) → **R82** dalam LEARNINGS.md (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg` (**setiap 1 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, dengan audio).
@@ -102,8 +102,8 @@ Kelantangan **−11.4 LUFS / +1.1 dBTP** — terlalu kuat & clipping; ikut R14 (
 | Hook = petikan lucu dari tengah temubual | R45/R56 | **Selari** — ayat paling menarik di 0 s |
 | Colour bars + beep selepas hook | R46 | **Selari — pattern kini dalam 4 rujukan** (S2, Rejuran, S18, S20) |
 | Caption putih + oren (warna jenama) ±52 px, ±78% | R16/R62/R72 | Selari (saiz OK); warna ikut jenama — tanya pengguna (R72) |
-| Kad soalan atas latar blur | — | **Baharu → P29** (menunggu keputusan) |
-| Kad akhir vendor + search bar URL + HRDC | R18 (search bar) | Search bar selari R18; kad akhir penuh → **P30** |
+| Kad soalan atas latar blur | — | **Baharu → R82** (pilihan) |
+| Kad akhir vendor + search bar URL + HRDC | R18 (search bar) | Search bar selari R18; kad akhir penuh → **R82** |
 | −11.4 LUFS / +1.1 dBTP | R14 | **Jangan tiru** |
 
 ## Checklist cepat

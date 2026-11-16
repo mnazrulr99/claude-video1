@@ -12,7 +12,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini). Aliran R29; gaya caption tanya dulu (R72).
-- Grafik baharu (callout berpenunjuk, CTA cop condong, kotak gradient) → **🕒 P32–P33** (menunggu keputusan); R80 — Claude cadang dulu.
+- Grafik baharu (callout berpenunjuk, CTA cop condong, kotak gradient) → **R82** (tanya ikut job, Claude cadang dulu); R80 — Claude cadang dulu.
 
 Gambar rujukan: `timeline-1.jpg` (**setiap 1 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264 30 fps, dengan audio).
@@ -100,8 +100,8 @@ Kelantangan **−7.8 LUFS / +0.7 dBTP** — terlalu kuat (X4); ikut R14.
 | Kotak gradient biru-teal pada perkataan aktif | R16 (tukar warna teks) / P15 | Alternatif "kotak" — **tanya pengguna (R72)** |
 | 3 transition kreatif dalam 31 s | R53 (tidak wajib) / R21 | Dibenarkan jika sesuai mood (tech/produk) — Claude cadang |
 | Label ✅ menaip + kursor | R18/R19 | **Selari** (search bar / label ✅) |
-| Callout berpenunjuk spec | R1b/R7 | Selari (label atas bahagian produk) → **P32** |
-| CTA cop condong + gema | R13 | Selari zon selamat; gaya baharu → **P33** |
+| Callout berpenunjuk spec | R1b/R7 | Selari (label atas bahagian produk) → **R82** |
+| CTA cop condong + gema | R13 | Selari zon selamat; gaya baharu → **R82** |
 | Eksport 4K 60 fps HEVC | X11 | **Jangan tiru** — standard Claude H.264 30 fps |
 | −7.8 LUFS | X4/R14 | **Jangan tiru** |
 
