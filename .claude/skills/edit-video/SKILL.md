@@ -90,6 +90,8 @@ di-overlay pada babak mana & kenapa) dalam peringkat cadangan/storyboard. Gambar
 > dalam Fasa 3 (jangan transkrip dua kali). Video tanpa suara: visual sahaja. Isi Jadual Analisis Bahan (jenis/isi · isi percakapan · take & sudut · B-roll · ruang kosong teks · latar boleh cut-out? · produk · gerakan ·
 > kualiti teknikal · bahan tambahan · apa kurang). Bentang: **✅ boleh dibuat** (2–3 arah + bukti fail/saat) · **❌ tak sesuai** + sebab ·
 > **📥 bahan tambahan** yang membantu · cadangan utama. Tunggu pengguna pilih (G2b) sebelum teruskan.
+> **Lagu/BGM (hanya jika pengguna bagi bersama raw):** ekstrak audio (video hitam → `-vn`), analisis BPM/beat, struktur (drop/chorus), mood,
+> panjang, kualiti → cadang cara guna ikut situasi (latar+ducking / potong ikut beat / campur). Tiada lagu → jangan tambah BGM (R55/R66).
 
 1. Contact sheet: `fps=2,scale=150:-1,drawtext(timestamp),tile=12x4` → lihat isi video.
 2. Transkrip **dengan masa setiap perkataan** (perlu untuk caption karaoke):

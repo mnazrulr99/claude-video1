@@ -45,6 +45,7 @@
 | Nama presenter/produk/brand | ✅ | Ejaan betul (R15) |
 | Harga / promo / CTA | Jika ada | "Tekan beg kuning", URL, WhatsApp |
 | Gambar produk (PNG), logo | Jika ada | Tiada → Claude potong dari video |
+| **Lagu/BGM** (fail audio atau video hitam ber-BGM) | Jika nak BGM dibakar | Pengguna bagi **bersama raw** jika mahu Claude edit sekali dengan lagu; **tiada lagu → video bersih tanpa BGM** (R55/R66) |
 | Gaya rujukan | Pilihan | "Sample 3" / "ikut cadangan Claude" |
 | Tarikh siap | Pilihan | Untuk susun keutamaan |
 
@@ -87,6 +88,18 @@
 | Bahan tambahan | Gambar/PNG/logo — resolusi, latar lut sinar?, warna jenama | Gaya grafik & warna highlight ikut jenama; PNG → pop item (R83c) |
 | Apa yang KURANG | Shot/bahan yang perlu untuk gaya tertentu tapi tiada | Senarai minta pada pengguna/klien |
 
+1b. 🤖 **Jika pengguna bagi lagu/BGM** (fail audio, atau video hitam → ekstrak audio `ffmpeg -i x.mp4 -vn -c:a copy bgm.m4a`): analisis
+   **tempo/BPM & beat** (librosa/`aubio` jika ada), **struktur** (intro, naik, drop/chorus, tenang — dari RMS/spectrogram), **mood**, **panjang vs video**,
+   **kualiti** (bitrate, clipping). Padankan dengan raw dan cadang cara guna **ikut situasi** (tiada lalai tetap):
+
+| Situasi | Cadangan biasa |
+|---|---|
+| Talking head / UGC bercakap | BGM latar perlahan bawah suara + ducking; potongan ikut ayat, bukan beat |
+| Highlight acara / montaj tanpa suara | Potong ikut beat (R41); klimaks pada drop/chorus |
+| Campur (highlight + testimoni, S15/R77) | Highlight ikut beat → BGM di-duck masa testimoni |
+| Lagu tak sesuai mood / terlalu pendek | Beritahu pengguna; cadang potong/ulang bahagian atau lagu lain |
+
+   Ingatkan lesen lagu untuk kegunaan klien (R44) — Claude tak boleh sahkan lesen dari audio. **Tiada lagu diberi → jangan tambah BGM** (R55/R66).
 2. 🤖 Bentang kepada pengguna (ringkas, dengan **contact sheet/key frames**):
    - **Ringkasan bahan** (jadual di atas, 1 baris setiap perkara).
    - **✅ Boleh dibuat dengan bahan ini** — 2–3 arah gaya (Sample + pilihan R79–R83 + effect E), setiap satu dengan **sebab + bukti** (cth. "latar dinding rata di 0–20 s → teks belakang subjek boleh").
