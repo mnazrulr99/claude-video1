@@ -6,6 +6,8 @@ Kesan: (1) perkataan diulang berturut ("aku aku"), (2) frasa 2–4 perkataan diu
 (3) perkataan isian (erm, emm, aa, eh, uh, hmm), (4) jeda panjang di tengah ayat (>0.8 s), (5) perkataan keyakinan rendah (Whisper prob < 0.3).
 """
 import json, re, sys
+if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    print(__doc__); sys.exit(0 if len(sys.argv) > 1 else 64)
 t = json.load(open(sys.argv[1]))
 ws = [dict(w=re.sub(r"[^\w-]", "", x["word"].lower()), raw=x["word"], s=x["start"], e=x["end"], p=x.get("prob", 1)) for seg in t for x in seg["words"]]
 ws = [w for w in ws if w["w"]]

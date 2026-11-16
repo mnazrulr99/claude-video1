@@ -6,6 +6,8 @@ Ukur: kelantangan bersepadu (LUFS), puncak, % masa senyap (< -50 dBFS), dan segm
 Keputusan: OK / AMARAN / BERHENTI (kod keluar 0 / 1 / 2).
 """
 import json, re, subprocess, sys
+if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    print(__doc__); sys.exit(0 if len(sys.argv) > 1 else 64)
 v = sys.argv[1]
 probe = subprocess.run(["ffprobe","-v","error","-select_streams","a","-show_entries","stream=codec_name,channels,sample_rate",
                         "-of","json",v],capture_output=True,text=True).stdout

@@ -10,7 +10,7 @@ command -v node >/dev/null && ok "Node $(node -v)" || bad "Node.js tiada (pasang
 command -v ffmpeg >/dev/null && ok "$(ffmpeg -version | head -1 | cut -d' ' -f1-3)" || bad "ffmpeg tiada"
 
 PY=python3
-for mod in "faster_whisper:faster-whisper" "cv2:opencv-python-headless" "PIL:pillow" "gdown:gdown" "numpy:numpy"; do
+for mod in "faster_whisper:faster-whisper" "cv2:opencv-python-headless" "PIL:pillow" "gdown:gdown" "numpy:numpy" "reportlab:reportlab"; do
   m=${mod%%:*}; p=${mod##*:}
   if $PY -c "import $m" 2>/dev/null; then ok "$p"; else
     pip install -q "$p" 2>/dev/null || pip install -q --break-system-packages "$p" 2>/dev/null
@@ -25,6 +25,10 @@ $PY -c "from faster_whisper import WhisperModel; WhisperModel('medium', device='
 
 # HyperFrames (render grafik) — cache npx
 npx -y hyperframes --version >/dev/null 2>&1 && ok "HyperFrames $(npx -y hyperframes --version 2>/dev/null | tail -1)" || bad "HyperFrames gagal"
+
+# Remotion (alternatif HyperFrames) — dipasang dalam projek setiap job (npm i remotion @remotion/cli react react-dom);
+# di sini cuma sahkan pakej boleh dimuat turun dari npm
+RV=$(npm view @remotion/cli version 2>/dev/null) && [ -n "$RV" ] && ok "Remotion boleh dipasang (v$RV)" || bad "Remotion tak dapat dicapai dari npm"
 
 # Model muka (zones.py) & SFX dalam repo
 D="$(cd "$(dirname "$0")" && pwd)"

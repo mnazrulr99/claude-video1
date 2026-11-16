@@ -1,6 +1,9 @@
 # Muzik raya ASAL (ciptaan Claude, tiada hak cipta pihak ketiga): kompang + gendang + akordion + bass + seruling.
 # 120 BPM, 4/4, 1 bar = 2.0 s. Guna: python3 -I music.py <out.wav>
 import sys, numpy as np, wave
+USAGE = "Muzik raya asal (120 BPM, 1 bar = 2 s, ±36 s).\nGuna: python3 -I tools/music_raya.py <out.wav>"
+if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    print(__doc__ or USAGE); sys.exit(0 if len(sys.argv) > 1 else 64)
 SR = 44100; BPM = 120; BEAT = 60 / BPM; BAR = 4 * BEAT
 NBARS = 18; TOTAL = 36.0
 rng = np.random.default_rng(1447)
