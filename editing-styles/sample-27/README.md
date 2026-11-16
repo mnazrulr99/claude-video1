@@ -10,7 +10,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
-- Effect ini → **🕒 P44** (menunggu keputusan pengguna).
+- Effect ini → **R85 (a)** (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg` … `timeline-8.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, kad akhir TikTok dibuang).

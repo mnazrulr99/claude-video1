@@ -10,7 +10,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
-- Transition yang diajar sudah ada dalam katalog SOP D1 (whip, zoom blur, punch-in) — **J cut & match cut** dan kad nombor kaca → **🕒 P47–P48**.
+- Transition yang diajar sudah ada dalam katalog SOP D1 (whip, zoom blur, punch-in) — **J cut → katalog SOP D1 T19**; match cut & kad nombor kaca → **R85 (d)–(e)** (tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, kad akhir TikTok dibuang).

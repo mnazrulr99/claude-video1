@@ -48,10 +48,10 @@ _Berdasarkan Sample 1–30 (S27–S30 satu lajur — tutorial teknik editing EN;
 
 **Pemerhatian:**
 - **Sample 27–30 (folder Drive 2026-11-16, kumpulan ke-3, 4 video — semua tutorial teknik editing, English, repost TikTok):** nilai utama = **teknik/effect**, bukan gaya jenama.
-  - **S27:** effect **"character intro"** — freeze frame + cut-out outline putih + latar halftone kelabu + kad nama ALL CAPS & jawatan. → P44.
-  - **S28:** listicle 7 langkah — **caption italic 2 tahap (putih kecil + kuning-lime besar)**, **lencana nombor bulat kuning**, pill URL/logo, kad rakaman skrin atas latar krim, tint emosi merah/B&W. → P45–P46.
-  - **S29:** listicle 5 transition — **kad nombor kaca atas latar blur** sebagai pemisah bab, label teknik oren bercahaya; mengajar **J cut** & **match cut**. → P47–P48.
-  - **S30:** **zoom intro** (zoom laju frame pertama) sebagai "scroll stopper"; caption 1 perkataan lowercase. → P49.
+  - **S27:** effect **"character intro"** — freeze frame + cut-out outline putih + latar halftone kelabu + kad nama ALL CAPS & jawatan. → R85a.
+  - **S28:** listicle 7 langkah — **caption italic 2 tahap (putih kecil + kuning-lime besar)**, **lencana nombor bulat kuning**, pill URL/logo, kad rakaman skrin atas latar krim, tint emosi merah/B&W. → R85b–c.
+  - **S29:** listicle 5 transition — **kad nombor kaca atas latar blur** sebagai pemisah bab, label teknik oren bercahaya; mengajar **J cut** & **match cut**. → R85d–e; J cut → SOP T19.
+  - **S30:** **zoom intro** (zoom laju frame pertama) sebagai "scroll stopper"; caption 1 perkataan lowercase. → R85f.
   - **Pattern berulang:** (1) **listicle bernombor dengan penanda nombor visual** (S25 "NN/17", S28 lencana, S29 kad kaca) — kini 3 rujukan; (2) **pemisah bab atas latar blur** (S18/S20 kad soalan, S29 kad nombor); (3) **hook = tunjuk hasil dulu** (S27, S30).
 - **Sample 23–26 (folder Drive 2026-11-16, kumpulan ke-2, 4 video — semua repost TikTok 576×1024):** tema bersama = **talking head yang "dihidupkan" dengan grafik/tipografi, bukan potongan**.
   - **S23 + S24 (editor "by.miyun", BM):** **editor lain (bukan pengguna — disahkan)**, portfolio (video dalam kad bucu bulat atas latar kabur — lapisan pameran, bukan gaya). S23: kinetic title hook, flash putih, **presenter cut-out atas grid + PNG hadiah pop bertimbun**, caption kotak biru. S24: **caption hierarki kata kunci gergasi + perkataan kecil**, **B-roll stok di ⅓ atas dengan feather** (pakar sentiasa di skrin). → R83 (a)–(e).

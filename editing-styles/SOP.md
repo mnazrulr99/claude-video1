@@ -115,7 +115,7 @@
 5. `tools/zones.py` — kesan muka & produk (R1).
 6. **Bentang cadangan** (selari dengan analisis bahan Fasa 2b, R84) ikut **Lampiran A** (resepi jenis video) — Claude cadang + sebab, pengguna pilih (R2):
    - **WAJIB tanya gaya caption (R72):** kedudukan (bawah R16/R62 vs atas R81f), bilangan perkataan, warna/highlight, saiz — beri pilihan + cadangan, **tunggu jawapan**.
-   - **Pilihan R79–R83** (termasuk effect E1–E17 Sample 25): untuk setiap pilihan yang relevan dengan video, nyatakan **cadangan Claude + sebab dahulu**, pengguna putuskan.
+   - **Pilihan R79–R85** (termasuk effect E1–E17 Sample 25): untuk setiap pilihan yang relevan dengan video, nyatakan **cadangan Claude + sebab dahulu**, pengguna putuskan.
    - Senarai TRIM (A) · 2–3 calon **hook** lulus R56 (lalai punchline R45) · gaya ·
      BGM (UGC bercakap lalai **tiada BGM** R55; video senyap → BGM royalty-free + link R4) · perkataan/nama tak pasti.
    - Peta peluang (B) diringkaskan; butiran penuh masuk pelan edit Fasa 4.
@@ -135,7 +135,7 @@
 1. **Pelan edit dalam jadual** (R25): `Saat | Layout | Visual | Kenapa` — visual bertukar setiap **2–4 s**;
    isi lajur Visual/Kenapa daripada **peta peluang (B)** selepas trim yang pengguna pilih.
 2. **Storyboard** (versi A untuk pengguna, dengan nota teknikal) + **papan layout** (SATU imej semua babak) (R26).
-3. **Senarai transition & SFX** ikut **Lampiran D3**: setiap momen → **pilihan Claude + 2 alternatif + sebab** (kod T/S dari katalog D1/D2) (R60).
+3. **Senarai transition & SFX** ikut **Lampiran D3**: setiap momen → **pilihan Claude + 2 alternatif + sebab** (kod T/S dari katalog D1/D2; effect E1–E17 R83f) (R60).
 4. Ikut **Lampiran B** (spesifikasi) untuk saiz, zon & rentak. Semakan kendiri 🤖 sebelum hantar:
    - [ ] Tulisan tak tutup muka; produk sedaya upaya (R1, R1a, R1b, R13)
    - [ ] Gaya caption **seperti dipilih pengguna (R72)**; lalai jika dipilih: caption 1–3 perkataan, ±48 px & digeser kiri (x < ±900), tukar warna teks (R16, R27, R62; X1); callout ikut masa subtitle (R63)
@@ -326,6 +326,7 @@
 | T16 | **Film strip / bingkai foto / kolaj** | Highlight acara, nostalgia (S7) | HyperFrames |
 | T17 | **Ken Burns** (≤5%) | Gambar statik / slideshow (R41) | zoompan |
 | T18 | **POV masuk pintu / berjalan** | Lawatan premis/kedai (R34, R35) | footage sebenar |
+| T19 | **J cut** — audio babak seterusnya mula ±0.3–0.5 s sebelum visual bertukar | Pertukaran babak bercakap → B-roll/sudut lain; rasa lancar, tarik penonton ke depan (S29) | ffmpeg: potong video & audio berasingan (audio offset), `acrossfade` pendek |
 
 Prinsip: **R21** (mesti sesuai dengan video, tidak rigid) · **R53** (transition kreatif tidak wajib) ·
 UGC: hard cut dominan, 0–1 transition kreatif · Acara: lebih banyak dibenarkan (R31), tiada SFX transition (R36).

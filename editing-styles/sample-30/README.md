@@ -10,7 +10,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
-- Zoom intro ≈ keluarga **R5/R53 (zoom blur), R7 (punch-in)** dan effect **E5 digital zoom** (R83f) → **🕒 P49** (sebagai pilihan hook).
+- Zoom intro ≈ keluarga **R5/R53 (zoom blur), R7 (punch-in)** dan effect **E5 digital zoom** (R83f) → **R85 (f)** (pilihan hook, tanya ikut job, Claude cadang dulu).
 
 Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, kad akhir TikTok dibuang).

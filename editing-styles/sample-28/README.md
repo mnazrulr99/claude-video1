@@ -11,7 +11,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
-- Gaya baharu → **🕒 P45–P46**. Lencana nombor = keluarga R79b (teks langkah bernombor); tint = X10 (jangan kerap).
+- Gaya baharu → **R85 (b)–(c)** (tanya ikut job, Claude cadang dulu). Lencana nombor = keluarga R79b (teks langkah bernombor); tint = X10 (jangan kerap).
 
 Gambar rujukan: `timeline-1.jpg` … `timeline-4.jpg` (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (540p, H.264, kad akhir TikTok dibuang).
