@@ -3,7 +3,7 @@
 > Cara guna: *"Edit video ni guna gaya Sample 15."*
 >
 > Video **promosi servis pengacara (Emcee Medina)** yang dibina daripada satu majlis resepsi sebenar:
-> **montaj highlight majlis** (emcee menyanyi/mengacara, tetamu, ketibaan, pengantin atas pelamin, persembahan, family photo, makanan)
+> **montaj highlight majlis** (emcee mengacara dengan mikrofon, tetamu, ketibaan, pengantin atas pelamin, persembahan, family photo, makanan)
 > → **testimoni pengantin & rakan** bercakap ke kamera ("So far emcee macam mana?") dengan **caption ayat bertambah perkataan demi perkataan**.
 > Ciri paling ketara: **header tetap "Majlis Resepsi" (serif krim-kuning) + nama pengantin skrip putih** di kanan atas sepanjang video,
 > **branding kecil "Emcee Medina"** serif italic di bawah tengah, transition **flash putih / light leak / overlay awan** yang lembut,
@@ -26,7 +26,7 @@ Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg`, `timeline-3.jpg` (setiap 0.5
 | Durasi / format | **72.5 s** · 1080×1920 (9:16) · 30 fps · **HEVC 10-bit HDR (HLG)** · eksport CapCut/Dreamina (`DreaminaMetaInfo`) |
 | Genre | Promosi servis emcee/pengacara majlis kahwin — highlight + testimoni klien |
 | Kamera | Telefon (iPhone HDR); handheld di kalangan tetamu, medium emcee di rostrum, selfie-style untuk testimoni |
-| Audio | Suara/nyanyian + muzik; **−8.2 LUFS, puncak +0.9 dBFS** (terlalu kuat — lihat X4/X7/X9) |
+| Audio | **BGM lagu ditambah oleh pengguna masa edit** (disahkan) + suara testimoni; **−8.2 LUFS, puncak +0.9 dBFS** (terlalu kuat — lihat X4/X7/X9) |
 
 ## Transkrip testimoni (Whisper, disemak dengan caption dalam video)
 
@@ -41,11 +41,11 @@ Gambar rujukan: `timeline-1.jpg`, `timeline-2.jpg`, `timeline-3.jpg` (setiap 0.5
 
 | Masa | Bahagian | Visual | Transition / grafik |
 |---|---|---|---|
-| 0–4.4 s | **HOOK — emcee beraksi** | Emcee (baju kurung pink) menyanyi di rostrum, ibu bapa pengantin duduk di belakang | Header **"Majlis Resepsi" muncul huruf demi huruf** (0–2 s), nama "Hakimi & Balqis" ditulis skrip (1–4 s), "Emcee Medina" muncul |
+| 0–4.4 s | **HOOK — emcee beraksi** | Emcee (baju kurung pink) mengacara dengan mikrofon di rostrum (suara asal diganti BGM), ibu bapa pengantin duduk di belakang | Header **"Majlis Resepsi" muncul huruf demi huruf** (0–2 s), nama "Hakimi & Balqis" ditulis skrip (1–4 s), "Emcee Medina" muncul |
 | 4.4–4.9 s | Peralihan | — | **Tint pink → flash putih** |
 | 4.9–8.2 s | Suasana | Pan tetamu di meja bulat, siling bunga | Hard cut |
 | 8.2–14.4 s | Ketibaan | Ibu bapa/pengantin berarak di antara meja | **Light leak/flare** menyapu (±11 s) |
-| 14.4–24.9 s | Emcee menyanyi | Medium lebih dekat (punch-in) emcee + pelamin biru | Flash putih lembut ±19.5 s |
+| 14.4–24.9 s | Emcee beraksi | Medium lebih dekat (punch-in) emcee + pelamin biru | Flash putih lembut ±19.5 s |
 | 24.9–25.6 s | Peralihan babak (siang → malam) | Dip gelap → **overlay awan/langit biru** (dreamy) | Transition kreatif utama |
 | 25.6–35.6 s | **Pengantin atas pentas** (malam) | Tetamu merakam dengan telefon di latar depan → close-up pengantin | Hard cut ±31 s |
 | 35.6–37.9 s | Persembahan | Penari/persembahan songket, lampu ungu | — |
@@ -94,9 +94,8 @@ Tiada sticker, emoji, ✅ atau label harga — gaya **elegan/minimal** sesuai ma
 
 | Masa | Bunyi | Fungsi |
 |---|---|---|
-| 0–31 s | **Nyanyian emcee** (vokal dengan harmonik jelas dalam spectrogram; Whisper tangkap lirik "…kerana makna dan cinta") | Bukti bakat emcee — **kesimpulan**: audio live emcee dijadikan "soundtrack" montaj |
-| 31–41 s | Trek lain (julat frekuensi terpotong ±12 kHz — sumber berbeza/termampat) | Kemungkinan lagu rakaman/BGM tambahan — **kesimpulan** |
-| 41–47 s | Kembali ke muzik/suasana | — |
+| 0–47 s | **BGM lagu (vokal)** — ditambah oleh pengguna masa edit (**disahkan pengguna**); Whisper tangkap lirik "…kerana makna dan cinta". Suara asal majlis dimatikan | Mood romantik majlis; selari R40 (suara asal boleh dimatikan, muzik penuh) |
+| 31–41 s | Bahagian lagu dengan julat frekuensi terpotong ±12 kHz | Kemungkinan bahagian lain lagu / sumber termampat — **kesimpulan** |
 | 47.5–72 s | **Suara testimoni dominan** + muzik perlahan di bawah | Bukti sosial |
 | Flash | Tiada SFX ketara dikesan (tiada transien whoosh/ding yang jelas) | Selari R36 (acara: muzik dominan, tiada SFX transition) |
 
@@ -110,11 +109,11 @@ Kelantangan **−8.2 LUFS / +0.9 dBFS** → clipping; jangan tiru (R14 kekal −
 | Caption testimoni ≈36 px | R40/X5 (≥44 px) | Konsep diterima (P20), saiz ikut ≥44 px |
 | −8.2 LUFS, +0.9 dBFS | R14, X4/X7/X9 | **Ditolak** |
 | Tamat **pudar krim/peach** | R12 / R42 (fade hitam) | Cadang sebagai pilihan mood majlis kahwin (P22) — menunggu keputusan |
-| Suara asal dikekalkan (nyanyian + testimoni) | R40 (suara boleh dimatikan, muzik penuh) | Tidak bercanggah — R40 "boleh"; untuk emcee yang menyanyi, suara asal = bukti bakat |
+| Highlight: suara asal dimatikan + BGM lagu; testimoni: suara asal + BGM perlahan | R40 | **Selari** R40 — dan menambah: BGM diperlahankan (ducking) masa testimoni |
 
 ## Checklist cepat
 
-1. Hook = emcee **sedang beraksi** (menyanyi/mengacara dengan mikrofon) + header majlis ditaip.
+1. Hook = emcee **sedang beraksi** (mengacara dengan mikrofon) + header majlis ditaip.
 2. Header tetap nama majlis (serif krim) + nama pengantin skrip putih di kanan atas; branding emcee kecil dalam zon selamat (R38/R39).
 3. Highlight bercerita: emcee ↔ suasana ↔ ketibaan ↔ pengantin ↔ persembahan ↔ family photo ↔ makanan (R41 format a).
 4. Flash putih/light leak antara segmen; satu transition dreamy (awan) untuk siang → malam (R42/R21).
@@ -122,6 +121,6 @@ Kelantangan **−8.2 LUFS / +0.9 dBFS** → clipping; jangan tiru (R14 kekal −
 6. Testimoni wajib sebut nama emcee + CTA lisan ("siapa nak guna servis Emcee Medina, tolong contact dia").
 7. Kelantangan −13/−14 LUFS (R14); tamat fade hitam (atau krim jika diluluskan).
 
-**Bahan dari pengguna/klien:** footage emcee beraksi (mengacara/menyanyi), B-roll majlis (dewan, ketibaan, pelamin, persembahan, makanan, family photo),
+**Bahan dari pengguna/klien:** footage emcee beraksi (mengacara), B-roll majlis (dewan, ketibaan, pelamin, persembahan, makanan, family photo),
 **klip testimoni** pengantin/keluarga/tetamu bercakap ke kamera (soalan "So far emcee macam mana?"), nama majlis & nama pengantin (ejaan tepat),
 nama/brand emcee, kebenaran pengantin untuk muka mereka dipapar dalam iklan, cara hubungi (jika mahu kad CTA).

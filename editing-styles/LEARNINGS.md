@@ -113,7 +113,7 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 - **Kreativiti Claude digalakkan:** gaya dalam Sample 1–6 ialah rujukan, bukan templat tegar. Selagi Peraturan Diterima (terutama R1, R13, R16, R21) dipatuhi, Claude boleh cadang idea grafik/transition/effect baharu yang sesuai dengan video — tunjuk dalam storyboard untuk keputusan pengguna (R2/R3).
 
 - **Jumlah grafik fleksibel** — pengguna suka dua-dua (±5 grafik/45 s atau ±9 grafik/52 s). Claude tentukan ikut kandungan dan tunjuk dalam storyboard. (/compare-learnedit periuk item 8)
-- **Presenter dikenali:** "Yana" (video periuk stainless steel pink, bilik dinding pink); **"Emcee Medina"** (pengacara wanita, Sample 15 — majlis resepsi Hakimi & Balqis; juga menyanyi); **"Emcee Hafiz"** (pengacara lelaki baju Melayu biru kotak, majlis raya — klien servis pengacara; rakan pengacara wanita tudung teal, nama belum disahkan).
+- **Presenter dikenali:** "Yana" (video periuk stainless steel pink, bilik dinding pink); **"Emcee Medina"** (pengacara wanita, Sample 15 — majlis resepsi Hakimi & Balqis); **"Emcee Hafiz"** (pengacara lelaki baju Melayu biru kotak, majlis raya — klien servis pengacara; rakan pengacara wanita tudung teal, nama belum disahkan).
 
 - **Watermark TikTok/app dalam sample** (logo TikTok + @username, cth. Sample 14) **bukan sebahagian gaya** — jangan tiru/masukkan dalam edit. (Arahan pengguna 2026-11-15)
 
@@ -127,11 +127,11 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | P16 | **Kekalkan isian natural** (cth. "Aa," sebelum ayat) vs buang semua (R11, kekal lalai buat masa ini). | /compare-learnedit Rejuran (item 16) |
 | P17 | **Caption 1 perkataan, putih, di ATAS (±22% dari atas)** bila separuh bawah frame dipenuhi produk besar (kereta, perabot) — alternatif kepada caption bawah R16/R62 — **ditawarkan sebagai pilihan bila tanya pengguna (R72)**. Highlight warna hanya pada label (kuning + ✅). | Sample 14 (sampel potential client) |
 | P18 | **Label senarai kegunaan = teks kuning + ✅, muncul satu demi satu di tempat caption** (ganti, bukan bertimbun) + ding setiap label. | Sample 14 |
-| P19 | **Struktur promo servis emcee/vendor majlis = highlight majlis (bukti kerja, ±65%) → flash putih → testimoni klien (bukti sosial, ±35%)**: pengantin perempuan → pengantin lelaki → rakan/tetamu, soalan pembuka "So far emcee macam mana?", testimoni menyebut **nama emcee + CTA lisan** ("siapa nak guna servis …, tolong contact dia"). Hook = emcee sedang beraksi (menyanyi/mengacara). | Sample 15 |
+| P19 | **Struktur promo servis emcee/vendor majlis = highlight majlis (bukti kerja, ±65%) → flash putih → testimoni klien (bukti sosial, ±35%)**: pengantin perempuan → pengantin lelaki → rakan/tetamu, soalan pembuka "So far emcee macam mana?", testimoni menyebut **nama emcee + CTA lisan** ("siapa nak guna servis …, tolong contact dia"). Hook = emcee sedang beraksi (mengacara dengan mikrofon) + BGM lagu. | Sample 15 |
 | P20 | **Caption testimoni = sentence case, perkataan muncul satu demi satu dan BERTAMBAH jadi ayat (3–4 baris, kemudian reset)**, krim/putih tanpa kotak, ±72–78% dari atas, **saiz ≥44 px** (sample ±36 px — terlalu kecil, X5). Hanya pada segmen bercakap; highlight tanpa caption. | Sample 15 |
 | P21 | **Header majlis + nama pengantin:** serif krim-kuning (typewriter) + **nama pengantin skrip tulisan tangan putih bertindih di bawahnya** (stroke reveal), rata kanan atas ±6–21%. Memperhalusi R38 untuk majlis kahwin. | Sample 15 |
 | P22 | **Ending pudar ke krim/peach terang** (bukan hitam) untuk video majlis kahwin bertema pastel — alternatif kepada R12/R42 (fade hitam). | Sample 15 |
-| P23 | **Suara asal emcee menyanyi dijadikan soundtrack montaj** (bukti bakat) — alternatif kepada R40 (matikan suara, muzik penuh). Overlay awan/langit sebagai transition dreamy siang → malam. | Sample 15 |
+| P23 | **Audio promo emcee:** highlight = suara asal dimatikan + **BGM lagu penuh** (pengguna tambah sendiri — disahkan); masuk testimoni → **BGM diperlahankan (ducking) di bawah suara testimoni**. Overlay awan/langit sebagai transition dreamy siang → malam. (Lagu tetap ikut R44 — berlesen.) | Sample 15 (disahkan pengguna: lagu ditambah masa edit) |
 | P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
 
 ---
