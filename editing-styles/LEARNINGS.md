@@ -131,7 +131,12 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 | # | Cadangan | Sumber |
 |---|---|---|
-| — | _(tiada — semua cadangan P9–P28 sudah diputuskan 2026-11-16: lihat R78–R81)_ | — |
+| P29 | **Kad soalan temubual atas latar video yang di-blur** (teks putih tebal sentence case, menaip ±0.5 s, kekal ±0.6–1 s) sebagai pemisah bab dalam video testimoni/temubual. | Sample 18, 20 |
+| P30 | **Kad akhir vendor/servis** (±4–5 s): latar warna jenama pastel atas foto acara pudar + logo + ayat CTA ("DM us…") + **search bar URL menaip** (R18) + lencana (cth. HRD Corp Claimable). | Sample 18, 20 |
+| P31 | **UGC tanpa suara gaya "aesthetic diary"**: teks cerita serif sentence case (≥44 px — bukan 28 px sample, X5), label produk skrip + anak panah, senarai manfaat bertitik, **penanda "Day 1" → "Day 14"** dengan satu light leak lompat masa. | Sample 19 |
+| P32 | **Callout spec berpenunjuk** (kotak putih kecil + garis nipis ke bahagian produk, cth. "WARRANTY MOTOR 10 tahun") muncul masa disebut (R1b/R63). | Sample 21 |
+| P33 | **CTA cop condong 2 baris** (jalur putih, teks navy tebal, ±−8°) + gema teks gergasi lut sinar di belakang, di zon selamat (R13). Juga: caption highlight **kotak gradient biru→teal** (varian P15/R81). | Sample 21 |
+| P34 | **Highlight acara 9:16: logo program condong (kotak warna jenama) tetap di atas** — letak ±9–14% dari atas (sample ±4–8% terlalu tinggi, zon UI). Transition pelbagai jenis (flash warna, panel condong, koyak kertas) di pertukaran segmen. | Sample 22 |
 
 ---|---|---|
 | P9 | **Warna highlight caption berselang** (merah → hijau → kuning) sebagai pilihan selain satu warna (R16 masih: tukar warna teks, bukan kotak). Claude cadang, pengguna pilih (R2). | Sample 10–13 |
@@ -165,3 +170,4 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | 2026-11-16 | /sample-baru | Sample 17 — tutorial green-screen serum kulit kepala (@abbeyyung, English, 122.8 s; Drive "Sample 16") | Format baharu: presenter cut-out atas B-roll demo + teks langkah bernombor + kad title siri. Kad akhir Instagram = platform (nota watermark). **P26 → R78 diterima** (format green-screen untuk klien); **P27 → R79** (gaya teks tanya setiap job); **P28 → R80** | Sebahagian |
 | 2026-11-16 | Semakan folder | Folder Drive sample (19 fail) dipadankan ikut ID fail — Drive "Sample 7" & "Sample 17" ialah edit pengguna yang sudah dibanding (/compare-learnedit periuk & kenangan-airterjun); jadual padanan dalam README.md | — |
 | 2026-11-16 | Arahan pengguna | Semua cadangan menunggu | "Semua tanya ikut job, tapi bagi cadangan awak dulu" — P24, P25, P28 → R80; P9–P11, P15–P18 → R81; P27 → R79 | R79–R81 diterima |
+| 2026-11-16 | /sample-baru | Sample 18–22 — folder Drive 6 video ("Document from ~n"): S18/S20 testimoni team-building engagelife × Mars, S19 UGC skincare tanpa suara (Eucerin), S21 iklan showroom Coway, S22 highlight sekolah 9:16 SKeSAS; video ke-5 = **duplikat Sample 10** (tidak disimpan) | Mengesahkan **R46 (colour bars + beep — kini 4 rujukan)**, R45, R16/R72 (warna highlight ikut jenama), R18/R19, R48/R65, R30–R42. **Tidak dipelajari:** −7.8 LUFS (S21, X4), +1.1/+1.2 dBTP (S18/S19, R14), teks ≈28 px (S19, X5), 4K 60 fps HEVC (S21, X11), logo ±4–8% dari atas (S22). Cadangan baharu **P29–P34** menunggu keputusan | 🕒 P29–P34 |
