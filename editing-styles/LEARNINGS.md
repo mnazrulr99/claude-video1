@@ -120,7 +120,8 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 - **Jumlah grafik fleksibel** — pengguna suka dua-dua (±5 grafik/45 s atau ±9 grafik/52 s). Claude tentukan ikut kandungan dan tunjuk dalam storyboard. (/compare-learnedit periuk item 8)
 - **Presenter dikenali:** "Yana" (video periuk stainless steel pink, bilik dinding pink); **"Emcee Medina"** (pengacara wanita, Sample 15 — majlis resepsi Hakimi & Balqis); **"Emcee Hafiz"** (pengacara lelaki baju Melayu biru kotak, majlis raya — klien servis pengacara; rakan pengacara wanita tudung teal, nama belum disahkan).
 
-- **Watermark TikTok/app dalam sample** (logo TikTok + @username, cth. Sample 14) **bukan sebahagian gaya** — jangan tiru/masukkan dalam edit. (Arahan pengguna 2026-11-15)
+- **Watermark TikTok/app dalam sample** (logo TikTok + @username, cth. Sample 14) **bukan sebahagian gaya** — jangan tiru/masukkan dalam edit. (Arahan pengguna 2026-11-15) Begitu juga **kad akhir/logo Instagram @username** (Sample 17).
+- **Kreator BettyRahmad** (watermark "bettyrahmad") muncul dalam **Sample 5, 6 & 16** — kemungkinan kreator tetap pengguna; gaya beliau: caption karaoke putih + kuning, label bubbly, CTA beg kuning.
 
 ## 🕒 Menunggu keputusan pengguna
 
@@ -133,6 +134,11 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | P17 | **Caption 1 perkataan, putih, di ATAS (±22% dari atas)** bila separuh bawah frame dipenuhi produk besar (kereta, perabot) — alternatif kepada caption bawah R16/R62 — **ditawarkan sebagai pilihan bila tanya pengguna (R72)**. Highlight warna hanya pada label (kuning + ✅). | Sample 14 (sampel potential client) |
 | P18 | **Label senarai kegunaan = teks kuning + ✅, muncul satu demi satu di tempat caption** (ganti, bukan bertimbun) + ding setiap label. | Sample 14 |
 | P11 | **Bukti harga sebagai screenshot/poster pop** di sebelah produk semasa harga disebut (kad halaman produk, poster promo, tag harga) — ikut R1. | Sample 10–12 |
+| P24 | **Label warna varian diwarnakan ikut warna itu sendiri** (cth. "PINK" font bubbly pink outline putih, "PUTIH" putih, "GREEN" hijau) + doodle sparkle, pop satu demi satu tepat masa disebut (R63). | Sample 16 |
+| P25 | **CTA "CHECKOUT SEKARANG!"** — italic tebal putih condong + **jalur tape kuning** di belakang "SEKARANG!", animasi berperingkat (tape → SEKARANG! → CHECKOUT), zon selamat atas (R13). Alternatif kepada pill beg kuning. | Sample 16 |
+| P26 | **Format tutorial green-screen:** presenter dipotong (buang latar) di **bawah tengah ±55% tinggi frame**, bercakap sepanjang video; di belakang **B-roll demo bertukar ±3–4 s yang sepadan dengan ayat** (R37). Untuk video edukasi/tutorial/tips. | Sample 17 |
+| P27 | **Tutorial: teks langkah bernombor (sentence case, ±22% dari atas, asterisk untuk tip sampingan) MENGGANTIKAN caption karaoke** — ditawarkan sebagai pilihan caption (R72). | Sample 17 |
+| P28 | **Kad title siri berjenama** (serif warna jenama atas latar warna lembut penuh, 2–3 s) selepas hook + **papan cadangan produk** gaya slaid bila presenter cadang produk. | Sample 17 |
 
 ---
 
@@ -153,3 +159,6 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | 2026-11-10 | /compare-learnedit | Majlis raya — edit pengguna (59.9 s, take panjang + header tetap + teks dialog + muzik) vs Claude FINAL v4 (slideshow 36 s) | Perbandingan dalam `comparisons/2026-11-10-raya/`; pengguna serahkan keputusan kepada Claude | R36–R44 diterima; X4–X6 ditolak |
 | 2026-11-14 | /compare-learnedit | kenangan-airterjun (Sukali Waterfall, Myanmar) — edit pengguna (58.8 s: + 5 foto klien, ±9 light leak, BGM, −13.2 LUFS) vs Claude FINAL v2 (48.6 s: 10 babak crossfade, intro poskad, bunyi air −26 LUFS) | Jenis job baharu: video kenangan pemandangan tanpa suara. Perbandingan dalam `comparisons/2026-11-14-kenangan-airterjun/` (muka klien di-blur, tiada video) | R67–R71 diterima; X10, X11 ditolak |
 | 2026-11-16 | /sample-baru | Sample 15 — promo servis Emcee Medina (majlis resepsi Hakimi & Balqis, 72.5 s, HDR) | Mengesahkan R38–R42 (header tetap, branding emcee, flash/light leak). Branding ±93% (X6), caption ±36 px (X5), −8.2 LUFS/+0.9 dBFS (X4) **tidak dipelajari**. P19–P23 → **R73–R77 diterima** (2026-11-16) | R73–R77 diterima |
+| 2026-11-16 | /sample-baru | Sample 16 — UGC jam tangan budak dalam kereta (BettyRahmad, 55.8 s; Drive "Sample 6") | Mengesahkan R16/R62 (caption putih + kuning ±48 px), R45, R53, R55, R12. −19.5 LUFS/+0.5 dBFS (R14) & ±7 SFX (R65) **tidak dipelajari**. P24, P25 menunggu | Menunggu |
+| 2026-11-16 | /sample-baru | Sample 17 — tutorial green-screen serum kulit kepala (@abbeyyung, English, 122.8 s; Drive "Sample 16") | Format baharu: presenter cut-out atas B-roll demo + teks langkah bernombor + kad title siri. Kad akhir Instagram = platform (nota watermark). P26–P28 menunggu | Menunggu |
+| 2026-11-16 | Semakan folder | Folder Drive sample (19 fail) dipadankan ikut ID fail — Drive "Sample 7" & "Sample 17" ialah edit pengguna yang sudah dibanding (/compare-learnedit periuk & kenangan-airterjun); jadual padanan dalam README.md | — |
