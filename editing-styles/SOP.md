@@ -15,6 +15,7 @@
 | 0 | Persediaan session | — |
 | 1 | Terima job & bahan | ⛔ G1: brief lengkap |
 | 2 | Semak teknikal (audio, video) | ⛔ G2: lulus semakan / pengguna setuju teruskan |
+| 2b | **Analisis bahan** → cadangan berasaskan bahan (R84) | ⛔ G2b: pilih arah gaya |
 | 3 | Transkrip → senarai trim → **PDF transkrip** & cadangan | ⛔ G3a: pilih trim, gaya, hook, warna, BGM · ⛔ G3b: sahkan PDF transkrip |
 | 4 | Pelan edit + storyboard + papan layout | ⛔ G4: pengguna lulus pelan |
 | 5 | Render PREVIEW + pakej klien | ⛔ G5: pengguna setuju hantar ke klien |
@@ -62,6 +63,35 @@
 
 ⛔ **G2:** lulus, atau pengguna setuju teruskan walaupun ada isu.
 
+## Fasa 2b — ANALISIS BAHAN → cadangan yang berasaskan bahan (R84) 🤖 → 🧑
+
+> Sebelum cadang apa-apa gaya, Claude **WAJIB tengok & analisis semua bahan** (video raw, gambar, logo, PNG, brief) dan
+> **cadang hanya editing yang bahan itu mampu sokong** — setiap cadangan mesti sebut **bukti dari bahan** (fail + saat).
+
+1. 🤖 Untuk **setiap fail**: contact sheet bertanda masa (0.5 s) + `tools/zones.py` (muka/produk) + semak audio. Isi **Jadual Analisis Bahan**:
+
+| Perkara | Apa dinilai | Kesan pada cadangan |
+|---|---|---|
+| Jenis & isi | Bercakap ke kamera / faceless / acara / demo; topik; mood | Pilih resepi Lampiran A + Sample terdekat |
+| Bilangan take & sudut | Satu take statik vs multi-angle; ada B-roll/close-up? | Satu take → caption/grafik jadi "gerak" (S24, R83d/e); multi-angle → cut on motion (S26); tiada B-roll → cadang stok/minta klien |
+| Framing & ruang kosong | Di mana ruang kosong untuk teks (atas/bawah/sisi); kedudukan muka & produk | Kedudukan caption/title (R1, R72, R81f) |
+| Latar | Kemas/rata/green screen vs sibuk | Boleh cut-out? → teks belakang subjek (R83h), presenter atas grid (R83b), green-screen (R78) |
+| Produk / benda penting | Kelihatan jelas? close-up ada? saiz | Punch-in/label (R7, R1b), callout (R82d) |
+| Gerakan & tenaga | Statik / banyak gerak / ekspresi | Rentak potongan, punch-in, effect (E1–E17) |
+| Kualiti teknikal | Resolusi, HDR, cahaya, goyang, fps, audio (bising/perlahan) | Had crop/zoom (R43), tonemap, perlu BGM/denoise? |
+| Bahan tambahan | Gambar/PNG/logo — resolusi, latar lut sinar?, warna jenama | Gaya grafik & warna highlight ikut jenama; PNG → pop item (R83c) |
+| Apa yang KURANG | Shot/bahan yang perlu untuk gaya tertentu tapi tiada | Senarai minta pada pengguna/klien |
+
+2. 🤖 Bentang kepada pengguna (ringkas, dengan **contact sheet/key frames**):
+   - **Ringkasan bahan** (jadual di atas, 1 baris setiap perkara).
+   - **✅ Boleh dibuat dengan bahan ini** — 2–3 arah gaya (Sample + pilihan R79–R83 + effect E), setiap satu dengan **sebab + bukti** (cth. "latar dinding rata di 0–20 s → teks belakang subjek boleh").
+   - **❌ Tak sesuai / tak boleh** dengan bahan ini + sebab (cth. "satu sudut sahaja → cut on motion S26 tak boleh").
+   - **📥 Bahan tambahan yang akan menaikkan hasil** (pilihan, bukan wajib).
+   - Cadangan utama Claude + sebab.
+3. Kemudian teruskan Fasa 3 (transkrip, trim, caption R72…) — cadangan Fasa 3 mesti selari dengan analisis ini.
+
+⛔ **G2b:** 🧑 pengguna pilih arah gaya (atau minta Claude guna cadangan utama).
+
 ## Fasa 3 — Analisis, transkrip & cadangan 🤖 → 🧑
 
 > **Video bercakap/berskrip: TRANSKRIP DULU sebelum apa-apa trim atau rancang grafik (R57).**
@@ -78,7 +108,7 @@
 3. **Dengar semula** perkataan "TAK PASTI" & nama (Whisper tersilap dengar, cth. "Yana"→"enak") — R15, R54.
 4. Contact sheet (setiap 0.5 s) — padankan peta peluang dengan apa yang **kelihatan** (R37), momen terbaik, ekspresi.
 5. `tools/zones.py` — kesan muka & produk (R1).
-6. **Bentang cadangan** ikut **Lampiran A** (resepi jenis video) — Claude cadang + sebab, pengguna pilih (R2):
+6. **Bentang cadangan** (selari dengan analisis bahan Fasa 2b, R84) ikut **Lampiran A** (resepi jenis video) — Claude cadang + sebab, pengguna pilih (R2):
    - **WAJIB tanya gaya caption (R72):** kedudukan (bawah R16/R62 vs atas R81f), bilangan perkataan, warna/highlight, saiz — beri pilihan + cadangan, **tunggu jawapan**.
    - **Pilihan R79–R83** (termasuk effect E1–E17 Sample 25): untuk setiap pilihan yang relevan dengan video, nyatakan **cadangan Claude + sebab dahulu**, pengguna putuskan.
    - Senarai TRIM (A) · 2–3 calon **hook** lulus R56 (lalai punchline R45) · gaya ·

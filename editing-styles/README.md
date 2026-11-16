@@ -8,6 +8,7 @@ Semua editing dibuat & dirender terus oleh Claude (ffmpeg) — pengguna tak guna
 
 1. Pengguna hantar **video mentah** (+ gambar produk jika ada).
 2. **Semak audio dahulu** (`tools/audio_check.py`) — jika terlalu perlahan/senyap → berhenti & beritahu pengguna (R23).
+2b. **Analisis SEMUA bahan** (raw, gambar, logo, brief) → cadang hanya gaya yang bahan mampu sokong, dengan bukti + apa tak sesuai + bahan tambahan (R84, SOP Fasa 2b). Pengguna pilih arah.
 3. **Analisis & transkrip**; tunjuk **senarai ayat tersangkut/ulang** (jangan potong dulu, R24) + **cadangan gaya**
    (Sample, hook, warna caption, BGM). Pengguna pilih.
 4. **Pelan edit dalam jadual** (Saat · Layout · Visual · Kenapa; visual tukar 2–4 s, R25).

@@ -5,7 +5,7 @@ sebarang tugas editing atau analisis sample — ia mengandungi aliran kerja waji
 (Sample 1, Sample 2, …), pattern bersama dan citarasa pengguna.
 
 Ringkasan:
-- Video mentah → analisis & cadang gaya → storyboard imej → tunggu setuju → baru render (ffmpeg).
+- Video mentah (+ bahan) → **analisis semua bahan dahulu (R84)** → cadang gaya yang bahan mampu sokong → storyboard imej → tunggu setuju → baru render (ffmpeg).
 - Sample siap edit baharu → analisis penuh → `editing-styles/sample-N/` → kemas kini katalog & "Pattern Bersama".
 - Balas dalam Bahasa Melayu santai, mesra.
 
