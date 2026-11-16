@@ -135,7 +135,12 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 | # | Cadangan | Sumber |
 |---|---|---|
-| — | _(tiada — P35–P43 diputuskan 2026-11-16: lihat R83)_ | — |
+| P44 | **Effect "character intro":** freeze frame ±2–3 s pada ekspresi bagus → subjek cut-out (rembg) + **outline putih tebal** atas latar asal dikelabukan + halftone → **kad nama ALL CAPS + jawatan kecil** bawah kiri (zon selamat, R1/X6) → hard cut sambung. Untuk kenalkan presenter/klien/pekerja (testimoni, servis, team). | Sample 27 |
+| P45 | **Caption italic 2 tahap:** baris 1 frasa putih kecil + baris 2 frasa penting **lebih besar kuning-lime** (atau merah untuk negatif) dengan glow. Pilihan dalam soalan R72. | Sample 28 (keluarga S25/S26 2 tahap) |
+| P46 | **Lencana nombor bulat** (warna jenama) di sebelah tajuk setiap langkah untuk video listicle/tips — varian visual R79b; plus pill URL/logo sumber bertindan (R18/R63). | Sample 28 |
+| P47 | **Kad nombor kaca atas latar video di-blur** (±1 s) sebagai pemisah item listicle, label nama item dalam kotak gelap + teks warna jenama bercahaya — keluarga R82a. | Sample 29 |
+| P48 | **J cut** (audio babak seterusnya mula ±0.3–0.5 s sebelum visual) dan **match cut** (gerakan sama, babak berbeza) → tambah ke katalog transition SOP D1 sebagai kod baharu. | Sample 29 |
+| P49 | **Zoom intro** (zoom laju 1.0→1.3× dalam ±0.3 s pada frame pertama, ease-out + sedikit motion blur) sebagai pilihan hook "scroll stopper" bersama R45. | Sample 30 |
 
 ---|---|---|
 | P9 | **Warna highlight caption berselang** (merah → hijau → kuning) sebagai pilihan selain satu warna (R16 masih: tukar warna teks, bukan kotak). Claude cadang, pengguna pilih (R2). | Sample 10–13 |
