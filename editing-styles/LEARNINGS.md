@@ -137,7 +137,9 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 
 | # | Cadangan | Sumber |
 |---|---|---|
-| — | _(tiada — P44–P49 diputuskan 2026-11-16: lihat R85; J cut → SOP D1 T19)_ | — |
+| P50 | **Hook "title model ditaip" gaya S31** — nama model ALL CAPS condensed putih + bayang, 3 baris bertingkat, ditaip huruf demi huruf ±2.5 s atas klip terbaik yang di-grade **B&W + glitch panel jalur menegak** + flash, kemudian **transition morph/displacement** ke warna (≤3 s, effect hanya di hook — X10). Untuk showcase produk besar (kereta, hartanah). | Sample 31 |
+| P51 | **Pakej "detail dealer" gaya S32** — (a) **lower third presenter** (logo jenama produk + bar warna dealer + kotak kuning: nama / model / logo dealer) pada kemunculan pertama presenter, keluar dengan smear; (b) **subtitle frasa ALL CAPS putih bayang tanpa highlight ±75–80%** sebagai pilihan dalam soalan R72; (c) **doodle highlighter kuning** coret pada lencana/detail masa disebut; (d) **split screen atas-bawah** untuk dua benda berkait (skrin + kawalan). Kad akhir dealer = R82b sedia ada. | Sample 32 |
+| P52 | **Split screen 3 panel menegak** (3 close-up bertindan, panel tengah wipe putih) sekali menjelang akhir showcase. | Sample 31 |
 
 ---|---|---|
 | P9 | **Warna highlight caption berselang** (merah → hijau → kuning) sebagai pilihan selain satu warna (R16 masih: tukar warna teks, bukan kotak). Claude cadang, pengguna pilih (R2). | Sample 10–13 |
@@ -173,3 +175,4 @@ Fail ini ialah **ingatan pembelajaran** Claude untuk editing video pengguna. Ia 
 | 2026-11-16 | Arahan pengguna | Semua cadangan menunggu | "Semua tanya ikut job, tapi bagi cadangan awak dulu" — P24, P25, P28 → R80; P9–P11, P15–P18 → R81; P27 → R79 | R79–R81 diterima |
 | 2026-11-16 | /sample-baru | Sample 18–22 — folder Drive 6 video ("Document from ~n"): S18/S20 testimoni team-building engagelife × Mars, S19 UGC skincare tanpa suara (Eucerin), S21 iklan showroom Coway, S22 highlight sekolah 9:16 SKeSAS; video ke-5 = **duplikat Sample 10** (tidak disimpan) | Mengesahkan **R46 (colour bars + beep — kini 4 rujukan)**, R45, R16/R72 (warna highlight ikut jenama), R18/R19, R48/R65, R30–R42. **Tidak dipelajari:** −7.8 LUFS (S21, X4), +1.1/+1.2 dBTP (S18/S19, R14), teks ≈28 px (S19, X5), 4K 60 fps HEVC (S21, X11), logo ±4–8% dari atas (S22). Cadangan baharu P29–P34 | → R82 |
 | 2026-11-16 | Arahan pengguna | P29–P34 (Sample 18–22) | "Tanya ikut job, Claude cadang dulu" — semua jadi pilihan R82 | R82 diterima |
+| 2026-11-17 | /sample-baru | Sample 31–32 — folder job klien kereta (Mercedes-AMG CLA 45 S): S31 showcase senyap @dtc_carhub (gaya klien mahu), S32 review presenter Sentimas (tahap detail klien mahu) | Mengesahkan R37/R63 (B-roll ikut perkataan), R82b (kad akhir dealer — kini 3 rujukan), R45. **Tidak dipelajari:** puncak +1.3 dBFS (S31) / +0.9 dBFS (S32) (R14), watermark & kad akhir TikTok (X12). Cadangan baharu P50–P52 | Menunggu |
