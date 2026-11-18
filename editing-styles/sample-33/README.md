@@ -12,7 +12,7 @@
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
 - Format: tanya landscape vs 9:16 dulu (R30–R32). Gred punchy kereta = R86; transition zoom/blur = R87; **flare maks 1×/video = R88** (sample ini guna 2 flash oren — tidak ditiru).
-- Pilihan baharu → **P53–P54** (menunggu keputusan pengguna).
+- Teks lirik kinetik = **R90** (pilihan untuk job kereta tanpa suara, perlu lagu berlirik). Micro-montage → **P54** (menunggu keputusan pengguna).
 
 Gambar rujukan: `timeline-1.jpg` (0–15.5 s) & `timeline-2.jpg` (16–24.5 s) (**setiap 0.5 s**), `key-frames.jpg` (10 momen), `audio-spectrogram.jpg`.
 **Salinan preview video:** `preview-540p.mp4` (958×540, H.264, penuh 24.5 s — tiada kad akhir TikTok dalam fail ini).
