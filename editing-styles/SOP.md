@@ -147,7 +147,10 @@
 
 1. **Pelan edit dalam jadual** (R25): `Saat | Layout | Visual | Kenapa` — visual bertukar setiap **2–4 s**;
    isi lajur Visual/Kenapa daripada **peta peluang (B)** selepas trim yang pengguna pilih.
-2. **Storyboard** (versi A untuk pengguna, dengan nota teknikal) + **papan layout** (SATU imej semua babak) (R26).
+2. **Storyboard HTML interaktif (link Artifact, mesra phone)** — versi A untuk pengguna (R91): susun babak ikut arc cerita
+   (hook → masalah → bukti → klimaks → CTA), setiap babak tunjuk thumbnail footage sebenar, timestamp & durasi, cadangan
+   caption & transition, dan **sebab babak dipilih**. Jana dengan `tools/storyboard_html.py` (lihat SKILL Langkah 3).
+   Papan layout (SATU imej semua babak, R26) pilihan tambahan. Storyboard klien versi B (selepas render) kekal JPG.
 3. **Senarai transition & SFX** ikut **Lampiran D3**: setiap momen → **pilihan Claude + 2 alternatif + sebab** (kod T/S dari katalog D1/D2; effect E1–E17 R83f) (R60).
 4. Ikut **Lampiran B** (spesifikasi) untuk saiz, zon & rentak. Semakan kendiri 🤖 sebelum hantar:
    - [ ] Tulisan tak tutup muka; produk sedaya upaya (R1, R1a, R1b, R13)

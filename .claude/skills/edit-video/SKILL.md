@@ -1,6 +1,6 @@
 ---
 name: edit-video
-description: Edit video mentah pengguna mengikut gaya rujukan (Sample 1, 2, 3, …) dalam editing-styles/. Gunakan bila pengguna hantar video raw (link Google Drive atau fail) dan minta edit. Prosedur wajib - analisis, cadang gaya, storyboard imej, tunggu setuju, baru render dengan ffmpeg.
+description: Edit video mentah pengguna mengikut gaya rujukan (Sample 1, 2, 3, …) dalam editing-styles/. Gunakan bila pengguna hantar video raw (link Google Drive atau fail) dan minta edit. Prosedur wajib - analisis, cadang gaya, storyboard HTML interaktif (link), tunggu setuju, baru render dengan ffmpeg.
 ---
 
 # /edit-video — Edit video mentah pengguna
@@ -109,12 +109,21 @@ di-overlay pada babak mana & kenapa) dalam peringkat cadangan/storyboard. Gambar
    - Bahan yang masih diperlukan (logo, gambar produk, CTA, dsb.).
 5. **Tunggu pengguna pilih.** Untuk semua pilihan kreatif: Claude cadang, pengguna putuskan.
 
-## Langkah 3 — STORYBOARD imej (jangan render lagi)
+## Langkah 3 — STORYBOARD HTML interaktif (link, mesra phone) — jangan render lagi (R91)
 
-Hasilkan imej storyboard (PNG/JPG, satu atau beberapa halaman) — setiap babak satu panel:
-- Frame sebenar dari video (dengan mock-up caption/title/sticker dilukis atas frame jika boleh).
-- Label: **masa mula–tamat**, teks caption, title/grafik, zoom/punch-in, effect, transition, SFX, BGM.
-Hantar kepada pengguna (SendUserFile, display render). **Tunggu komen; ulang sehingga pengguna kata setuju.**
+1. **Susun ikut storytelling, bukan sekadar cantum clip.** Setiap babak diberi `beat`:
+   `hook → masalah → bukti → klimaks → cta` (`lain` untuk jambatan). Pilih susunan yang paling kuat walaupun
+   berbeza dengan turutan rakaman; tulis logik keseluruhan dalam `arc_note`. (Acara: ikut aturcara R31.)
+2. Tulis `output/<job>/plan-storyboard.json` (format: `tools/templates/storyboard-plan.example.json`). Setiap babak:
+   `src`, `in`/`out` (saat dalam fail sebenar), `beat`, `visual`, `caption`, `transition {pick, alts, why}`, `sfx`, `why`
+   (**sebab babak ini dipilih**, dengan bukti: R56, R37, apa yang kelihatan).
+3. Jana: `python3 -I tools/storyboard_html.py output/<job>/plan-storyboard.json output/<job>/storyboard-<job>.html`
+   → thumbnail 3 frame sebenar setiap babak (tekan untuk tukar), timestamp dalam video siap + sumber asal, durasi,
+   bar arc cerita, cadangan caption & transition (+ alternatif boleh pilih), sebab, undi OK/Ubah/Buang, komen,
+   butang **"Salin maklum balas"** (pengguna tampal dalam chat).
+4. **Terbitkan sebagai link Artifact** (Artifact publish, `icon: "film"`) dan beri link dalam chat. Pengguna semak di phone.
+   Ulang guna `file_path` yang sama untuk versi baharu (link kekal sama). Papan layout imej masih boleh disertakan jika perlu.
+**Tunggu komen; ulang sehingga pengguna kata setuju.**
 
 ## Langkah 4 — Render (selepas setuju sahaja)
 

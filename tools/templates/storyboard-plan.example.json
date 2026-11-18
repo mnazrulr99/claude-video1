@@ -1,0 +1,14 @@
+{
+  "title": "Periuk Tekanan Demo",
+  "client": "Contoh klien",
+  "format": "9:16",
+  "style": "Sample 3 + R81 (caption atas)",
+  "arc_note": "Mula dengan wap meletup (hook visual), kemudian masalah masak lambat, bukti daging lembut dalam 15 minit, klimaks reaksi rasa, dan tutup dengan harga + CTA.",
+  "scenes": [
+    {"src": "raw/demo.mp4", "in": 21.0, "out": 23.2, "beat": "hook", "visual": "Close-up wap keluar dari injap", "caption": "15 MINIT JE?!", "transition": {"pick": "Hard cut (buka video)", "alts": ["T8 zoom blur", "E3 flash putih"], "why": "Buka terus tanpa transition supaya hook kena dalam < 1 s."}, "sfx": "S2 whoosh", "why": "Frame paling dramatik dalam raw, lulus ujian R56 dan terus berkait dengan produk (masak cepat)."},
+    {"src": "raw/demo.mp4", "in": 2.0, "out": 5.0, "beat": "masalah", "visual": "Penutur depan dapur, medium shot", "caption": "MASAK RENDANG 3 JAM", "transition": {"pick": "Hard cut", "alts": ["T3 whip pan"], "why": "UGC: hard cut dominan (R53)."}, "why": "Penonton kenal rasa penat masak lama, jadi ada sebab nak terus tengok."},
+    {"src": "raw/demo.mp4", "in": 9.5, "out": 12.0, "beat": "bukti", "visual": "Tekan butang, timer 15:00", "caption": "TEKAN SATU BUTANG", "transition": {"pick": "Hard cut + punch-in 1.1x", "alts": ["T12 paper rip", "Hard cut"], "why": "Punch-in tekankan tindakan."}, "why": "Bukti produk mudah guna, padan dengan apa yang disebut dalam ucapan (R37)."},
+    {"src": "raw/demo.mp4", "in": 14.0, "out": 17.0, "beat": "klimaks", "visual": "Daging dicubit dengan sudu, lembut", "caption": "LEMBUT GILA", "transition": {"pick": "T12 paper rip", "alts": ["T8 zoom blur", "Hard cut"], "why": "Satu-satunya transition kreatif, di tengah video (R10/R53)."}, "sfx": "S12 paper-rip", "why": "Hasil yang penonton nak tengok; momen paling kuat diletak dekat hujung untuk kekalkan tontonan."},
+    {"src": "raw/demo.mp4", "in": 26.0, "out": 29.0, "beat": "cta", "visual": "Produk + harga, penutur senyum", "caption": "RM199 · KLIK BAKUL KUNING", "transition": {"pick": "Hard cut", "alts": ["Dip hitam"], "why": "CTA jelas, tamat hitam (R12)."}, "why": "Tutup dengan tindakan jelas selepas penonton dah yakin."}
+  ]
+}
