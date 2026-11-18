@@ -9,7 +9,7 @@
 ## Pilihan pengguna
 
 - Ikut `editing-styles/LEARNINGS.md` (Peraturan Diterima mengatasi apa-apa dalam sample ini).
-- Hook ini dari keluarga **"borrowed viral hook + jambatan"** (Sample 34–38) → cadangan **P55** (🕒 menunggu keputusan pengguna). Bercanggah separa dengan **R56(b)** (hook mesti berkait terus dengan isi) — kaitan dibina oleh **jambatan**, bukan isi klip. Jangan guna tanpa persetujuan pengguna.
+- Hook ini dari keluarga **"borrowed viral hook + jambatan"** (Sample 34–38). **Jenis jambatan sample ini DITERIMA → R91** — tapi **wajib tanya pengguna dulu** setiap job sama ada nak guna hook macam ni.
 - ⚠️ Klip viral hook ialah **footage orang lain** (hak cipta). Untuk job klien, guna klip berlesen/stok, rakaman sendiri, atau lakonan semula — jangan muat turun klip viral orang.
 - Watermark TikTok & kad akhir TikTok = bukan gaya (X12) — dipotong dari preview.
 

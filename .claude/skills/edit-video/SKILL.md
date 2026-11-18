@@ -32,7 +32,7 @@ Balas dalam **Bahasa Melayu santai & mesra**. Pengguna **tidak guna sebarang app
 5. Caption **1–3 perkataan**; perkataan penting **dibesarkan masa close-up**. (R27) Caption ikut transkrip **verbatim** yang disemak —
    Whisper `ms` menterjemah slang/English ("worth it"→"berbaloi", "korang"→"anda"); betulkan sebelum storyboard. (R54)
 6. **Lalai: video BERSIH tanpa SFX & BGM** + jadual masa momen SFX (title utama + penutup) untuk pengguna tambah sendiri (R65, R66). Jika diminta SFX: jarang, tiada whoosh setiap cut (R48).
-6b. **Hook mesti lulus ujian R56:** sangat menarik (berhenti scroll < 3 s) **dan** berkait terus dengan isi video; cadang 2–3 calon + sebab.
+6b. **Hook mesti lulus ujian R56:** sangat menarik (berhenti scroll < 3 s) **dan** berkait terus dengan isi video; cadang 2–3 calon + sebab. Hook "borrowed viral + jambatan visual" (R91: objek kesinambungan / soalan→jawapan / match cut) → **tanya pengguna dulu** nak guna atau tidak; jangan lalai. Jambatan tanpa kaitan visual = X14 (ditolak).
     **Hook lalai:** ayat punchline terus di 0 s (buang mukadimah) + colour bars & beep ±1 s jika ada punchline (R45, R46).
     **Suara asal** — tiada denoise & tiada percepat (R61; 1.1× hanya jika diminta). Filter warna ringan sahaja (R64). Grafik: skrip italic + bulat tebal, warna **kontras** dengan produk, sticker pill putih (R50–R52).
     Transition kreatif tidak wajib (R53). UGC bercakap: tiada BGM secara lalai (R55).

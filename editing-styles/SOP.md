@@ -216,7 +216,7 @@
 | **Kenangan / travel pemandangan** (tanpa suara) | — (job kenangan-airterjun) | Tiada hook jualan; fade dari hitam + title poskad nama tempat & tarikh atas langit/ruang kosong | Title elegan sahaja (serif italic + huruf besar berjarak, tarikh "8 NOVEMBER 2026"); tiada caption | **Bunyi alam asal diperlahankan ±−26 LUFS** untuk BGM pengguna (R71) | Tiada dibakar (R66) | Crossfade 0.8 s; **light leak hanya masuk/keluar foto orang** (R70) | **Tanya foto/video klien di G1** (R67) → pemandangan → foto (±2 s, R69) → pemandangan → foto → penutup fade hitam (R68) |
 | **Highlight acara** | S7–S9 | Drone/penjenama/momen VIP | Tiada karaoke; header nama acara (R38), teks dialog ≥44 px dekat penutur (R40), branding klien (R39) | **Muzik penuh** berlesen/asal (R44); suara asal boleh dimatikan | **Tiada SFX transition** (R36) | Light leak masuk montaj, dip hitam antara segmen, fade hitam akhir (R42) | **Tanya dulu:** format 9:16/landscape (R30) & bercerita/slideshow (R41); ikut aturcara (R31) |
 
-**Hook (semua jenis):** beri 2–3 calon, setiap satu lulus ujian R56 (menarik < 3 s **dan** berkait terus dengan isi).
+**Hook (semua jenis):** beri 2–3 calon, setiap satu lulus ujian R56 (menarik < 3 s **dan** berkait terus dengan isi). **Hook "borrowed viral + jambatan visual" (R91)** hanya boleh dicadang sebagai pilihan — **TANYA pengguna dulu** nak guna atau tidak; jambatan tanpa kaitan visual ditolak (X14).
 
 ---
 
